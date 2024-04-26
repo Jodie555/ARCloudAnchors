@@ -165,7 +165,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Android: com.dilmergames.ardraw
+    Android: com.metvibee.betafirebase
     iPhone: com.dilmergames.arcloudanchors
   buildNumber:
     Bratwurst: 0
