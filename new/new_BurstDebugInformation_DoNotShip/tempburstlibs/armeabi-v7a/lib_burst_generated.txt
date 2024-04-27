@@ -8,6 +8,10 @@ Library: C:\Users\Jodie\Documents\project\AR\newtest\ARCloudAnchors\ARCloudAncho
 --float-precision=Standard
 --target-framework=NetFramework
 --assembly-defines=Assembly-CSharp;
+--assembly-defines=Firebase.App;
+--assembly-defines=Firebase.Database;
+--assembly-defines=Firebase.Platform;
+--assembly-defines=Google.MiniJson;
 --assembly-defines=Google.XR.ARCoreExtensions;
 --assembly-defines=Mono.Security;
 --assembly-defines=mscorlib;
@@ -90,6 +94,10 @@ Library: C:\Users\Jodie\Documents\project\AR\newtest\ARCloudAnchors\ARCloudAncho
 --target-framework=NetFramework
 --float-mode=Fast
 --assembly-defines=Assembly-CSharp;
+--assembly-defines=Firebase.App;
+--assembly-defines=Firebase.Database;
+--assembly-defines=Firebase.Platform;
+--assembly-defines=Google.MiniJson;
 --assembly-defines=Google.XR.ARCoreExtensions;
 --assembly-defines=Mono.Security;
 --assembly-defines=mscorlib;
