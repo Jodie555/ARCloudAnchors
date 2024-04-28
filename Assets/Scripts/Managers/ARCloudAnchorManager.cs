@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR.ARSubsystems;
-
+using Firebase.Database;
 
 public class UnityEventResolver : UnityEvent<Transform>{}
 
@@ -64,31 +64,50 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
     private GameObject placedGameObject = null;
 
+    private FirebaseInit firebaseInit;
+
+    private string fixedID = "testinID";
+
+
     private async void Awake() 
     {
         resolver = new UnityEventResolver();   
         resolver.AddListener((t) => ARPlacementManager.Instance.ReCreatePlacement(t));
         await UnityServices.InitializeAsync();
         await AuthenticationService.Instance.SignInAnonymouslyAsync();
+        
 
+    }
+
+    private void Start()
+    {
+        firebaseInit = GetComponent<FirebaseInit>();
     }
 
     public async void SaveData(string anchorId)
     {
-        var playerData = new Dictionary<string, object>{
-          {"firstKeyName", "a text value"},
-          {"secondKeyName", anchorId}
-        };
-        await CloudSaveService.Instance.Data.ForceSaveAsync(playerData);
-        Debug.Log($"Saved data {string.Join(',', playerData)}");
-        ARDebugManager.Instance.LogInfo($"Saved data {string.Join(',', playerData)}");
+        //var playerData = new Dictionary<string, object>{
+        //  {"firstKeyName", "a text value"},
+        //  {"secondKeyName", anchorId}
+        //};
+        //await CloudSaveService.Instance.Data.ForceSaveAsync(playerData);
+        firebaseInit.uploadData(fixedID, anchorId);
+
+
+        ARDebugManager.Instance.LogInfo($"Saving data {string.Join(',', anchorId)}");
+
+
+
     }
 
     private async Task<string> GetAnchorIDCloud()
     {
-        var resultdata = await CloudSaveService.Instance.Data.LoadAllAsync();
-        Debug.Log($"Saved data {string.Join(',', resultdata.Values)}");
-        string anchorId = resultdata.TryGetValue("secondKeyName", out string result) ? result : "";
+
+
+        string anchorId = await firebaseInit.getData(fixedID);
+        ARDebugManager.Instance.LogInfo($"testValue firebase {anchorId}");
+        //var resultdata = await CloudSaveService.Instance.Data.LoadAllAsync();
+        //string anchorId = resultdata.TryGetValue("secondKeyName", out string result) ? result : "";
         return anchorId;
     }
 
@@ -125,12 +144,17 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
         var anchorId = await GetAnchorIDCloud();
 
         ARDebugManager.Instance.LogInfo($"Saved data {string.Join(',', anchorId)} ");
+
+
+
+
+
         if (anchorId != "")
         {
             ARDebugManager.Instance.LogInfo($"Can Get the AnchorID ");
             resolveCloudAnchorPromise = arAnchorManager.ResolveCloudAnchorAsync(anchorId);
             StartCoroutine(ResolvePromise(resolveCloudAnchorPromise));
-            ARDebugManager.Instance.LogInfo("Resolved");
+            ARDebugManager.Instance.LogInfo($"Resolved anchorID {anchorId}");
 
 
 
@@ -285,7 +309,7 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
         if (cloudAnchorState == CloudAnchorState.Success)
         {
-            ARDebugManager.Instance.LogInfo($"CloudAnchorId: {resolveCloudAnchorResult.Anchor.transform.position} resolved");
+
 
             resolver.Invoke(resolveCloudAnchorResult.Anchor.transform);
 
@@ -312,7 +336,6 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
         if (cloudAnchorState == CloudAnchorState.Success)
         {
-            ARDebugManager.Instance.LogInfo($"New Scene CloudAnchorId: {resolveCloudAnchorResult.Anchor.pose.position} resolved");
             anchorResolveInProgress = false;
             //resolver.Invoke(resolveCloudAnchorResult.Anchor.transform);
 
