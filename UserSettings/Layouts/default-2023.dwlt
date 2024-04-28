@@ -343,7 +343,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 310.3333}
     m_SelectedIDs: 7ec00000
     m_LastClickedID: 49278
-    m_ExpandedIDs: 000000009e860000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -372,7 +372,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009e860000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1002,6 +1002,20 @@ MonoBehaviour:
       layout: 4
       size: {x: 0, y: 0}
       sizeOverridden: 0
+    - dockPosition: 1
+      containerId: overlay-container--right
+      displayed: 0
+      id: APV Overlay
+      index: 12
+      contents: '{"m_Layout":4,"m_Collapsed":false,"m_Floating":false,"m_FloatingSnapOffset":{"x":0.0,"y":0.0},"m_SnapOffsetDelta":{"x":0.0,"y":0.0},"m_FloatingSnapCorner":0,"m_Size":{"x":0.0,"y":0.0},"m_SizeOverridden":false}'
+      floating: 0
+      collapsed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      layout: 4
+      size: {x: 0, y: 0}
+      sizeOverridden: 0
     m_ContainerData:
     - containerId: overlay-toolbar__top
       scrollOffset: 0
@@ -1157,7 +1171,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1045.8333, y: 647.5}
+  m_TargetSize: {x: 836.6666, y: 518}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1172,10 +1186,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -418.33334
-    m_HBaseRangeMax: 418.33334
-    m_VBaseRangeMin: -259
-    m_VBaseRangeMax: 259
+    m_HBaseRangeMin: -278.8889
+    m_HBaseRangeMax: 278.8889
+    m_VBaseRangeMin: -172.66667
+    m_VBaseRangeMax: 172.66667
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1195,7 +1209,7 @@ MonoBehaviour:
       y: 21
       width: 836.6666
       height: 518
-    m_Scale: {x: 0.99999994, y: 0.99999994}
+    m_Scale: {x: 1.5, y: 1.5}
     m_Translation: {x: 418.3333, y: 259}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -1203,12 +1217,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -418.33334
-      y: -259.00003
-      width: 836.6667
-      height: 518.00006
+      x: -278.8889
+      y: -172.66667
+      width: 557.7778
+      height: 345.33334
     m_MinimalGUI: 1
-  m_defaultScale: 0.99999994
+  m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1255, y: 808.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
