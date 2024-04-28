@@ -11,6 +11,7 @@ Library: C:\Users\Jodie\Documents\project\AR\newtest\ARCloudAnchors\ARCloudAncho
 --assembly-defines=Firebase.App;
 --assembly-defines=Firebase.Database;
 --assembly-defines=Firebase.Platform;
+--assembly-defines=Firebase.TaskExtension;
 --assembly-defines=Google.MiniJson;
 --assembly-defines=Google.XR.ARCoreExtensions;
 --assembly-defines=Mono.Security;
@@ -97,6 +98,7 @@ Library: C:\Users\Jodie\Documents\project\AR\newtest\ARCloudAnchors\ARCloudAncho
 --assembly-defines=Firebase.App;
 --assembly-defines=Firebase.Database;
 --assembly-defines=Firebase.Platform;
+--assembly-defines=Firebase.TaskExtension;
 --assembly-defines=Google.MiniJson;
 --assembly-defines=Google.XR.ARCoreExtensions;
 --assembly-defines=Mono.Security;
