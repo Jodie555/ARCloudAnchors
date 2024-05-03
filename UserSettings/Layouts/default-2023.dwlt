@@ -1037,15 +1037,15 @@ MonoBehaviour:
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
-  m_2DMode: 0
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 427.84442, y: 192.39388, z: -4.1768723}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0}
+    m_Value: {x: 427.84442, y: 192.39388, z: -4.1768723}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1091,17 +1091,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 10
+    m_Target: 427.6911
     speed: 2
-    m_Value: 10
+    m_Value: 427.6911
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -1171,7 +1171,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 836.6666, y: 518}
+  m_TargetSize: {x: 1045.8333, y: 647.5}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1186,10 +1186,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -278.8889
-    m_HBaseRangeMax: 278.8889
-    m_VBaseRangeMin: -172.66667
-    m_VBaseRangeMax: 172.66667
+    m_HBaseRangeMin: -418.33334
+    m_HBaseRangeMax: 418.33334
+    m_VBaseRangeMin: -259
+    m_VBaseRangeMax: 259
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1222,7 +1222,7 @@ MonoBehaviour:
       width: 557.7778
       height: 345.33334
     m_MinimalGUI: 1
-  m_defaultScale: 1
+  m_defaultScale: 0.99999994
   m_LastWindowPixelSize: {x: 1255, y: 808.5}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1

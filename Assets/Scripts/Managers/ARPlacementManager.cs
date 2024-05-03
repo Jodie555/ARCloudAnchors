@@ -52,8 +52,13 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
 
     public void RemovePlacements()
     {
-        Destroy(placedGameObject);
-        placedGameObject = null;
+        if (placedGameObject != null)
+        {
+            Destroy(placedGameObject);
+            placedGameObject = null;
+
+        }
+
     }
 
     void Update()

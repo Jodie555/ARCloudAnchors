@@ -110,7 +110,7 @@ public class ARDrawManager : Singleton<ARDrawManager>
             }
         }
         //queue to the ARAnchor List after the drawing is done
-        ARCloudAnchorManager.Instance.QueueAnchorList(anchors);
+        //ARCloudAnchorManager.Instance.QueueAnchorList(anchors);
 
 
     }

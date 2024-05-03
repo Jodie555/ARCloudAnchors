@@ -1179,7 +1179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: RESOLVE
+  m_text: "save \nAnchord ID"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1206,8 +1206,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.71
-  m_fontSizeBase: 30.71
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1392,7 +1392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -480.94, y: 205}
+  m_AnchoredPosition: {x: -284, y: 203}
   m_SizeDelta: {x: 257.1, y: 56.2183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895584291
@@ -1439,8 +1439,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405077189}
-        m_TargetAssemblyTypeName: ARCloudAnchorManager, Assembly-CSharp
+      - m_Target: {fileID: 1405077193}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
         m_MethodName: ChangeScene
         m_Mode: 1
         m_Arguments:
@@ -2246,6 +2246,7 @@ GameObject:
   - component: {fileID: 1405077190}
   - component: {fileID: 1405077191}
   - component: {fileID: 1405077192}
+  - component: {fileID: 1405077193}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -2461,6 +2462,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c0d47baaca728b40b13a1bbcf7564c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1405077193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405077180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8e47b7ac399ec34caa0a1f4fc9f66ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 
 --- !u!1 &1438120337
 GameObject:
   m_ObjectHideFlags: 0
@@ -2939,7 +2953,7 @@ GameObject:
   - component: {fileID: 1754216059}
   - component: {fileID: 1754216058}
   m_Layer: 5
-  m_Name: ResolveAnchor
+  m_Name: SaveAnchorID
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3010,8 +3024,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1405077189}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Resolve
+        m_TargetAssemblyTypeName: ARCloudAnchorManager, Assembly-CSharp
+        m_MethodName: SaveCloudAnchorID
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
