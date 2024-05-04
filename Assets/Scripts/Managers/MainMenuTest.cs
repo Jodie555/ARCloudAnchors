@@ -22,12 +22,6 @@ public class MainMenuTest : MonoBehaviour
 
     }
 
-    public void ChangeSceneTest()
-    {
 
-        //SceneManager.LoadScene("NewScene");
-        SceneManager.LoadScene("ARCloudAnchor");
-
-    }
 
 }

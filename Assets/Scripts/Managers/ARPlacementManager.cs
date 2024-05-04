@@ -50,10 +50,24 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
         return false;
     }
 
+    public void changePlacedPrefab()
+    {
+        ARDebugManager.Instance.LogInfo($"before changed placed Prefab");
+
+        placedPrefab = GameObject.FindGameObjectWithTag("TestingAnchor");
+        ARDebugManager.Instance.LogInfo($"changed placePrefab {placedPrefab}");
+
+    }
+
     public void RemovePlacements()
     {
-        Destroy(placedGameObject);
-        placedGameObject = null;
+        if (placedGameObject != null)
+        {
+            Destroy(placedGameObject);
+            placedGameObject = null;
+
+        }
+
     }
 
     void Update()
@@ -85,15 +99,8 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
         placedGameObject.transform.parent = transform;
     }
 
-    public void ResetAnchor(ARCloudAnchor anchorCloudObject)
-    {
-        Pose pose = anchorCloudObject.pose;
-        ARDebugManager.Instance.LogInfo($"Get Back Position {pose.position}");
-        Instantiate(placedPrefab, pose.position + new Vector3(0, 10, 50), pose.rotation);
-    }
 
-
-    public void getBackAnchor(ARCloudAnchor anchorCloudObject)
+    public void placeGameObject(ARCloudAnchor anchorCloudObject)
     {
         ARDebugManager.Instance.LogInfo($"Get Back Position {anchorCloudObject.transform.position}");
 

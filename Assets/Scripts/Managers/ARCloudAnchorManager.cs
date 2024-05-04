@@ -23,16 +23,10 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
     [SerializeField]
     private float resolveAnchorPassedTimeout = 10.0f;
-    [SerializeField]
-    private GameObject placedPrefab = null;
 
     private ARAnchorManager arAnchorManager = null;
 
     private ARAnchor pendingHostAnchor = null;
-
-    private ARCloudAnchor cloudAnchor = null;
-
-    private ARCloudAnchor outputCloudAnchor = null;
 
     private string anchorToResolve;
 
@@ -40,7 +34,7 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
     private bool anchorResolveInProgress = false;
     
-    private float safeToResolvePassed = 0;
+    private float safeToResolvePassed = 5.0f;
 
     private UnityEventResolver resolver = null;
 
@@ -54,15 +48,13 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
     private string cloudAnchorId = null;
 
-    private List<ARAnchor> aRAnchors = new List<ARAnchor>();
+    //private List<ARAnchor> aRAnchors = new List<ARAnchor>();
 
-    private int anchorHostedCount = 0;
+    //private int anchorHostedCount = 0;
 
-    private bool isListHosted = true;
+    //private bool isListHosted = true;
 
     public bool isNewSceneResolved = false;
-
-    private GameObject placedGameObject = null;
 
     private FirebaseInit firebaseInit;
 
@@ -86,16 +78,9 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
     public async void SaveData(string anchorId)
     {
-        //var playerData = new Dictionary<string, object>{
-        //  {"firstKeyName", "a text value"},
-        //  {"secondKeyName", anchorId}
-        //};
-        //await CloudSaveService.Instance.Data.ForceSaveAsync(playerData);
+
         firebaseInit.uploadData(fixedID, anchorId);
-
-
         ARDebugManager.Instance.LogInfo($"Saving data {string.Join(',', anchorId)}");
-
 
 
     }
@@ -106,61 +91,32 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
         string anchorId = await firebaseInit.getData(fixedID);
         ARDebugManager.Instance.LogInfo($"testValue firebase {anchorId}");
-        //var resultdata = await CloudSaveService.Instance.Data.LoadAllAsync();
-        //string anchorId = resultdata.TryGetValue("secondKeyName", out string result) ? result : "";
+
         return anchorId;
     }
 
 
-    public void SaveARDrawAnchor()
+    public async void resolveAnchor()
     {
-        arAnchorManager = GetComponent<ARAnchorManager>();
-        LoadData();
-    }
-
-    public async void NewSceneResolve()
-    {
-        ARDebugManager.Instance.LogInfo($"Next scene");
+        //arAnchorManager = GetComponent<ARAnchorManager>();
+        //NewSceneResolve();
         var anchorId = await GetAnchorIDCloud();
-        ARDebugManager.Instance.LogInfo($"saved Cloud Anchor ID {anchorId}");
-
-        //newscene
-        //SceneManager.LoadScene("ARCloudAnchor");
-        arAnchorManager = GetComponent<ARAnchorManager>();
-        resolveCloudAnchorPromise = arAnchorManager.ResolveCloudAnchorAsync(anchorId);
-        ARDebugManager.Instance.LogInfo($"Next scene can get  Cloud Anchor ID {resolveCloudAnchorPromise}");
-
-        StartCoroutine(ResolvePromise(resolveCloudAnchorPromise));
-        ARDebugManager.Instance.LogInfo("Resolved");
-
-        isNewSceneResolved = true;
-
-    }
-
-    public async void LoadData()
-    {
-        ARDebugManager.Instance.LogInfo($"Resolve start ");
-
-        var anchorId = await GetAnchorIDCloud();
-
-        ARDebugManager.Instance.LogInfo($"Saved data {string.Join(',', anchorId)} ");
-
-
-
-
+        ARDebugManager.Instance.LogInfo($"can anchor ID {anchorId}");
 
         if (anchorId != "")
         {
-            ARDebugManager.Instance.LogInfo($"Can Get the AnchorID ");
+            arAnchorManager = GetComponent<ARAnchorManager>();
             resolveCloudAnchorPromise = arAnchorManager.ResolveCloudAnchorAsync(anchorId);
+            ARDebugManager.Instance.LogInfo($"Next scene can get  Cloud Anchor ID {resolveCloudAnchorPromise}");
+
             StartCoroutine(ResolvePromise(resolveCloudAnchorPromise));
-            ARDebugManager.Instance.LogInfo($"Resolved anchorID {anchorId}");
-
-
+            ARDebugManager.Instance.LogInfo("Resolved");
 
         }
-
     }
+
+
+
 
 
     private Pose GetCameraPose()
@@ -177,10 +133,10 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
     }
 
 
-    public void QueueAnchorList(List<ARAnchor> arAnchorList)
-    {
-        aRAnchors = arAnchorList;
-    }
+    //public void QueueAnchorList(List<ARAnchor> arAnchorList)
+    //{
+    //    aRAnchors = arAnchorList;
+    //}
 
 
     private IEnumerator CheckHostCloudAnchorPromise(HostCloudAnchorPromise promise)
@@ -197,19 +153,19 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
     }
 
-    private IEnumerator CheckListHostCloudAnchorPromise(HostCloudAnchorPromise promise)
-    {
+    //private IEnumerator CheckListHostCloudAnchorPromise(HostCloudAnchorPromise promise)
+    //{
 
-        yield return promise;
-        if (promise.State == PromiseState.Cancelled) yield break;
-        hostCloudAnchorResult = promise.Result;
-        /// Use the result of your promise here.
+    //    yield return promise;
+    //    if (promise.State == PromiseState.Cancelled) yield break;
+    //    hostCloudAnchorResult = promise.Result;
+    //    /// Use the result of your promise here.
 
-        cloudAnchorId = hostCloudAnchorResult.CloudAnchorId;
-        ARDebugManager.Instance.LogInfo($"Cloud Anchor ID new {cloudAnchorId}");
-        isListHosted = true;
-        anchorHostedCount++;
-    }
+    //    cloudAnchorId = hostCloudAnchorResult.CloudAnchorId;
+    //    ARDebugManager.Instance.LogInfo($"Cloud Anchor ID new {cloudAnchorId}");
+    //    isListHosted = true;
+    //    anchorHostedCount++;
+    //}
 
 
     public void HostAnchor()
@@ -221,28 +177,31 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
         FeatureMapQuality quality =
             arAnchorManager.EstimateFeatureMapQualityForHosting(GetCameraPose());
+
+        ARDebugManager.Instance.LogInfo($"quality {quality}");
+
         HostCloudAnchorPromise =  arAnchorManager.HostCloudAnchorAsync(pendingHostAnchor, 1);
         StartCoroutine(CheckHostCloudAnchorPromise(HostCloudAnchorPromise));
 
 
     }
 
-    public void HostAnchorList()
-    {
-        ARDebugManager.Instance.LogInfo($"host a list of Anchors");
-        foreach(ARAnchor anchor in aRAnchors)
-        {
-            if (isListHosted)
-            {
-                var promise = arAnchorManager.HostCloudAnchorAsync(anchor, 1);
-                isListHosted = false;
-                StartCoroutine(CheckListHostCloudAnchorPromise(promise));
-            }
+    //public void HostAnchorList()
+    //{
+    //    ARDebugManager.Instance.LogInfo($"host a list of Anchors");
+    //    foreach(ARAnchor anchor in aRAnchors)
+    //    {
+    //        if (isListHosted)
+    //        {
+    //            var promise = arAnchorManager.HostCloudAnchorAsync(anchor, 1);
+    //            isListHosted = false;
+    //            StartCoroutine(CheckListHostCloudAnchorPromise(promise));
+    //        }
 
-        }
-        ARDebugManager.Instance.LogInfo($"number of hosted anchor {anchorHostedCount}");
+    //    }
+    //    ARDebugManager.Instance.LogInfo($"number of hosted anchor {anchorHostedCount}");
         
-    }
+    //}
 
 
     private IEnumerator ResolvePromise(ResolveCloudAnchorPromise promise)
@@ -259,14 +218,10 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
         ARDebugManager.Instance.LogInfo($"resultAnchor new {resultAnchor.transform.position}");
     }
 
-    public async void Resolve()
+    public async void SaveCloudAnchorID()
     {
-        ARDebugManager.Instance.LogInfo("save Cloud Anchor ID");
 
         ARDebugManager.Instance.LogInfo($"saved Cloud Anchor ID {cloudAnchorId}");
-
-
-
         SaveData(cloudAnchorId);
 
     }
@@ -291,30 +246,21 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
         }
     }
 
-    public void ChangeScene()
-    {
-        SceneManager.LoadScene("NewScene");
 
-    }
-    public void RemoveObject()
-    {
-        ARPlacementManager.Instance.RemovePlacements();
-    }
 
     private void CheckResolveProgress()
     {
         CloudAnchorState cloudAnchorState = resolveCloudAnchorResult.CloudAnchorState;
-        
+
         ARDebugManager.Instance.LogInfo($"ResolveCloudAnchor state {cloudAnchorState}");
 
         if (cloudAnchorState == CloudAnchorState.Success)
         {
 
-
-            resolver.Invoke(resolveCloudAnchorResult.Anchor.transform);
+            //resolver.Invoke(resolveCloudAnchorResult.Anchor.transform);
 
             //ARPlacementManager.Instance.RemovePlacements();
-            ARPlacementManager.Instance.ResetAnchor(resolveCloudAnchorResult.Anchor);
+            ARPlacementManager.Instance.placeGameObject(resolveCloudAnchorResult.Anchor);
 
             anchorResolveInProgress = false;
 
@@ -328,31 +274,6 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
         }
     }
 
-    private void CheckResolveProgressAnother()
-    {
-        CloudAnchorState cloudAnchorState = resolveCloudAnchorResult.CloudAnchorState;
-
-        ARDebugManager.Instance.LogInfo($"ResolveCloudAnchor state {cloudAnchorState}");
-
-        if (cloudAnchorState == CloudAnchorState.Success)
-        {
-            anchorResolveInProgress = false;
-            //resolver.Invoke(resolveCloudAnchorResult.Anchor.transform);
-
-            //ARPlacementManager.Instance.ResetAnchor(resolveCloudAnchorResult.Anchor);
-            //placedGameObject = Instantiate(placedPrefab, resolveCloudAnchorResult.Anchor.pose.position, resolveCloudAnchorResult.Anchor.pose.rotation);
-            //placedGameObject.transform.parent = resolveCloudAnchorResult.Anchor.transform;
-
-            ARPlacementManager.Instance.getBackAnchor(resolveCloudAnchorResult.Anchor);
-            ARDebugManager.Instance.LogInfo($"New Scene Total resolved");
-        }
-        else if (cloudAnchorState != CloudAnchorState.TaskInProgress)
-        {
-            ARDebugManager.Instance.LogError($"Fail to resolve Cloud Anchor with state: {cloudAnchorState}");
-
-            anchorResolveInProgress = false;
-        }
-    }
 
     #endregion
 
@@ -371,25 +292,13 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
             // check evey (resolveAnchorPassedTimeout)
             safeToResolvePassed = resolveAnchorPassedTimeout;
 
-            if (!string.IsNullOrEmpty(anchorToResolve))
-            {
-                ARDebugManager.Instance.LogInfo($"Resolving AnchorId: {anchorToResolve}");
-                CheckResolveProgress();
-
-
-            }
+            ARDebugManager.Instance.LogInfo($"Resolving AnchorId: {anchorToResolve}");
+            CheckResolveProgress();
 
         }
         else
         {
             safeToResolvePassed -= Time.deltaTime * 1.0f;
-        }
-
-        if (isNewSceneResolved && anchorResolveInProgress)
-        {
-            ARDebugManager.Instance.LogInfo($"new Scene update:");
-            CheckResolveProgressAnother();
-            isNewSceneResolved = false;
         }
 
 
