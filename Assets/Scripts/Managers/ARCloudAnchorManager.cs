@@ -23,8 +23,6 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
     [SerializeField]
     private float resolveAnchorPassedTimeout = 10.0f;
-    [SerializeField]
-    private GameObject placedPrefab = null;
 
     private ARAnchorManager arAnchorManager = null;
 
@@ -82,10 +80,7 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
     {
 
         firebaseInit.uploadData(fixedID, anchorId);
-
-
         ARDebugManager.Instance.LogInfo($"Saving data {string.Join(',', anchorId)}");
-
 
 
     }
@@ -119,6 +114,8 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
         }
     }
+
+
 
 
 
@@ -180,6 +177,9 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
         FeatureMapQuality quality =
             arAnchorManager.EstimateFeatureMapQualityForHosting(GetCameraPose());
+
+        ARDebugManager.Instance.LogInfo($"quality {quality}");
+
         HostCloudAnchorPromise =  arAnchorManager.HostCloudAnchorAsync(pendingHostAnchor, 1);
         StartCoroutine(CheckHostCloudAnchorPromise(HostCloudAnchorPromise));
 

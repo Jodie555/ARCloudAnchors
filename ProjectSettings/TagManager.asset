@@ -4,7 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Line
+  - Placement
+  - TestingAnchor
   layers:
   - Default
   - TransparentFX
