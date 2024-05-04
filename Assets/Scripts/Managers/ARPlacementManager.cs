@@ -92,13 +92,15 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
 
     public void ResetAnchor(ARCloudAnchor anchorCloudObject)
     {
-        Pose pose = anchorCloudObject.pose;
-        ARDebugManager.Instance.LogInfo($"Get Back Position {pose.position}");
-        Instantiate(placedPrefab, pose.position + new Vector3(0, 10, 50), pose.rotation);
+        //Transform transform = anchorCloudObject.transform;
+        ARDebugManager.Instance.LogInfo($"Get Back Position {transform.position}");
+        //Instantiate(placedPrefab, transform.position + new Vector3(0, 10, 50), transform.rotation);
+        placedGameObject = Instantiate(placedPrefab, anchorCloudObject.transform.position, anchorCloudObject.transform.rotation);
+        placedGameObject.transform.parent = anchorCloudObject.transform;
     }
 
 
-    public void getBackAnchor(ARCloudAnchor anchorCloudObject)
+    public void placeGameObject(ARCloudAnchor anchorCloudObject)
     {
         ARDebugManager.Instance.LogInfo($"Get Back Position {anchorCloudObject.transform.position}");
 

@@ -1096,7 +1096,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 615447763}
         m_TargetAssemblyTypeName: ARCloudAnchorManager, Assembly-CSharp
-        m_MethodName: NewSceneResolve
+        m_MethodName: resolveAnchor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
