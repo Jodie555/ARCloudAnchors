@@ -192,6 +192,7 @@ GameObject:
   - component: {fileID: 277870579}
   - component: {fileID: 277870578}
   - component: {fileID: 277870582}
+  - component: {fileID: 277870583}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -298,6 +299,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   placedPrefab: {fileID: 8892413415797720469, guid: 129ad34963f384c74a74dc102aafbe4d,
     type: 3}
+--- !u!114 &277870583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 277870577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8e47b7ac399ec34caa0a1f4fc9f66ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 
 --- !u!1 &615447762
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,9 +689,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 277870582}
-        m_TargetAssemblyTypeName: MainMenuTest, Assembly-CSharp
-        m_MethodName: ChangeSceneTest
+      - m_Target: {fileID: 277870583}
+        m_TargetAssemblyTypeName: SceneEventManager, Assembly-CSharp
+        m_MethodName: BackToMainScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1082,7 +1096,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 615447763}
         m_TargetAssemblyTypeName: ARCloudAnchorManager, Assembly-CSharp
-        m_MethodName: NewSceneResolve
+        m_MethodName: resolveAnchor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

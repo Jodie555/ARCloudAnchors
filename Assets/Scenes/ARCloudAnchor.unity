@@ -202,9 +202,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405077189}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: HostAnchor
+      - m_Target: {fileID: 1405077194}
+        m_TargetAssemblyTypeName: MainSceneUIManager, Assembly-CSharp
+        m_MethodName: hostButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -335,9 +335,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405077189}
-        m_TargetAssemblyTypeName: ARCloudAnchorManager, Assembly-CSharp
-        m_MethodName: SaveARDrawAnchor
+      - m_Target: {fileID: 1405077194}
+        m_TargetAssemblyTypeName: MainSceneUIManager, Assembly-CSharp
+        m_MethodName: resolveButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -468,9 +468,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405077191}
-        m_TargetAssemblyTypeName: ARDrawManager, Assembly-CSharp
-        m_MethodName: TestDraw
+      - m_Target: {fileID: 1405077194}
+        m_TargetAssemblyTypeName: MainSceneUIManager, Assembly-CSharp
+        m_MethodName: reDrawButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -955,9 +955,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405077189}
-        m_TargetAssemblyTypeName: ARCloudAnchorManager, Assembly-CSharp
-        m_MethodName: RemoveObject
+      - m_Target: {fileID: 1405077194}
+        m_TargetAssemblyTypeName: MainSceneUIManager, Assembly-CSharp
+        m_MethodName: changePlacedPrefabButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1179,7 +1179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: RESOLVE
+  m_text: "save \nAnchord ID"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1206,8 +1206,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30.71
-  m_fontSizeBase: 30.71
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1356,6 +1356,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 639003840}
   m_CullTransparentMesh: 0
+--- !u!1001 &835647570
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8892413415797720468, guid: 129ad34963f384c74a74dc102aafbe4d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413415797720468, guid: 129ad34963f384c74a74dc102aafbe4d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413415797720468, guid: 129ad34963f384c74a74dc102aafbe4d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413415797720468, guid: 129ad34963f384c74a74dc102aafbe4d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413415797720468, guid: 129ad34963f384c74a74dc102aafbe4d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413415797720468, guid: 129ad34963f384c74a74dc102aafbe4d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413415797720468, guid: 129ad34963f384c74a74dc102aafbe4d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413415797720468, guid: 129ad34963f384c74a74dc102aafbe4d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413415797720468, guid: 129ad34963f384c74a74dc102aafbe4d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413415797720468, guid: 129ad34963f384c74a74dc102aafbe4d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413415797720469, guid: 129ad34963f384c74a74dc102aafbe4d,
+        type: 3}
+      propertyPath: m_Name
+      value: Placement
+      objectReference: {fileID: 0}
+    - target: {fileID: 8892413415797720469, guid: 129ad34963f384c74a74dc102aafbe4d,
+        type: 3}
+      propertyPath: m_TagString
+      value: TestingAnchor
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 129ad34963f384c74a74dc102aafbe4d, type: 3}
 --- !u!1 &895584289
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,7 +1465,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -480.94, y: 205}
+  m_AnchoredPosition: {x: -284, y: 203}
   m_SizeDelta: {x: 257.1, y: 56.2183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895584291
@@ -1439,9 +1512,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405077189}
-        m_TargetAssemblyTypeName: ARCloudAnchorManager, Assembly-CSharp
-        m_MethodName: ChangeScene
+      - m_Target: {fileID: 1405077194}
+        m_TargetAssemblyTypeName: MainSceneUIManager, Assembly-CSharp
+        m_MethodName: changeSceneButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1682,7 +1755,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CLEAR
+  m_text: Resolve
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2246,6 +2319,8 @@ GameObject:
   - component: {fileID: 1405077190}
   - component: {fileID: 1405077191}
   - component: {fileID: 1405077192}
+  - component: {fileID: 1405077193}
+  - component: {fileID: 1405077194}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -2415,7 +2490,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arCamera: {fileID: 1438120338}
   resolveAnchorPassedTimeout: 5
-  placedPrefab: {fileID: 0}
   isNewSceneResolved: 0
 --- !u!114 &1405077190
 MonoBehaviour:
@@ -2459,6 +2533,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c0d47baaca728b40b13a1bbcf7564c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1405077193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405077180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8e47b7ac399ec34caa0a1f4fc9f66ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 
+--- !u!114 &1405077194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405077180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59a560d4d3d2cb147a43ca9a15ac28fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1438120337
@@ -2939,7 +3038,7 @@ GameObject:
   - component: {fileID: 1754216059}
   - component: {fileID: 1754216058}
   m_Layer: 5
-  m_Name: ResolveAnchor
+  m_Name: SaveAnchorID
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3009,9 +3108,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405077189}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Resolve
+      - m_Target: {fileID: 1405077194}
+        m_TargetAssemblyTypeName: MainSceneUIManager, Assembly-CSharp
+        m_MethodName: saveCloudAnchorIDButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3150,3 +3249,4 @@ SceneRoots:
   - {fileID: 1555178248}
   - {fileID: 1911534745}
   - {fileID: 1606920030}
+  - {fileID: 835647570}
