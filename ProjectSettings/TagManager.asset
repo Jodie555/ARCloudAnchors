@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Placement
   - TestingAnchor
+  - Character
+  - Rock
   layers:
   - Default
   - TransparentFX
