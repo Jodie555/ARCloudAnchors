@@ -23,10 +23,13 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
 
     private ARAnchorManager arAnchorManager = null;
 
+    private GameObjectsManager gameObjectsManager = null;
+
     void Awake() 
     {
         arRaycastManager = GetComponent<ARRaycastManager>();
         arAnchorManager = GetComponent<ARAnchorManager>();
+        gameObjectsManager = GetComponent<GameObjectsManager>();
     }
 
     bool TryGetTouchPosition(out Vector2 touchPosition)
@@ -50,13 +53,13 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
         return false;
     }
 
-    public void changePlacedPrefab()
+    public void changePlacedPrefab(string tagName)
     {
         ARDebugManager.Instance.LogInfo($"before changed placed Prefab");
-
-        placedPrefab = GameObject.FindGameObjectWithTag("TestingAnchor");
+        placedPrefab = gameObjectsManager.getGameObjectByTag(tagName);
+        //placedPrefab = GameObject.FindGameObjectWithTag(tagName);
         ARDebugManager.Instance.LogInfo($"changed placePrefab {placedPrefab}");
-
+        
     }
 
     public void RemovePlacements()
@@ -72,25 +75,38 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
 
     void Update()
     {
-        if(!TryGetTouchPosition(out Vector2 touchPosition))
+        if (!TryGetTouchPosition(out Vector2 touchPosition))
             return;
 
-        if(placedGameObject != null)
-            return;
+        //if(placedGameObject != null)
+        //    return;
 
-        if (arRaycastManager.Raycast(touchPosition, hits, UnityEngine.XR.ARSubsystems.TrackableType.PlaneWithinPolygon))
-        {
-            var hitPose = hits[0].pose;
-            ARDebugManager.Instance.LogInfo($"Hit Pose placeManager {hitPose}");
-            placedGameObject = Instantiate(placedPrefab, hitPose.position, hitPose.rotation);
-            ARDebugManager.Instance.LogInfo($"HostAnchor executing");
-            var anchor = arAnchorManager.AddAnchor(new Pose(hitPose.position, hitPose.rotation));
-            placedGameObject.transform.parent = anchor.transform;
-            ARDebugManager.Instance.LogInfo($"anchor Pose {anchor.transform.position}");
+        //if (arRaycastManager.Raycast(touchPosition, hits, UnityEngine.XR.ARSubsystems.TrackableType.PlaneWithinPolygon))
+        //{
+        //    var hitPose = hits[0].pose;
+        //    ARDebugManager.Instance.LogInfo($"Hit Pose placeManager {hitPose}");
+        //    placedGameObject = Instantiate(placedPrefab, hitPose.position, hitPose.rotation);
+        //    ARDebugManager.Instance.LogInfo($"HostAnchor executing");
+        //    var anchor = arAnchorManager.AddAnchor(new Pose(hitPose.position, hitPose.rotation));
+        //    placedGameObject.transform.parent = anchor.transform;
+        //    ARDebugManager.Instance.LogInfo($"anchor Pose {anchor.transform.position}");
 
-            // this won't host the anchor just add a reference to be later host it
-            ARCloudAnchorManager.Instance.QueueAnchor(anchor);
-        }
+        //    // this won't host the anchor just add a reference to be later host it
+        //    ARCloudAnchorManager.Instance.QueueAnchor(anchor);
+        //}
+
+
+        Vector3 newTouchPosition = arCamera.ScreenToWorldPoint(new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, 0.3f));
+        ARDebugManager.Instance.LogInfo($"Hit Pose placeManager {newTouchPosition}");
+        placedGameObject = Instantiate(placedPrefab, newTouchPosition, new Quaternion());
+        ARDebugManager.Instance.LogInfo($"HostAnchor executing");
+        var anchor = arAnchorManager.AddAnchor(new Pose(newTouchPosition, new Quaternion()));
+        placedGameObject.transform.parent = anchor.transform;
+        ARDebugManager.Instance.LogInfo($"anchor Pose {anchor.transform.position}");
+
+        // this won't host the anchor just add a reference to be later host it
+        ARCloudAnchorManager.Instance.QueueAnchor(anchor);
+
     }
 
     public void ReCreatePlacement(Transform transform)
