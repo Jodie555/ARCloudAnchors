@@ -41,7 +41,12 @@ public class MainSceneUIManager : MonoBehaviour
 
     public void changePlacedPrefabButton()
     {
-        arPlacementManager.changePlacedPrefab();
+        arPlacementManager.changePlacedPrefab("TestingAnchor");
+    }
+
+    public void chooseCharacterPrefabButton()
+    {
+        arPlacementManager.changePlacedPrefab("Character");
     }
 
     public void reDrawButton()
