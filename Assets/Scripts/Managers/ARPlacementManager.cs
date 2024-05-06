@@ -25,11 +25,14 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
 
     private GameObjectsManager gameObjectsManager = null;
 
+    private AnchorListManager anchorListManager = null;
+
     void Awake() 
     {
         arRaycastManager = GetComponent<ARRaycastManager>();
         arAnchorManager = GetComponent<ARAnchorManager>();
         gameObjectsManager = GetComponent<GameObjectsManager>();
+        anchorListManager = GetComponent<AnchorListManager>();
     }
 
     bool TryGetTouchPosition(out Vector2 touchPosition)
@@ -106,6 +109,7 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
 
         // this won't host the anchor just add a reference to be later host it
         ARCloudAnchorManager.Instance.QueueAnchor(anchor);
+        anchorListManager.AddPlacedGameObject(new PlacedGameObject("red", anchor));
 
     }
 
