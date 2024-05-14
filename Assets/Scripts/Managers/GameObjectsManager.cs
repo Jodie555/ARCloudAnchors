@@ -23,13 +23,13 @@ public class GameObjectsManager : MonoBehaviour
         
     }
 
-    public GameObject getGameObjectByTag(string tagName)
+    public GameObject getGameObjectByName(string name)
     {
-        if (tagName == "TestingAnchor")
+        if (name == "TestingAnchor")
         {
             return placementObjectPrefab;
         }
-        else if (tagName == "Character")
+        else if (name == "Character")
         {
             return characterPrefab;
         }

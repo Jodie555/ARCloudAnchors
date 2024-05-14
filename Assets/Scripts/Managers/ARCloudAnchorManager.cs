@@ -13,6 +13,8 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR.ARSubsystems;
 using Firebase.Database;
+using PlacedGameObjectClass;
+using Newtonsoft.Json;
 
 public class UnityEventResolver : UnityEvent<Transform>{}
 
@@ -85,6 +87,11 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
     }
 
+    public async void saveListOfData(List<object> anchorIdList)
+    {
+        firebaseInit.uploadListData("testList", "anchor", anchorIdList);
+    }   
+
     private async Task<string> GetAnchorIDCloud()
     {
 
@@ -93,6 +100,34 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
         ARDebugManager.Instance.LogInfo($"testValue firebase {anchorId}");
 
         return anchorId;
+    }
+
+    public async void getListOfAnchors()
+    {
+
+
+        //Dictionary<string, object> listObject = await firebaseInit.getDict("testinID");
+        //object vector3 = listObject["anchor0"];
+        //ARDebugManager.Instance.LogInfo($"get vector3 {vector3}");
+        //foreach (DataSnapshot item in listObject)
+        //{
+        //    ARDebugManager.Instance.LogInfo($"anchors ListedObject {item.Value}");
+        //}
+
+
+        //Dictionary<string, object> listObject = await firebaseInit.GetDictTest<Dictionary<string, object>>("testinWayID");
+        //object vector3 = listObject["anchor0"];
+        //ARDebugManager.Instance.LogInfo($"get vector3 {vector3}");
+
+        string testObject = await firebaseInit.GetDictTest<string>("testcheckID");
+        ARDebugManager.Instance.LogInfo($"get vector3 {testObject}");
+        PlacedGameObject placedObject = JsonConvert.DeserializeObject<PlacedGameObject>(testObject);
+        ARDebugManager.Instance.LogInfo($"placedObject {placedObject.position}");
+        ARDebugManager.Instance.LogInfo($"next {placedObject.rotation}");
+
+
+
+
     }
 
 

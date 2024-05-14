@@ -4,7 +4,9 @@ using Google.XR.ARCoreExtensions;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
-
+using PlacedGameObjectClass;
+using Newtonsoft.Json;
+using System;
 
 [RequireComponent(typeof(ARRaycastManager))]
 public class ARPlacementManager : Singleton<ARPlacementManager>
@@ -27,12 +29,15 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
 
     private AnchorListManager anchorListManager = null;
 
+    private FirebaseInit firebaseInit = null;
+
     void Awake() 
     {
         arRaycastManager = GetComponent<ARRaycastManager>();
         arAnchorManager = GetComponent<ARAnchorManager>();
         gameObjectsManager = GetComponent<GameObjectsManager>();
         anchorListManager = GetComponent<AnchorListManager>();
+        firebaseInit = GetComponent<FirebaseInit>();
     }
 
     bool TryGetTouchPosition(out Vector2 touchPosition)
@@ -59,7 +64,7 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
     public void changePlacedPrefab(string tagName)
     {
         ARDebugManager.Instance.LogInfo($"before changed placed Prefab");
-        placedPrefab = gameObjectsManager.getGameObjectByTag(tagName);
+        placedPrefab = gameObjectsManager.getGameObjectByName(tagName);
         //placedPrefab = GameObject.FindGameObjectWithTag(tagName);
         ARDebugManager.Instance.LogInfo($"changed placePrefab {placedPrefab}");
         
@@ -109,7 +114,53 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
 
         // this won't host the anchor just add a reference to be later host it
         ARCloudAnchorManager.Instance.QueueAnchor(anchor);
-        anchorListManager.AddPlacedGameObject(new PlacedGameObject("red", anchor));
+
+        var testPlacedGameObject = new PlacedGameObject("Character", anchor.transform.position, anchor.transform.rotation, null, null);
+
+
+        anchorListManager.AddPlacedGameObject(testPlacedGameObject);
+        ARDebugManager.Instance.LogInfo($"Added anchorListManager {anchorListManager.placedGameObjects}");
+
+
+        var position = anchorListManager.placedGameObjects[0].position;
+        ARDebugManager.Instance.LogInfo($"get back pos {position}");
+
+
+    }
+
+
+    public void uploadAnchorList()
+    {
+
+        //upload one object
+        try
+        {
+            string s = JsonConvert.SerializeObject(anchorListManager.placedGameObjects[0]);
+            ARDebugManager.Instance.LogInfo($"result placed game object {s}");
+            firebaseInit.uploadObject("testcheckID", s);
+        }
+        catch (Exception e)
+        {
+            ARDebugManager.Instance.LogInfo($"Error {e.Message}");
+        }
+
+
+        List<object> list = new List<object>();
+        for (int i = 0; i < anchorListManager.placedGameObjects.Count; i++)
+        {
+            ARDebugManager.Instance.LogInfo($"Placed Game Object {anchorListManager.placedGameObjects[i].position}");
+            list.Add(anchorListManager.placedGameObjects[i].position);
+            object placedobject = anchorListManager.placedGameObjects[i];
+
+            
+
+
+
+
+        }
+        //firebaseInit.uploadListData("testinWayID", "anchor", list);
+
+        //firebaseInit.uploadObject("checkID", list);
 
     }
 
@@ -118,6 +169,8 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
         placedGameObject = Instantiate(placedPrefab, transform.position, transform.rotation);
         placedGameObject.transform.parent = transform;
     }
+
+
 
 
     public void placeGameObject(ARCloudAnchor anchorCloudObject)

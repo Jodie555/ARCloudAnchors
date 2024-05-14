@@ -17,7 +17,7 @@ public class AnchorListManager : MonoBehaviour
         
     }
 
-    public List<PlacedGameObject> placedGameObjects = new List<PlacedGameObject>();
+    public List<PlacedGameObject> placedGameObjects = new();
 
 
     public void AddPlacedGameObject(PlacedGameObject placedGameObject)
