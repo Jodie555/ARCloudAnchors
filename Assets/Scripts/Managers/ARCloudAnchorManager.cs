@@ -15,6 +15,7 @@ using UnityEngine.XR.ARSubsystems;
 using Firebase.Database;
 using PlacedGameObjectClass;
 using Newtonsoft.Json;
+using UnityEditor.Rendering;
 
 public class UnityEventResolver : UnityEvent<Transform>{}
 
@@ -81,22 +82,24 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
     public async void SaveData(string anchorId)
     {
 
-        firebaseInit.uploadData(fixedID, anchorId);
+        firebaseInit.uploadString(fixedID, anchorId);
         ARDebugManager.Instance.LogInfo($"Saving data {string.Join(',', anchorId)}");
 
 
     }
 
-    public async void saveListOfData(List<object> anchorIdList)
-    {
-        firebaseInit.uploadListData("testList", "anchor", anchorIdList);
-    }   
+    //public async void saveListOfData(List<object> anchorIdList)
+    //{
+    //    firebaseInit.uploadListData("testList", "anchor", anchorIdList);
+    //}   
 
     private async Task<string> GetAnchorIDCloud()
     {
 
 
-        string anchorId = await firebaseInit.getData(fixedID);
+        string anchorId = await firebaseInit.GetObject(fixedID);
+        anchorId = JsonConvert.DeserializeObject<string>(anchorId);
+
         ARDebugManager.Instance.LogInfo($"testValue firebase {anchorId}");
 
         return anchorId;
@@ -119,12 +122,22 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
         //object vector3 = listObject["anchor0"];
         //ARDebugManager.Instance.LogInfo($"get vector3 {vector3}");
 
-        string testObject = await firebaseInit.GetDictTest<string>("testcheckID");
+        //string testObject = await firebaseInit.GetDictTest<string>("testcheckID");
+
+        // get one object
+        string testObject = await firebaseInit.GetObject("testcheckID");
+
         ARDebugManager.Instance.LogInfo($"get vector3 {testObject}");
         PlacedGameObject placedObject = JsonConvert.DeserializeObject<PlacedGameObject>(testObject);
         ARDebugManager.Instance.LogInfo($"placedObject {placedObject.position}");
         ARDebugManager.Instance.LogInfo($"next {placedObject.rotation}");
 
+
+        // get list of object
+        string listObjects = await firebaseInit.GetObject("testinWayID");
+
+        List<PlacedGameObject> listpPlacedObject = JsonConvert.DeserializeObject<List<PlacedGameObject>>(listObjects);
+        ARDebugManager.Instance.LogInfo($"list placedObject {listpPlacedObject[0].position}");
 
 
 
