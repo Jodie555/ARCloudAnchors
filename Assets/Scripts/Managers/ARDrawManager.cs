@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using DilmerGames.Core.Singletons;
 using UnityEngine;
 using UnityEngine.Events;
@@ -27,7 +29,7 @@ public class ARDrawManager : Singleton<ARDrawManager>
 
     private List<int> fingerIdList = new List<int>();
 
-    private bool CanDraw { get; set; }
+    private bool enableDraw = false;
 
     void Update ()
     {
@@ -35,7 +37,7 @@ public class ARDrawManager : Singleton<ARDrawManager>
         // ARAnchor newAnchor = anchorManager.AddAnchor(pose);
         // var cloudAnchor = anchorManager.HostCloudAnchorAsync(newAnchor,10);
 
-        CanDraw = true;
+
         #if !UNITY_EDITOR
         DrawOnTouch();
         #else
@@ -43,9 +45,9 @@ public class ARDrawManager : Singleton<ARDrawManager>
         #endif
 	}
 
-    public void AllowDraw(bool isAllow)
+    public void ToggleDraw()
     {
-        CanDraw = isAllow;
+        enableDraw = !enableDraw;
     }
 
 
@@ -70,7 +72,7 @@ public class ARDrawManager : Singleton<ARDrawManager>
 
     void DrawOnTouch()
     {
-        if(!CanDraw) return;
+        if(!enableDraw) return;
 
         int tapCount = Input.touchCount > 1 && lineSettings.allowMultiTouch ? Input.touchCount : 1;
         for (int i = 0; i < tapCount; i++)
@@ -117,7 +119,7 @@ public class ARDrawManager : Singleton<ARDrawManager>
 
     void DrawOnMouse()
     {
-        if(!CanDraw) return;
+        if(!enableDraw) return;
 
         Vector3 mousePosition = arCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, lineSettings.distanceFromCamera));
 

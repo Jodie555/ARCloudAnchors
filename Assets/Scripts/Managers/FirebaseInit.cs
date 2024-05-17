@@ -20,49 +20,130 @@ public class FirebaseInit : MonoBehaviour
 
         ARDebugManager.Instance.LogInfo($"connecting{FirebaseDatabase.DefaultInstance}");
         reference = FirebaseDatabase.DefaultInstance.RootReference;
-
-
-        CreateNewUser();
         ARDebugManager.Instance.LogInfo($"Finished");
 
-        GetBackInfo();
+        //CreateNewUser();
+
+
+        //GetBackInfo();
 
     }
 
-    public void CreateNewUser()
-    {
-        reference.Child("users").Child(userId).SetValueAsync("John Doe");
-        Debug.Log("New User Created");
-    }
+    //public void CreateNewUser()
+    //{
+    //    reference.Child("users").Child(userId).SetValueAsync("John Doe");
+    //    Debug.Log("New User Created");
+    //}
 
-    public void GetBackInfo()
-    {
-        reference.Child("users")
-         .Child(userId)
-         .GetValueAsync().ContinueWithOnMainThread(task => {
-             if (task.IsFaulted)
-             {
-                 Debug.Log(task.Exception.Message);
-                 ARDebugManager.Instance.LogInfo($"Failed");
-             }
-             else if (task.IsCompleted)
-             {
-                 ARDebugManager.Instance.LogInfo($"Finished{task.Result}");
-                 DataSnapshot snapshot = task.Result;
-                 Debug.Log("Name=" + snapshot.Value);
-                 ARDebugManager.Instance.LogInfo($"Finished{snapshot.Value}");
-             }
-         });
+    //public void GetBackInfo()
+    //{
+    //    reference.Child("users")
+    //     .Child(userId)
+    //     .GetValueAsync().ContinueWithOnMainThread(task => {
+    //         if (task.IsFaulted)
+    //         {
+    //             Debug.Log(task.Exception.Message);
+    //             ARDebugManager.Instance.LogInfo($"Failed");
+    //         }
+    //         else if (task.IsCompleted)
+    //         {
+    //             ARDebugManager.Instance.LogInfo($"Finished{task.Result}");
+    //             DataSnapshot snapshot = task.Result;
+    //             Debug.Log("Name=" + snapshot.Value);
+    //             ARDebugManager.Instance.LogInfo($"Finished{snapshot.Value}");
+    //         }
+    //     });
 
-    }
+    //}
 
-    public void uploadData(string key,string value)
+    public void uploadString(string key,string value)
     {
         reference.Child(key).SetValueAsync(value);
 
     }
 
-    public async Task<string> getData(string key )
+
+    //public void uploadListData(string key, string itemName, List<object> values)
+    //{
+    //    ARDebugManager.Instance.LogInfo($"uploadListData {values}");
+
+    //    int i = 0;
+    //    foreach (object val in values)
+    //    {
+    //        ARDebugManager.Instance.LogInfo($"val {val}");
+
+    //        ARDebugManager.Instance.LogInfo($"Test uploadListData {val.ToString()}");
+    //        ARDebugManager.Instance.LogInfo($"item Name {itemName + i.ToString()}");
+
+    //        reference.Child(key).Child(itemName + i.ToString()).SetValueAsync(val.ToString());
+    //        i++;
+    //    }
+
+    //}
+
+    //public void uploadObject(string key, object value)
+    //{
+    //    reference.Child(key).SetValueAsync(value);
+    //}
+
+    public void uploadObject(string key, string value)
+    {
+        reference.Child(key).SetRawJsonValueAsync(value);
+    }
+
+
+
+    //public async Task<string> getData(string key )
+    //{
+    //    string targetValue = null;
+    //    await reference.Child(key)
+    //     .GetValueAsync().ContinueWithOnMainThread(task => {
+    //         if (task.IsFaulted)
+    //         {
+    //             Debug.Log(task.Exception.Message);
+    //             ARDebugManager.Instance.LogInfo($"Failed");
+    //         }
+    //         else if (task.IsCompleted)
+    //         {
+    //             ARDebugManager.Instance.LogInfo($"Finished{task.Result}");
+    //             DataSnapshot snapshot = task.Result;
+    //             targetValue = snapshot.Value.ToString();
+    //             Debug.Log("Name=" + snapshot.Value);
+    //             ARDebugManager.Instance.LogInfo($"Finished{targetValue}");
+    //         }
+    //     });
+    //    return targetValue;
+
+    //}
+
+
+
+    //public async Task<T>  GetDictTest<T>(string key) where T : class
+    //{
+    //    T targetValue = null;
+    //    await reference.Child(key)
+    //     .GetValueAsync().ContinueWithOnMainThread(task => {
+    //         if (task.IsFaulted)
+    //         {
+    //             Debug.Log(task.Exception.Message);
+    //             ARDebugManager.Instance.LogInfo($"Failed");
+    //         }
+    //         else if (task.IsCompleted)
+    //         {
+    //             ARDebugManager.Instance.LogInfo($"Finished{task.Result}");
+    //             DataSnapshot snapshot = task.Result;
+    //             targetValue = snapshot.Value as T;
+    //             Debug.Log("Name=" + snapshot.Value);
+
+
+    //         }
+    //     });
+    //    return targetValue;
+
+    //}
+
+
+    public async Task<string> GetObject(string key)
     {
         string targetValue = null;
         await reference.Child(key)
@@ -76,9 +157,10 @@ public class FirebaseInit : MonoBehaviour
              {
                  ARDebugManager.Instance.LogInfo($"Finished{task.Result}");
                  DataSnapshot snapshot = task.Result;
-                 targetValue = snapshot.Value.ToString();
+                 targetValue = snapshot.GetRawJsonValue();
                  Debug.Log("Name=" + snapshot.Value);
-                 ARDebugManager.Instance.LogInfo($"Finished{targetValue}");
+
+
              }
          });
         return targetValue;

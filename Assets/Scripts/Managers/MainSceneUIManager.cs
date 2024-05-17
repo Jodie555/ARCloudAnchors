@@ -59,4 +59,14 @@ public class MainSceneUIManager : MonoBehaviour
         sceneEventManager.ChangeScene();
     }
 
+    public void ToggleDrawButton()
+    {
+        arDrawManager.ToggleDraw();
+    }
+
+    public void TogglePlacementButton()
+    {
+        arPlacementManager.TogglePlacement();
+    }
+
 }
