@@ -31,6 +31,8 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
 
     private FirebaseInit firebaseInit = null;
 
+    private bool enablePlacement = false;
+
     void Awake() 
     {
         arRaycastManager = GetComponent<ARRaycastManager>();
@@ -81,8 +83,16 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
 
     }
 
+
+    public void TogglePlacement()
+    {
+        enablePlacement = !enablePlacement;
+    }
+
     void Update()
     {
+        if (!enablePlacement) return;
+
         if (!TryGetTouchPosition(out Vector2 touchPosition))
             return;
 

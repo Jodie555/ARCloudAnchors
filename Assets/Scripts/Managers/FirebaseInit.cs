@@ -20,41 +20,41 @@ public class FirebaseInit : MonoBehaviour
 
         ARDebugManager.Instance.LogInfo($"connecting{FirebaseDatabase.DefaultInstance}");
         reference = FirebaseDatabase.DefaultInstance.RootReference;
-
-
-        CreateNewUser();
         ARDebugManager.Instance.LogInfo($"Finished");
 
-        GetBackInfo();
+        //CreateNewUser();
+
+
+        //GetBackInfo();
 
     }
 
-    public void CreateNewUser()
-    {
-        reference.Child("users").Child(userId).SetValueAsync("John Doe");
-        Debug.Log("New User Created");
-    }
+    //public void CreateNewUser()
+    //{
+    //    reference.Child("users").Child(userId).SetValueAsync("John Doe");
+    //    Debug.Log("New User Created");
+    //}
 
-    public void GetBackInfo()
-    {
-        reference.Child("users")
-         .Child(userId)
-         .GetValueAsync().ContinueWithOnMainThread(task => {
-             if (task.IsFaulted)
-             {
-                 Debug.Log(task.Exception.Message);
-                 ARDebugManager.Instance.LogInfo($"Failed");
-             }
-             else if (task.IsCompleted)
-             {
-                 ARDebugManager.Instance.LogInfo($"Finished{task.Result}");
-                 DataSnapshot snapshot = task.Result;
-                 Debug.Log("Name=" + snapshot.Value);
-                 ARDebugManager.Instance.LogInfo($"Finished{snapshot.Value}");
-             }
-         });
+    //public void GetBackInfo()
+    //{
+    //    reference.Child("users")
+    //     .Child(userId)
+    //     .GetValueAsync().ContinueWithOnMainThread(task => {
+    //         if (task.IsFaulted)
+    //         {
+    //             Debug.Log(task.Exception.Message);
+    //             ARDebugManager.Instance.LogInfo($"Failed");
+    //         }
+    //         else if (task.IsCompleted)
+    //         {
+    //             ARDebugManager.Instance.LogInfo($"Finished{task.Result}");
+    //             DataSnapshot snapshot = task.Result;
+    //             Debug.Log("Name=" + snapshot.Value);
+    //             ARDebugManager.Instance.LogInfo($"Finished{snapshot.Value}");
+    //         }
+    //     });
 
-    }
+    //}
 
     public void uploadString(string key,string value)
     {
