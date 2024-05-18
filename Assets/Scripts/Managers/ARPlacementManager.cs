@@ -154,7 +154,7 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
             ARDebugManager.Instance.LogInfo($"Error {e.Message}");
         }
 
-
+        //upload list of objects
         List<object> list = new List<object>();
         for (int i = 0; i < anchorListManager.placedGameObjects.Count; i++)
         {
@@ -162,9 +162,6 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
             list.Add(anchorListManager.placedGameObjects[i]);
 
             //object placedobject = anchorListManager.placedGameObjects[i];
-
-
-
 
 
 
@@ -194,4 +191,27 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
         placedGameObject.transform.parent = anchorCloudObject.transform;
         ARDebugManager.Instance.LogInfo($"Finished");
     }
+
+    public void placeGameObject(ARCloudAnchor receivedAnchor,List<PlacedGameObject> listPlacedObjects)
+    {
+
+        PlacedGameObject lastPlacedObject = listPlacedObjects[listPlacedObjects.Count - 1];
+
+        Vector3 distanceDifference = lastPlacedObject.position - receivedAnchor.transform.position;
+
+        //for loop of listPlacedObjects
+        for (int i = 0; i < listPlacedObjects.Count; i++)
+        {
+            ARDebugManager.Instance.LogInfo($"Get Back Position {listPlacedObjects[i].position}");
+
+            Vector3 newPosition = listPlacedObjects[i].position - distanceDifference;
+
+            placedGameObject = Instantiate(placedPrefab, newPosition, listPlacedObjects[i].rotation);
+            placedGameObject.transform.parent = receivedAnchor.transform;
+
+        }
+        ARDebugManager.Instance.LogInfo($"Finished");
+
+    }
+
 }

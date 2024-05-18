@@ -37,6 +37,7 @@ public class MainSceneUIManager : MonoBehaviour
     public void saveCloudAnchorIDButton()
     {
         arCloudAnchorManager.SaveCloudAnchorID();
+        arCloudAnchorManager.SavePlacedObjectList();
     }
 
     public void changePlacedPrefabButton()
@@ -52,6 +53,11 @@ public class MainSceneUIManager : MonoBehaviour
     public void reDrawButton()
     {
         arDrawManager.TestDraw();
+    }
+
+    public void getAnchorListButton()
+    {
+        arCloudAnchorManager.getListOfAnchors();
     }
 
     public void changeSceneButton()
