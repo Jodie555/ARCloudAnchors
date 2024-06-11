@@ -34,4 +34,14 @@ public class SceneEventManager : MonoBehaviour
 
     }
 
+    public void StartScene()
+    {
+        SceneManager.LoadScene("ARCloudAnchor");
+    }
+
+    public void MainMenuScene()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
 }

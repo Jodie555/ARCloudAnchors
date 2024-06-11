@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainSceneUIManager : MonoBehaviour
+public class ButtonManager : MonoBehaviour
 {
 
     private ARCloudAnchorManager arCloudAnchorManager = null;
@@ -75,4 +75,13 @@ public class MainSceneUIManager : MonoBehaviour
         arPlacementManager.TogglePlacement();
     }
 
+    public void ChangeMainMenuSceneButton()
+    {
+        sceneEventManager.MainMenuScene();
+    }
+
+    public void ChangeStartSceneButton()
+    {
+        sceneEventManager.StartScene();
+    }
 }

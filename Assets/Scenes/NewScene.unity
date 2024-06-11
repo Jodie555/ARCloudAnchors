@@ -350,8 +350,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   arCamera: {fileID: 1732112158}
   resolveAnchorPassedTimeout: 10
-  placedPrefab: {fileID: 1606865568273965884, guid: 23cfcc059ac2646eeaa6bf6b81088206,
-    type: 3}
   isNewSceneResolved: 0
 --- !u!114 &615447764
 MonoBehaviour:

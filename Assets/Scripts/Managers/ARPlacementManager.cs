@@ -154,8 +154,8 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
             ARDebugManager.Instance.LogInfo($"Error {e.Message}");
         }
 
-
-        List<object> list = new List<object>();
+        //upload list of objects
+        List<PlacedGameObject> list = new List<PlacedGameObject>();
         for (int i = 0; i < anchorListManager.placedGameObjects.Count; i++)
         {
             ARDebugManager.Instance.LogInfo($"Placed Game Object {anchorListManager.placedGameObjects[i].position}");
@@ -166,12 +166,12 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
 
 
 
-
-
-
         }
         //firebaseInit.uploadListData("testinWayID", "anchor", list);
-        string listObjects = JsonConvert.SerializeObject(list);
+
+        RoomClass.Room room = new RoomClass.Room(list);
+
+        string listObjects = JsonConvert.SerializeObject(room);
 
         firebaseInit.uploadObject("testinWayID", listObjects);
 
@@ -194,4 +194,27 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
         placedGameObject.transform.parent = anchorCloudObject.transform;
         ARDebugManager.Instance.LogInfo($"Finished");
     }
+
+    public void placeGameObject(ARCloudAnchor receivedAnchor,List<PlacedGameObject> listPlacedObjects)
+    {
+
+        PlacedGameObject lastPlacedObject = listPlacedObjects[listPlacedObjects.Count - 1];
+
+        Vector3 distanceDifference = lastPlacedObject.position - receivedAnchor.transform.position;
+
+        //for loop of listPlacedObjects
+        for (int i = 0; i < listPlacedObjects.Count; i++)
+        {
+            ARDebugManager.Instance.LogInfo($"Get Back Position {listPlacedObjects[i].position}");
+
+            Vector3 newPosition = listPlacedObjects[i].position - distanceDifference;
+
+            placedGameObject = Instantiate(placedPrefab, newPosition, listPlacedObjects[i].rotation);
+            placedGameObject.transform.parent = receivedAnchor.transform;
+
+        }
+        ARDebugManager.Instance.LogInfo($"Finished");
+
+    }
+
 }

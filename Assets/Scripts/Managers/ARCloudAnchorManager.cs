@@ -16,6 +16,7 @@ using Firebase.Database;
 using PlacedGameObjectClass;
 using Newtonsoft.Json;
 using UnityEditor.Rendering;
+using NUnit.Framework;
 
 public class UnityEventResolver : UnityEvent<Transform>{}
 
@@ -49,6 +50,8 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
     private ResolveCloudAnchorResult resolveCloudAnchorResult = null;
 
+    private AnchorListManager anchorListManager = null;
+
     private string cloudAnchorId = null;
 
     //private List<ARAnchor> aRAnchors = new List<ARAnchor>();
@@ -62,6 +65,8 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
     private FirebaseInit firebaseInit;
 
     private string fixedID = "testinID";
+
+    List<PlacedGameObject> listPlacedObject;
 
 
     private async void Awake() 
@@ -77,6 +82,8 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
     private void Start()
     {
         firebaseInit = GetComponent<FirebaseInit>();
+        anchorListManager = GetComponent<AnchorListManager>();
+
     }
 
     public async void SaveData(string anchorId)
@@ -136,8 +143,19 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
         // get list of object
         string listObjects = await firebaseInit.GetObject("testinWayID");
 
-        List<PlacedGameObject> listpPlacedObject = JsonConvert.DeserializeObject<List<PlacedGameObject>>(listObjects);
-        ARDebugManager.Instance.LogInfo($"list placedObject {listpPlacedObject[0].position}");
+        try
+        {
+            //List<PlacedGameObject> listpPlacedObject = JsonConvert.DeserializeObject<List<PlacedGameObject>>(listObjects);
+            //ARDebugManager.Instance.LogInfo($"list placedObject {listpPlacedObject[0].position}");
+            RoomClass.Room listpPlacedObject = JsonConvert.DeserializeObject<RoomClass.Room>(listObjects);
+            ARDebugManager.Instance.LogInfo($"list placedObject {listpPlacedObject.placedGameObjects[0].position}");
+        }
+        catch
+        (System.Exception e)
+        {
+            ARDebugManager.Instance.LogInfo($"Error {e.Message}");
+        }
+
 
 
 
@@ -150,6 +168,11 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
         //NewSceneResolve();
         var anchorId = await GetAnchorIDCloud();
         ARDebugManager.Instance.LogInfo($"can anchor ID {anchorId}");
+
+        string listObjects = await firebaseInit.GetObject("listPlacedObjects");
+
+        listPlacedObject = JsonConvert.DeserializeObject<List<PlacedGameObject>>(listObjects);
+
 
         if (anchorId != "")
         {
@@ -274,6 +297,14 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
     }
 
+    public async void SavePlacedObjectList()
+    {
+        List<PlacedGameObject> placedObjectList = anchorListManager.placedGameObjects;
+        string listObjects = JsonConvert.SerializeObject(placedObjectList);
+
+        firebaseInit.uploadObject("listPlacedObjects", listObjects);
+    }
+
     private void CheckHostingProgress()
     {
         CloudAnchorState cloudAnchorState = hostCloudAnchorResult.CloudAnchorState;
@@ -304,11 +335,14 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
         if (cloudAnchorState == CloudAnchorState.Success)
         {
+            ARDebugManager.Instance.LogInfo($"placing the objects");
 
             //resolver.Invoke(resolveCloudAnchorResult.Anchor.transform);
 
             //ARPlacementManager.Instance.RemovePlacements();
-            ARPlacementManager.Instance.placeGameObject(resolveCloudAnchorResult.Anchor);
+
+
+            ARPlacementManager.Instance.placeGameObject(resolveCloudAnchorResult.Anchor, listPlacedObject);
 
             anchorResolveInProgress = false;
 

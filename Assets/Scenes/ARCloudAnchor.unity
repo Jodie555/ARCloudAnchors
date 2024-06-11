@@ -4496,9 +4496,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405077189}
-        m_TargetAssemblyTypeName: ARCloudAnchorManager, Assembly-CSharp
-        m_MethodName: getListOfAnchors
+      - m_Target: {fileID: 1405077194}
+        m_TargetAssemblyTypeName: MainSceneUIManager, Assembly-CSharp
+        m_MethodName: getAnchorListButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
