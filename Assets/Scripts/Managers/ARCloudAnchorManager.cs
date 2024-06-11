@@ -147,8 +147,8 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
         {
             //List<PlacedGameObject> listpPlacedObject = JsonConvert.DeserializeObject<List<PlacedGameObject>>(listObjects);
             //ARDebugManager.Instance.LogInfo($"list placedObject {listpPlacedObject[0].position}");
-            RoomClass.Room[] listpPlacedObject = JsonConvert.DeserializeObject<RoomClass.Room[]>(listObjects);
-            ARDebugManager.Instance.LogInfo($"list placedObject {listpPlacedObject}");
+            RoomClass.Room listpPlacedObject = JsonConvert.DeserializeObject<RoomClass.Room>(listObjects);
+            ARDebugManager.Instance.LogInfo($"list placedObject {listpPlacedObject.placedGameObjects[0].position}");
         }
         catch
         (System.Exception e)

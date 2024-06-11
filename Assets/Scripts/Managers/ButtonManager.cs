@@ -75,4 +75,13 @@ public class ButtonManager : MonoBehaviour
         arPlacementManager.TogglePlacement();
     }
 
+    public void ChangeMainMenuSceneButton()
+    {
+        sceneEventManager.MainMenuScene();
+    }
+
+    public void ChangeStartSceneButton()
+    {
+        sceneEventManager.StartScene();
+    }
 }

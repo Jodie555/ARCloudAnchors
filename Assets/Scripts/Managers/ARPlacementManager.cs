@@ -155,7 +155,7 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
         }
 
         //upload list of objects
-        List<object> list = new List<object>();
+        List<PlacedGameObject> list = new List<PlacedGameObject>();
         for (int i = 0; i < anchorListManager.placedGameObjects.Count; i++)
         {
             ARDebugManager.Instance.LogInfo($"Placed Game Object {anchorListManager.placedGameObjects[i].position}");
@@ -168,7 +168,10 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
 
         }
         //firebaseInit.uploadListData("testinWayID", "anchor", list);
-        string listObjects = JsonConvert.SerializeObject(list);
+
+        RoomClass.Room room = new RoomClass.Room(list);
+
+        string listObjects = JsonConvert.SerializeObject(room);
 
         firebaseInit.uploadObject("testinWayID", listObjects);
 
