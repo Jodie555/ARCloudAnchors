@@ -8,6 +8,8 @@ namespace PlacedGameObjectClass
 {
     public class PlacedGameObject
     {
+        public string placedGameObjectID;
+
         public float positionX;
         public float positionY;
         public float positionZ;
@@ -37,8 +39,11 @@ namespace PlacedGameObjectClass
         }
         public string tag;
         public GameObject gameObject;
+        public string owner_UserID;
+        public Dictionary<string, bool> members_UserID;
 
-        public PlacedGameObject(string prefabName, Vector3 position, Quaternion rotation, string tag, GameObject gameObject)
+        public PlacedGameObject(string placedGameObjectID, string prefabName, Vector3 position, Quaternion rotation, 
+            string tag, GameObject gameObject,string owner_UserID, Dictionary<string, bool> members_UserID)
         {
             this.prefabName = prefabName;
             this.positionX = position.x;
@@ -50,6 +55,9 @@ namespace PlacedGameObjectClass
             this.rotationZ = rotation.z;
             this.tag = tag;
             this.gameObject = gameObject;
+            this.placedGameObjectID = placedGameObjectID;
+            this.owner_UserID = owner_UserID;
+            this.members_UserID = members_UserID;
         }
 
     }

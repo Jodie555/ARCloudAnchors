@@ -91,6 +91,10 @@ public class FirebaseInit : MonoBehaviour
         reference.Child(key).SetRawJsonValueAsync(value);
     }
 
+    public void uploadObject(string key,string id, string value)
+    {
+        reference.Child(key).Child(id).SetRawJsonValueAsync(value);
+    }
 
 
     //public async Task<string> getData(string key )
@@ -167,4 +171,56 @@ public class FirebaseInit : MonoBehaviour
 
     }
 
+
+    public async Task<string> GetObject(string key,string id)
+    {
+        string targetValue = null;
+        await reference.Child(key).Child(id)
+         .GetValueAsync().ContinueWithOnMainThread(task => {
+             if (task.IsFaulted)
+             {
+                 Debug.Log(task.Exception.Message);
+                 ARDebugManager.Instance.LogInfo($"Failed");
+             }
+             else if (task.IsCompleted)
+             {
+                 ARDebugManager.Instance.LogInfo($"Finished{task.Result}");
+                 DataSnapshot snapshot = task.Result;
+                 targetValue = snapshot.GetRawJsonValue();
+                 Debug.Log("Name=" + snapshot.Value);
+
+
+             }
+         });
+        return targetValue;
+
+    }
+
+
+    public async Task<string> GetObject(string key, string id, string variable)
+    {
+        string targetValue = null;
+        await reference.Child(key).Child(id).Child(variable)
+         .GetValueAsync().ContinueWithOnMainThread(task => {
+             if (task.IsFaulted)
+             {
+                 Debug.Log(task.Exception.Message);
+                 ARDebugManager.Instance.LogInfo($"Failed");
+             }
+             else if (task.IsCompleted)
+             {
+                 ARDebugManager.Instance.LogInfo($"Finished{task.Result}");
+                 DataSnapshot snapshot = task.Result;
+                 targetValue = snapshot.GetRawJsonValue();
+                 Debug.Log("Name=" + snapshot.Value);
+
+
+             }
+         });
+        return targetValue;
+
+    }
+
 }
+
+

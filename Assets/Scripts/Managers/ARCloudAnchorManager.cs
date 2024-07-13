@@ -141,14 +141,14 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
 
         // get list of object
-        string listObjects = await firebaseInit.GetObject("testinWayID");
-
+        string listObjects = await firebaseInit.GetObject("testinWayID","roomID1");
         try
         {
             //List<PlacedGameObject> listpPlacedObject = JsonConvert.DeserializeObject<List<PlacedGameObject>>(listObjects);
             //ARDebugManager.Instance.LogInfo($"list placedObject {listpPlacedObject[0].position}");
-            RoomClass.Room listpPlacedObject = JsonConvert.DeserializeObject<RoomClass.Room>(listObjects);
-            ARDebugManager.Instance.LogInfo($"list placedObject {listpPlacedObject.placedGameObjects[0].position}");
+            RoomClass.Room listPlacedObject = JsonConvert.DeserializeObject<RoomClass.Room>(listObjects);
+            ARDebugManager.Instance.LogInfo($"list placedObject {listPlacedObject.placedGameObjects["key_0"].position}");
+
         }
         catch
         (System.Exception e)
@@ -287,6 +287,9 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
         var resultAnchor = resolveCloudAnchorResult.Anchor;
         anchorResolveInProgress = true;
         ARDebugManager.Instance.LogInfo($"resultAnchor new {resultAnchor.transform.position}");
+
+
+
     }
 
     public async void SaveCloudAnchorID()
