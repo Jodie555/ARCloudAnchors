@@ -11,6 +11,7 @@ public class RayCastManager : Singleton<RayCastManager>
 
     [SerializeField]
     private Camera arCamera = null;
+    GameObject controlledUnit = null;
 
 
     int i = 0;
@@ -24,72 +25,129 @@ public class RayCastManager : Singleton<RayCastManager>
     void Update()
     {
 
-
-        if (!TryGetTouchPosition(out Vector2 touchPosition))
-            return;
-
-        GameObject controlledUnit = null;
         RaycastHit hit;
-        Ray ray = arCamera.ScreenPointToRay(touchPosition);
+        int tapCount = Input.touchCount;
+        Ray ray;
+        Vector3 touchPosition;
 
-        ARDebugManager.Instance.LogInfo($"touched  : {touchPosition}");
-
-        
-
-        if (Physics.Raycast(ray, out hit))
+        for (int i = 0; i < tapCount; i++)
         {
 
-            try
+            Touch touch = Input.GetTouch(i);
+            //touchPosition = arCamera.ScreenToWorldPoint(new Vector3(Input.GetTouch(i).position.x, Input.GetTouch(i).position.y, 0.3f));
+            touchPosition = arCamera.ScreenToWorldPoint(touch.position);
+
+            ARDebugManager.Instance.LogInfo($"touched  : {touchPosition}");
+
+
+            if (touch.phase == TouchPhase.Began)
             {
-                //ARDebugManager.Instance.LogInfo($"current position: {hit.transform.gameObject.transform.position}");
-                //hit.transform.gameObject.transform.position = new Vector3(hit.transform.gameObject.transform.position.x + 10f, hit.transform.gameObject.transform.position.y + 10f, hit.transform.gameObject.transform.position.z + 10f);
-                //ARDebugManager.Instance.LogInfo($"newposition: {hit.transform.gameObject.transform.position}");
-                //ARDebugManager.Instance.LogInfo($"tag: {hit.transform.gameObject.tag}");
-
-                controlledUnit = hit.transform.gameObject;
-
-                ////controlledUnit.SetActive(false);
-                //controlledUnit.transform.transform.position = new Vector3(0, 0, 0);
-                //controlledUnit.transform.position = new Vector3(0, 0, 0);
-                ARDebugManager.Instance.LogInfo($"name ff : {hit.transform.gameObject.name}");
-
-            }
-            catch (System.Exception e)
-            {
-                ARDebugManager.Instance.LogInfo($"error {e.Message}");
-            }
-
-        }
-        else
-        {
-            List<GameObject> objectsInScene = new List<GameObject>();
-            GameObject[] _allObjects = SceneManager.GetSceneByName("NewScene").GetRootGameObjects();
-            string names = "";
+                
+                ray = arCamera.ScreenPointToRay(touch.position);
 
 
-            foreach (GameObject obj in _allObjects)
-            {
-                objectsInScene.Add(obj);
-                GetChildObjects(obj.transform, ref objectsInScene);
-            }
-
-
-            foreach (GameObject obj in objectsInScene)
-            {
-                if (obj.name.Contains("Charact"))
+                if (Physics.Raycast(ray, out hit))
                 {
-                    //obj.transform.transform.position = new Vector3(0, 0, 0);
-                    //obj.SetActive(false);
-                    ARDebugManager.Instance.LogInfo($"get the object I want");
-                    //go.transform.position = new Vector3(0, 0, 0);
+
+                    try
+                    {
+
+                        controlledUnit = hit.transform.gameObject;
+                        ARDebugManager.Instance.LogInfo($"name ff : {hit.transform.gameObject.name}");
+                        //touchPosition = arCamera.ScreenToWorldPoint(new Vector3(0, 0, 0));
+                        //controlledUnit.transform.position = touchPosition;
+
+                    }
+                    catch (System.Exception e)
+                    {
+                        ARDebugManager.Instance.LogInfo($"error {e.Message}");
+                    }
 
                 }
 
-                names += obj.name + " ";
             }
-            //ARDebugManager.Instance.LogInfo($"names {names}");
+            else if (touch.phase == TouchPhase.Moved || touch.phase == TouchPhase.Stationary)
+            {
 
+                ARDebugManager.Instance.LogInfo($"Moved=");
+                touchPosition = arCamera.ScreenToWorldPoint(new Vector3(Input.GetTouch(i).position.x, Input.GetTouch(i).position.y, 0.3f));
+                controlledUnit.transform.position = touchPosition;
+                ARDebugManager.Instance.LogInfo($"Moved touched  : {touchPosition}");
+            }
+            else if (touch.phase == TouchPhase.Ended)
+            {
+            }
         }
+
+
+
+
+
+        //if (!TryGetTouchPosition(out Vector2 touchPosition))
+        //    return;
+
+        //GameObject controlledUnit = null;
+        //RaycastHit hit;
+        //Ray ray = arCamera.ScreenPointToRay(touchPosition);
+
+        //ARDebugManager.Instance.LogInfo($"touched  : {touchPosition}");
+
+        
+
+        //if (Physics.Raycast(ray, out hit))
+        //{
+
+        //    try
+        //    {
+        //        //ARDebugManager.Instance.LogInfo($"current position: {hit.transform.gameObject.transform.position}");
+        //        //hit.transform.gameObject.transform.position = new Vector3(hit.transform.gameObject.transform.position.x + 10f, hit.transform.gameObject.transform.position.y + 10f, hit.transform.gameObject.transform.position.z + 10f);
+        //        //ARDebugManager.Instance.LogInfo($"newposition: {hit.transform.gameObject.transform.position}");
+        //        //ARDebugManager.Instance.LogInfo($"tag: {hit.transform.gameObject.tag}");
+
+        //        controlledUnit = hit.transform.gameObject;
+
+        //        ////controlledUnit.SetActive(false);
+        //        //controlledUnit.transform.transform.position = new Vector3(0, 0, 0);
+        //        //controlledUnit.transform.position = new Vector3(0, 0, 0);
+        //        ARDebugManager.Instance.LogInfo($"name ff : {hit.transform.gameObject.name}");
+
+        //    }
+        //    catch (System.Exception e)
+        //    {
+        //        ARDebugManager.Instance.LogInfo($"error {e.Message}");
+        //    }
+
+        //}
+        //else
+        //{
+        //    List<GameObject> objectsInScene = new List<GameObject>();
+        //    GameObject[] _allObjects = SceneManager.GetSceneByName("NewScene").GetRootGameObjects();
+        //    string names = "";
+
+
+        //    foreach (GameObject obj in _allObjects)
+        //    {
+        //        objectsInScene.Add(obj);
+        //        GetChildObjects(obj.transform, ref objectsInScene);
+        //    }
+
+
+        //    foreach (GameObject obj in objectsInScene)
+        //    {
+        //        if (obj.name.Contains("Charact"))
+        //        {
+        //            //obj.transform.transform.position = new Vector3(0, 0, 0);
+        //            //obj.SetActive(false);
+        //            ARDebugManager.Instance.LogInfo($"get the object I want");
+        //            //go.transform.position = new Vector3(0, 0, 0);
+
+        //        }
+
+        //        names += obj.name + " ";
+        //    }
+        //    //ARDebugManager.Instance.LogInfo($"names {names}");
+
+        //}
 
     }
 
