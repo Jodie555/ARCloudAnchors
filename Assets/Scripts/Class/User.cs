@@ -8,7 +8,6 @@ namespace UserClass
 
     public class User
     {
-        public Dictionary<string,RoomClass.Room> room;
         public string name;
         public string email;
         public string password;
@@ -16,13 +15,16 @@ namespace UserClass
         public string updatedAt;
 
 
-        public User(Dictionary<string, RoomClass.Room> room)
+        public User(string name, string email, string password, string createdAt, string updatedAt)
         {
-            this.room = room;
+            this.name = name;
+            this.email = email;
+            this.password = password;
+            this.createdAt = createdAt;
+            this.updatedAt = updatedAt;
         }
 
 
     }
 
 }
-

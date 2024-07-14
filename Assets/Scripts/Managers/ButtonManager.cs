@@ -60,6 +60,11 @@ public class ButtonManager : MonoBehaviour
         arCloudAnchorManager.getListOfAnchors();
     }
 
+    public void uploadAnchorListButton()
+    {
+        arPlacementManager.uploadAnchorList();
+    }
+
     public void changeSceneButton()
     {
         sceneEventManager.ChangeScene();

@@ -7,6 +7,7 @@ using UnityEngine.XR.ARSubsystems;
 using PlacedGameObjectClass;
 using Newtonsoft.Json;
 using System;
+using UnityEngine.UIElements;
 
 [RequireComponent(typeof(ARRaycastManager))]
 public class ARPlacementManager : Singleton<ARPlacementManager>
@@ -91,6 +92,7 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
 
     void Update()
     {
+
         if (!enablePlacement) return;
 
         if (!TryGetTouchPosition(out Vector2 touchPosition))
@@ -125,7 +127,7 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
         // this won't host the anchor just add a reference to be later host it
         ARCloudAnchorManager.Instance.QueueAnchor(anchor);
 
-        var testPlacedGameObject = new PlacedGameObject("Character", anchor.transform.position, anchor.transform.rotation, null, null);
+        var testPlacedGameObject = new PlacedGameObject("gameObject1","Character", anchor.transform.position, anchor.transform.rotation, null, null,null, null);
 
 
         anchorListManager.AddPlacedGameObject(testPlacedGameObject);
@@ -156,24 +158,27 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
 
         //upload list of objects
         List<PlacedGameObject> list = new List<PlacedGameObject>();
+        Dictionary<string, PlacedGameObject> dict = new Dictionary<string, PlacedGameObject>();
         for (int i = 0; i < anchorListManager.placedGameObjects.Count; i++)
         {
             ARDebugManager.Instance.LogInfo($"Placed Game Object {anchorListManager.placedGameObjects[i].position}");
             list.Add(anchorListManager.placedGameObjects[i]);
 
             //object placedobject = anchorListManager.placedGameObjects[i];
+            string test = JsonConvert.SerializeObject(anchorListManager.placedGameObjects[i]);
 
-
-
+            firebaseInit.uploadObject("testValue", i.ToString(), test);
+            dict.Add("key_"+i.ToString(), anchorListManager.placedGameObjects[i]);
 
         }
         //firebaseInit.uploadListData("testinWayID", "anchor", list);
 
-        RoomClass.Room room = new RoomClass.Room(list);
+        RoomClass.Room room = new RoomClass.Room("roomID1", dict, null, null, new DateTime(), null, new DateTime(), null);
 
         string listObjects = JsonConvert.SerializeObject(room);
 
-        firebaseInit.uploadObject("testinWayID", listObjects);
+
+        firebaseInit.uploadObject("testinWayID", room.roomID, listObjects);
 
     }
 
@@ -211,6 +216,10 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
 
             placedGameObject = Instantiate(placedPrefab, newPosition, listPlacedObjects[i].rotation);
             placedGameObject.transform.parent = receivedAnchor.transform;
+
+            ARDebugManager.Instance.LogInfo($"name {placedGameObject.name}");
+            ARDebugManager.Instance.LogInfo($"layer {placedGameObject.layer}");
+
 
         }
         ARDebugManager.Instance.LogInfo($"Finished");
