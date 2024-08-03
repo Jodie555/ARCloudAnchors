@@ -140,6 +140,9 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
         ARDebugManager.Instance.LogInfo($"next {placedObject.rotation}");
 
 
+        string testObject1 = await firebaseInit.GetObject("testinWayID/roomID1");
+        ARDebugManager.Instance.LogInfo($"testoneObject {testObject1}");
+
         // get list of object
         string listObjects = await firebaseInit.GetObject("testinWayID","roomID1");
         try

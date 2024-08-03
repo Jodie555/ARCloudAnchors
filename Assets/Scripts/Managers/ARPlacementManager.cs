@@ -127,6 +127,8 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
         // this won't host the anchor just add a reference to be later host it
         ARCloudAnchorManager.Instance.QueueAnchor(anchor);
 
+
+        // TODO : randomly generate a placedGameObjectID 
         var testPlacedGameObject = new PlacedGameObject("gameObject1","Character", anchor.transform.position, anchor.transform.rotation, null, null,null, null);
 
 
@@ -141,7 +143,7 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
     }
 
 
-    public void uploadAnchorList()
+    public async void uploadAnchorList()
     {
 
         //upload one object
@@ -167,8 +169,10 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
             //object placedobject = anchorListManager.placedGameObjects[i];
             string test = JsonConvert.SerializeObject(anchorListManager.placedGameObjects[i]);
 
-            firebaseInit.uploadObject("testValue", i.ToString(), test);
+            //firebaseInit.uploadObject("testValue", i.ToString(), test);
+            string key = firebaseInit.pushObject(key: "testValue", value: test  );
             dict.Add("key_"+i.ToString(), anchorListManager.placedGameObjects[i]);
+            var backvalue = await firebaseInit.GetObject("testValue", key);
 
         }
         //firebaseInit.uploadListData("testinWayID", "anchor", list);

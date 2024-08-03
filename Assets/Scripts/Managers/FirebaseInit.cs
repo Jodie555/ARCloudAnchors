@@ -96,6 +96,15 @@ public class FirebaseInit : MonoBehaviour
         reference.Child(key).Child(id).SetRawJsonValueAsync(value);
     }
 
+    public string pushObject(string key, string value) 
+    {
+        DatabaseReference newPostRef = reference.Child(key).Push();
+        newPostRef.SetRawJsonValueAsync(value);
+
+        return newPostRef.Key;
+    }
+
+
 
     //public async Task<string> getData(string key )
     //{
