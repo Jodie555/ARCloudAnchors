@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 
-namespace PlacedGameObjectClass
+namespace Assets.Scripts.DataObjects.Object
 {
     public class PlacedGameObject
     {
@@ -34,7 +34,7 @@ namespace PlacedGameObjectClass
         {
             get
             {
-                return new Quaternion(rotationW,positionX, positionY, positionZ);
+                return new Quaternion(rotationW, positionX, positionY, positionZ);
             }
         }
         public string tag;
@@ -42,17 +42,17 @@ namespace PlacedGameObjectClass
         public string owner_UserID;
         public Dictionary<string, bool> members_UserID;
 
-        public PlacedGameObject(string placedGameObjectID, string prefabName, Vector3 position, Quaternion rotation, 
-            string tag, GameObject gameObject,string owner_UserID, Dictionary<string, bool> members_UserID)
+        public PlacedGameObject(string placedGameObjectID, string prefabName, Vector3 position, Quaternion rotation,
+            string tag, GameObject gameObject, string owner_UserID, Dictionary<string, bool> members_UserID)
         {
             this.prefabName = prefabName;
-            this.positionX = position.x;
-            this.positionY = position.y;
-            this.positionZ = position.z;
-            this.rotationW = rotation.w;
-            this.rotationX = rotation.x;
-            this.rotationY = rotation.y;
-            this.rotationZ = rotation.z;
+            positionX = position.x;
+            positionY = position.y;
+            positionZ = position.z;
+            rotationW = rotation.w;
+            rotationX = rotation.x;
+            rotationY = rotation.y;
+            rotationZ = rotation.z;
             this.tag = tag;
             this.gameObject = gameObject;
             this.placedGameObjectID = placedGameObjectID;

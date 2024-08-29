@@ -1,16 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using PlacedGameObjectClass;
 using System;
 
-namespace RoomClass
+namespace Assets.Scripts.DataObjects.Object
 {
 
     public class Room
     {   
         public string roomID;
-        public Dictionary<string,PlacedGameObject> placedGameObjects;
+        public Dictionary<string, PlacedGameObject> placedGameObjects;
         public Dictionary<string, bool> members_UserID;
         public string owner_UserID;
         public DateTime createdAt;

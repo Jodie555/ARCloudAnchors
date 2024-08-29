@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using PlacedGameObjectClass;
 
-namespace UserClass
+namespace Assets.Scripts.DataObjects.Object
 {
 
     public class User

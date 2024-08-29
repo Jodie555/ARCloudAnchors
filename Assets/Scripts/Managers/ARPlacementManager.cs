@@ -4,10 +4,10 @@ using Google.XR.ARCoreExtensions;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
-using PlacedGameObjectClass;
 using Newtonsoft.Json;
 using System;
 using UnityEngine.UIElements;
+using Assets.Scripts.DataObjects.Object;
 
 [RequireComponent(typeof(ARRaycastManager))]
 public class ARPlacementManager : Singleton<ARPlacementManager>
@@ -177,7 +177,7 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
         }
         //firebaseInit.uploadListData("testinWayID", "anchor", list);
 
-        RoomClass.Room room = new RoomClass.Room("roomID1", dict, null, null, new DateTime(), null, new DateTime(), null);
+        Assets.Scripts.DataObjects.Object.Room room = new Assets.Scripts.DataObjects.Object.Room("roomID1", dict, null, null, new DateTime(), null, new DateTime(), null);
 
         string listObjects = JsonConvert.SerializeObject(room);
 
