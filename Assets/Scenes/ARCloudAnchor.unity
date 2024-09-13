@@ -3313,7 +3313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2340bae2764d8e4b97908aa31d51d0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  placementObjectPrefab: {fileID: 8892413415797720469, guid: 129ad34963f384c74a74dc102aafbe4d,
+  placementObjectPrefab: {fileID: 5811970893536397571, guid: 13241d599ff10413498d04c6d683ca10,
     type: 3}
   characterPrefab: {fileID: 1606865568273965884, guid: 23cfcc059ac2646eeaa6bf6b81088206,
     type: 3}
