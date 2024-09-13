@@ -4,10 +4,10 @@ using Google.XR.ARCoreExtensions;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
-using PlacedGameObjectClass;
 using Newtonsoft.Json;
 using System;
 using UnityEngine.UIElements;
+using Assets.Scripts.DataObjects.Object;
 
 [RequireComponent(typeof(ARRaycastManager))]
 public class ARPlacementManager : Singleton<ARPlacementManager>
@@ -127,6 +127,8 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
         // this won't host the anchor just add a reference to be later host it
         ARCloudAnchorManager.Instance.QueueAnchor(anchor);
 
+
+        // TODO : randomly generate a placedGameObjectID 
         var testPlacedGameObject = new PlacedGameObject("gameObject1","Character", anchor.transform.position, anchor.transform.rotation, null, null,null, null);
 
 
@@ -141,7 +143,7 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
     }
 
 
-    public void uploadAnchorList()
+    public async void uploadAnchorList()
     {
 
         //upload one object
@@ -167,13 +169,15 @@ public class ARPlacementManager : Singleton<ARPlacementManager>
             //object placedobject = anchorListManager.placedGameObjects[i];
             string test = JsonConvert.SerializeObject(anchorListManager.placedGameObjects[i]);
 
-            firebaseInit.uploadObject("testValue", i.ToString(), test);
+            //firebaseInit.uploadObject("testValue", i.ToString(), test);
+            string key = firebaseInit.pushObject(key: "testValue", value: test  );
             dict.Add("key_"+i.ToString(), anchorListManager.placedGameObjects[i]);
+            var backvalue = await firebaseInit.GetObject("testValue", key);
 
         }
         //firebaseInit.uploadListData("testinWayID", "anchor", list);
 
-        RoomClass.Room room = new RoomClass.Room("roomID1", dict, null, null, new DateTime(), null, new DateTime(), null);
+        Assets.Scripts.DataObjects.Object.Room room = new Assets.Scripts.DataObjects.Object.Room("roomID1", dict, null, null, new DateTime(), null, new DateTime(), null);
 
         string listObjects = JsonConvert.SerializeObject(room);
 

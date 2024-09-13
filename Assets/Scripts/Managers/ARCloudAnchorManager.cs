@@ -13,10 +13,10 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR.ARSubsystems;
 using Firebase.Database;
-using PlacedGameObjectClass;
 using Newtonsoft.Json;
 using UnityEditor.Rendering;
 using NUnit.Framework;
+using Assets.Scripts.DataObjects.Object;
 
 public class UnityEventResolver : UnityEvent<Transform>{}
 
@@ -140,13 +140,16 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
         ARDebugManager.Instance.LogInfo($"next {placedObject.rotation}");
 
 
+        string testObject1 = await firebaseInit.GetObject("testinWayID/roomID1");
+        ARDebugManager.Instance.LogInfo($"testoneObject {testObject1}");
+
         // get list of object
         string listObjects = await firebaseInit.GetObject("testinWayID","roomID1");
         try
         {
             //List<PlacedGameObject> listpPlacedObject = JsonConvert.DeserializeObject<List<PlacedGameObject>>(listObjects);
             //ARDebugManager.Instance.LogInfo($"list placedObject {listpPlacedObject[0].position}");
-            RoomClass.Room listPlacedObject = JsonConvert.DeserializeObject<RoomClass.Room>(listObjects);
+            Assets.Scripts.DataObjects.Object.Room listPlacedObject = JsonConvert.DeserializeObject<Assets.Scripts.DataObjects.Object.Room>(listObjects);
             ARDebugManager.Instance.LogInfo($"list placedObject {listPlacedObject.placedGameObjects["key_0"].position}");
 
         }
