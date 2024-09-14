@@ -20,9 +20,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoScene.unity
     guid: da4db6c21a88243878fecfe160c1be3b
-  - enabled: 1
+  - enabled: 0
     path: Assets/test.unity
     guid: 9586be9ecac89bf4caa8e7b2fb29c3a9
+  - enabled: 1
+    path: Assets/Scenes/ARCloudAnchortest.unity
+    guid: 7a2570febc3e86f4ab28dc0ee6127a3e
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 3b6e1e3b51b0f4f9782af98302d4a97f,
       type: 2}
