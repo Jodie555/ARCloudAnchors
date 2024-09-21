@@ -3164,7 +3164,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1438120342}
@@ -3381,7 +3381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2340bae2764d8e4b97908aa31d51d0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  placementObjectPrefab: {fileID: 5811970893536397571, guid: 13241d599ff10413498d04c6d683ca10,
+  placementObjectPrefab: {fileID: 8008690481610993897, guid: 05dc499abf8344636a806463427e3ccb,
     type: 3}
   characterPrefab: {fileID: 1606865568273965884, guid: 23cfcc059ac2646eeaa6bf6b81088206,
     type: 3}

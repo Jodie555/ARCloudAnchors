@@ -1,0 +1,2716 @@
+Using pre-set license
+Built from '2023.2/staging' branch; Version is '2023.2.3f1 (21747dafc6ee) revision 2192509'; Using compiler version '193431935'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16068 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2023.2.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker8
+-projectPath
+C:/Users/Jodie/Documents/project/AR/newtest/ARCloudAnchors/ARCloudAnchors
+-logFile
+Logs/AssetImportWorker8.log
+-srvPort
+58412
+-job-worker-count
+9
+-background-job-worker-count
+8
+-asset-garbage-collectors
+1
+Successfully changed project path to: C:/Users/Jodie/Documents/project/AR/newtest/ARCloudAnchors/ARCloudAnchors
+C:/Users/Jodie/Documents/project/AR/newtest/ARCloudAnchors/ARCloudAnchors
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [94116] Host "[IP] 192.168.0.34 [Port] 0 [Flags] 2 [Guid] 1520470269 [EditorId] 1520470269 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6D8FKOB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [94116] Host "[IP] 192.168.0.34 [Port] 0 [Flags] 2 [Guid] 1520470269 [EditorId] 1520470269 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6D8FKOB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 9
+[Physics::Module] Initialized MultithreadedJobDispatcher with 9 workers.
+Library Redirect Path: Library/
+Refreshing native plugins compatible for Editor in 7.28 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2023.2.3f1 (21747dafc6ee)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Jodie/Documents/project/AR/newtest/ARCloudAnchors/ARCloudAnchors/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 Laptop GPU (ID=0x28e0)
+    Vendor:   NVIDIA
+    VRAM:     7957 MB
+    Driver:   32.0.15.5612
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56920
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Registered in 0.003026 seconds.
+- Loaded All Assemblies, in  0.281 seconds
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 351 ms
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Finished resetting the current domain, in  0.619 seconds
+Domain Reload Profiling: 898ms
+	BeginReloadAssembly (85ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (123ms)
+		LoadAssemblies (84ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (120ms)
+			TypeCache.Refresh (119ms)
+				TypeCache.ScanAssembly (109ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (619ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (577ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (445ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (96ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.854 seconds
+Refreshing native plugins compatible for Editor in 11.82 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.757 seconds
+Domain Reload Profiling: 1599ms
+	BeginReloadAssembly (268ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (513ms)
+		LoadAssemblies (377ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (203ms)
+			TypeCache.Refresh (159ms)
+				TypeCache.ScanAssembly (141ms)
+			BuildScriptInfoCaches (32ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (757ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (491ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (380ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 4.30 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 266 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6344 unused Assets / (15.2 MB). Loaded Objects now: 6810.
+Memory consumption went from 197.9 MB to 182.8 MB.
+Total: 9.159200 ms (FindLiveObjects: 0.437200 ms CreateObjectMapping: 0.314700 ms MarkObjects: 3.450200 ms  DeleteObjects: 4.955000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 258793.340779 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/AffordanceThemes/InteractionColorAffordanceTheme.asset
+  artifactKey: Guid(3ec238cb3e80e274c844d7b56f585392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/AffordanceThemes/InteractionColorAffordanceTheme.asset using Guid(3ec238cb3e80e274c844d7b56f585392) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '458a90ef850529bbf8acddb95d4d96b1') in 0.0213399 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 693.139829 seconds.
+  path: Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat
+  artifactKey: Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.render-pipelines.universal/Runtime/Materials/ParticlesUnlit.mat using Guid(e823cd5b5d27c0f4b8256e7c12ee3e6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ae53c9b1ea4eef58f483d99bdf4673c') in 0.3943037 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 42
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.189205 seconds.
+  path: Assets/Prefabs/CharacterBody.prefab
+  artifactKey: Guid(9c62ad4a847f64c0792685dbbf951dc6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/CharacterBody.prefab using Guid(9c62ad4a847f64c0792685dbbf951dc6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '89730e6db565e153b647d05c7dc0a019') in 0.2074093 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 232
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.845251 seconds.
+  path: Assets/Prefabs/CharacterBody.prefab
+  artifactKey: Guid(9c62ad4a847f64c0792685dbbf951dc6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/CharacterBody.prefab using Guid(9c62ad4a847f64c0792685dbbf951dc6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '79ed21e782be56815dfec501780fdb06') in 0.0170091 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 233
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.57 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 97 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6230 unused Assets / (13.7 MB). Loaded Objects now: 6945.
+Memory consumption went from 181.4 MB to 167.7 MB.
+Total: 25.720200 ms (FindLiveObjects: 0.782900 ms CreateObjectMapping: 0.327200 ms MarkObjects: 19.016900 ms  DeleteObjects: 5.590800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.95 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.5 MB). Loaded Objects now: 6945.
+Memory consumption went from 179.5 MB to 165.0 MB.
+Total: 10.737800 ms (FindLiveObjects: 0.458400 ms CreateObjectMapping: 0.274600 ms MarkObjects: 4.433500 ms  DeleteObjects: 5.570200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 185.578010 seconds.
+  path: Assets/Prefabs/CharacterBody.prefab
+  artifactKey: Guid(9c62ad4a847f64c0792685dbbf951dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/CharacterBody.prefab using Guid(9c62ad4a847f64c0792685dbbf951dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b076ea8acde2f809566ce0786a16865') in 0.261028 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 261
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.711607 seconds.
+  path: Assets/Scenes/ARCloudAnchortest.unity
+  artifactKey: Guid(7a2570febc3e86f4ab28dc0ee6127a3e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/ARCloudAnchortest.unity using Guid(7a2570febc3e86f4ab28dc0ee6127a3e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '314ca4bc0b271df539f19900e0a43379') in 0.0056104 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.84 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.4 MB). Loaded Objects now: 6946.
+Memory consumption went from 189.8 MB to 175.5 MB.
+Total: 14.217000 ms (FindLiveObjects: 0.489900 ms CreateObjectMapping: 0.270600 ms MarkObjects: 6.697500 ms  DeleteObjects: 6.754900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.13 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.3 MB). Loaded Objects now: 6946.
+Memory consumption went from 189.7 MB to 175.5 MB.
+Total: 11.116900 ms (FindLiveObjects: 0.483300 ms CreateObjectMapping: 0.355400 ms MarkObjects: 4.578300 ms  DeleteObjects: 5.698300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 83843.364094 seconds.
+  path: Assets/Prefabs/CharacterBody.prefab
+  artifactKey: Guid(9c62ad4a847f64c0792685dbbf951dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/CharacterBody.prefab using Guid(9c62ad4a847f64c0792685dbbf951dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c22c28c430b1bba1129b046d29b01c11') in 0.9818279 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 261
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Prefabs/CharacterBody.prefab
+  artifactKey: Guid(9c62ad4a847f64c0792685dbbf951dc6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/CharacterBody.prefab using Guid(9c62ad4a847f64c0792685dbbf951dc6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6e88686eee4431d3326422cb5b1376a4') in 0.0625145 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 233
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.393123 seconds.
+  path: Assets/Prefabs/CharacterBody.prefab
+  artifactKey: Guid(9c62ad4a847f64c0792685dbbf951dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/CharacterBody.prefab using Guid(9c62ad4a847f64c0792685dbbf951dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6d24d70e933b374dee3b491ba43c327f') in 0.1987188 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 261
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.761423 seconds.
+  path: Assets/Prefabs/CharacterBody.prefab
+  artifactKey: Guid(9c62ad4a847f64c0792685dbbf951dc6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/CharacterBody.prefab using Guid(9c62ad4a847f64c0792685dbbf951dc6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '957cc3ff88d872bb45c985e6beb468e5') in 0.0218977 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 233
+
+========================================================================
+Received Import Request.
+  Time since last request: 1054.940615 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '46ddd87aaa573229ebcc339d714f8fac') in 0.0263701 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.908758 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ada053573c870e4f4aba56f06faafa7b') in 0.0098617 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 206.338809 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '10c6e2f9f5bbda2ef40ba2ff8a6fd452') in 0.0894715 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.883016 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0f95c4e1ed594bac26a7e9485a34830c') in 0.0060376 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.028449 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a883fec4d19178114a20a66a1b6df4d') in 0.0109359 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.964517 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0974e867dbe0dec21220481c4d923153') in 0.0389701 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.144594 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75cb01b16e0cb998e89f28ae3a72faad') in 0.0090789 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.957877 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6a5fb863790b83482cdf9e8deb422746') in 0.0064654 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 78.476904 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5f51c702c3448781a4e4b6a18f5f9e53') in 0.0436213 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 32
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.905104 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f8146bcc26110c8496cbc1633360960a') in 0.0059235 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.820238 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '79cfb5e1c487011ab7ae26b9a4f44201') in 0.0055476 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 11
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.892823 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4019f9a30a83c77e1b489e91690da407') in 0.0045968 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
+
+========================================================================
+Received Import Request.
+  Time since last request: 188.031365 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b938b39573e555e4dc40aaa9301b7295') in 0.0127728 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 35
+
+========================================================================
+Received Import Request.
+  Time since last request: 121.550312 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'caf2477191df0bd2e2c0318dc0e3d658') in 0.0146944 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 37
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.947428 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e385fe2a5d8699200c5f17b248ed4601') in 0.0330189 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.399683 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '64090b976ca00959340a27198cda66ce') in 0.0141996 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 38
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.953022 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'de3697402b84d34a757f93610848c74c') in 0.0121535 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 1186.351398 seconds.
+  path: Assets/Scenes/ARCloudAnchortest.unity
+  artifactKey: Guid(7a2570febc3e86f4ab28dc0ee6127a3e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/ARCloudAnchortest.unity using Guid(7a2570febc3e86f4ab28dc0ee6127a3e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ed03dc16efa2f39a06378db16ff32cb7') in 0.0071879 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.94 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (13.7 MB). Loaded Objects now: 6947.
+Memory consumption went from 190.0 MB to 176.4 MB.
+Total: 73.489200 ms (FindLiveObjects: 0.902000 ms CreateObjectMapping: 0.348500 ms MarkObjects: 66.913100 ms  DeleteObjects: 5.322200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.36 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.3 MB). Loaded Objects now: 6947.
+Memory consumption went from 189.9 MB to 175.5 MB.
+Total: 12.430800 ms (FindLiveObjects: 0.496300 ms CreateObjectMapping: 0.325500 ms MarkObjects: 4.669500 ms  DeleteObjects: 6.939000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 300.614327 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70a4cd0f1c797762fd42fd828dba4844') in 0.1793003 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 38
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.793736 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '80b72545242bac1070ea4a50acef29f1') in 0.0174691 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.328097 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb289848d3b741ec991cb577bd6245ee') in 0.0110926 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 38
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.965005 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '90d655035129ce8ad465adda8169cd70') in 0.0142096 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.585952 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '032a8dfb2c90bf88d8bfdd052e7f9370') in 0.0073345 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 38
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.967838 seconds.
+  path: Assets/Prefabs/new.prefab
+  artifactKey: Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/new.prefab using Guid(c5f76d6b8d56f8d4eb947aac064919e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '82238d31f63611b70026b1239550ed1f') in 0.0293976 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 15
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.56 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.4 MB). Loaded Objects now: 6947.
+Memory consumption went from 189.9 MB to 175.4 MB.
+Total: 17.529200 ms (FindLiveObjects: 0.526400 ms CreateObjectMapping: 0.521200 ms MarkObjects: 7.936400 ms  DeleteObjects: 8.543600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.32 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.7 MB). Loaded Objects now: 6947.
+Memory consumption went from 189.8 MB to 175.1 MB.
+Total: 13.828700 ms (FindLiveObjects: 0.525900 ms CreateObjectMapping: 0.493000 ms MarkObjects: 6.191700 ms  DeleteObjects: 6.616900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 67661.625224 seconds.
+  path: Assets/Prefabs/Placement.prefab
+  artifactKey: Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Placement.prefab using Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd0e04e34d20fc78c7c303cce969381c4') in 0.5252112 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 50
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.283595 seconds.
+  path: Assets/Prefabs/Placement.prefab
+  artifactKey: Guid(129ad34963f384c74a74dc102aafbe4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/Placement.prefab using Guid(129ad34963f384c74a74dc102aafbe4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8514902609416d6253e5a2c89adcc7fc') in 0.1072315 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.809504 seconds.
+  path: Assets/Prefabs/Placement.prefab
+  artifactKey: Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Placement.prefab using Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a3eba3b32f629f1d529a9642231ad290') in 0.0209425 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 50
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.932605 seconds.
+  path: Assets/Prefabs/Placement.prefab
+  artifactKey: Guid(129ad34963f384c74a74dc102aafbe4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/Placement.prefab using Guid(129ad34963f384c74a74dc102aafbe4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c4e1dc82e08d796a0afb3585852121f7') in 0.0185577 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.245191 seconds.
+  path: Assets/Prefabs/Placement.prefab
+  artifactKey: Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Placement.prefab using Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4cfd84080097107295da267c862b270b') in 0.0123959 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 50
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.527314 seconds.
+  path: Assets/Prefabs/Placement.prefab
+  artifactKey: Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Placement.prefab using Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b564a8ce349b1155faeb808f8ffd2bb') in 0.0107261 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 50
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.415149 seconds.
+  path: Assets/Prefabs/Placement.prefab
+  artifactKey: Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Placement.prefab using Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5f62cb05b12a254b1838d969cb4d29e0') in 0.0101892 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 50
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.947752 seconds.
+  path: Assets/Prefabs/Placement.prefab
+  artifactKey: Guid(129ad34963f384c74a74dc102aafbe4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/Placement.prefab using Guid(129ad34963f384c74a74dc102aafbe4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6c2dcb819b21b9ea478964019f156bd2') in 0.0489337 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.879936 seconds.
+  path: Assets/Prefabs/Placement.prefab
+  artifactKey: Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Placement.prefab using Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '643b3edcd71cb89edee47d063680808f') in 0.0093792 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 50
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.955653 seconds.
+  path: Assets/Prefabs/Placement.prefab
+  artifactKey: Guid(129ad34963f384c74a74dc102aafbe4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/Placement.prefab using Guid(129ad34963f384c74a74dc102aafbe4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '92cea7dfa9b57cf68cea2d52fd448f48') in 0.0100411 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.62 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.5 MB). Loaded Objects now: 6948.
+Memory consumption went from 190.0 MB to 175.5 MB.
+Total: 54.712600 ms (FindLiveObjects: 0.679800 ms CreateObjectMapping: 0.294100 ms MarkObjects: 48.202800 ms  DeleteObjects: 5.532800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.54 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.5 MB). Loaded Objects now: 6948.
+Memory consumption went from 190.1 MB to 175.6 MB.
+Total: 12.254600 ms (FindLiveObjects: 0.636200 ms CreateObjectMapping: 0.329700 ms MarkObjects: 5.331100 ms  DeleteObjects: 5.956500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.84 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.6 MB). Loaded Objects now: 6948.
+Memory consumption went from 190.1 MB to 175.5 MB.
+Total: 13.059500 ms (FindLiveObjects: 0.499000 ms CreateObjectMapping: 0.324800 ms MarkObjects: 6.669200 ms  DeleteObjects: 5.564700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.50 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.3 MB). Loaded Objects now: 6948.
+Memory consumption went from 189.9 MB to 175.7 MB.
+Total: 10.287600 ms (FindLiveObjects: 0.474800 ms CreateObjectMapping: 0.328100 ms MarkObjects: 4.294300 ms  DeleteObjects: 5.189000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 2950.014958 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park
+  artifactKey: Guid(785f1e5de6627d74cbff034cd6489976) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park using Guid(785f1e5de6627d74cbff034cd6489976) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7053059d8114dde666d2d752cb0b87a0') in 0.054774 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.154539 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '99a212c7b6e7128a896c3940a4cff16f') in 0.1339533 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 64
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.795014 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '198b1af3c6c918db73baec8c4ffb4e6f') in 0.0281854 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.265134 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac74900567142d5580f86d2e81ae6dcd') in 0.0136764 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 64
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.968074 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '860f4b0f800f3eaddab6b985b57580c1') in 0.0135838 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 64
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.370094 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '68a54bc798bd2156b2130f9cf3a5f2e0') in 0.0120449 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 64
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.322603 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3006ddefaa4964515e6c11aa9998dc82') in 0.0110194 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 64
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.946959 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '46fe9546e573d7338e699527163f7ebb') in 0.0108848 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 31
+
+========================================================================
+Received Import Request.
+  Time since last request: 739.756719 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f0fbcc22a7bee40808458e5a170987b9') in 0.0643234 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 65
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.787596 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd08d6fb7c7699b7f30a47775c63ced7d') in 0.0550696 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 32
+
+========================================================================
+Received Import Request.
+  Time since last request: 1423.025564 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6cfd8047ff21f37616303556ef2ecbd3') in 0.0329652 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 65
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.704315 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '63288388285c4c92bd62dd4c8617d104') in 0.0153502 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 65
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.990377 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eeb753e92623777bc387df5f59db8f26') in 0.0145283 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 65
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.962481 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '81b5a33bb0216d2e9669e29a98b2b8ee') in 0.0139581 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 32
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.154139 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6cad035ca9a3a1aaa7fb680193d1ca67') in 0.0128157 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 65
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.965511 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f249eb3d6827f405db479f8e1f9e6502') in 0.0128067 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 32
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.805633 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac8533ff78a6b3c7e8df51ee980e3e18') in 0.0132818 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 65
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.961608 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '700dfbbc2c06006008cab8c2059ce3ca') in 0.0115659 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 32
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.114058 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '68dc46b5132e232425903b0bd6850d09') in 0.0122342 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 65
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.964936 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0678f0fde5971f6bac6cc5015dbcd4b1') in 0.0184989 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 32
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.220741 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '68e22acc392ec1fb6bd2a75665597f2e') in 0.0107497 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 65
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.969108 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ff79c8e3acd61a26038bbe953fc3a1e1') in 0.0091603 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 32
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.119123 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f74193310518434ec5b0821fcc9b9bb8') in 0.0117852 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 65
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.964991 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2e7b2e9a205d0498c9b25466be128092') in 0.0084093 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 32
+
+========================================================================
+Received Import Request.
+  Time since last request: 286.927360 seconds.
+  path: Assets/Scenes/ARCloudAnchortest.unity
+  artifactKey: Guid(7a2570febc3e86f4ab28dc0ee6127a3e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/ARCloudAnchortest.unity using Guid(7a2570febc3e86f4ab28dc0ee6127a3e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0e8b1b1aced1187b74f534397b083a7f') in 0.0084189 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.39 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.7 MB). Loaded Objects now: 6948.
+Memory consumption went from 190.1 MB to 175.3 MB.
+Total: 68.144900 ms (FindLiveObjects: 1.352700 ms CreateObjectMapping: 0.355000 ms MarkObjects: 60.444400 ms  DeleteObjects: 5.991400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.48 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.5 MB). Loaded Objects now: 6948.
+Memory consumption went from 190.0 MB to 175.5 MB.
+Total: 11.319600 ms (FindLiveObjects: 0.449800 ms CreateObjectMapping: 0.298000 ms MarkObjects: 4.897600 ms  DeleteObjects: 5.672300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.70 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.8 MB). Loaded Objects now: 6948.
+Memory consumption went from 190.1 MB to 175.3 MB.
+Total: 17.672500 ms (FindLiveObjects: 0.472400 ms CreateObjectMapping: 0.284600 ms MarkObjects: 9.874100 ms  DeleteObjects: 7.039500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.94 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.5 MB). Loaded Objects now: 6948.
+Memory consumption went from 190.1 MB to 175.6 MB.
+Total: 11.107900 ms (FindLiveObjects: 0.613700 ms CreateObjectMapping: 0.371700 ms MarkObjects: 4.912200 ms  DeleteObjects: 5.208700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 1963.233129 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoScene.unity
+  artifactKey: Guid(da4db6c21a88243878fecfe160c1be3b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoScene.unity using Guid(da4db6c21a88243878fecfe160c1be3b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '21299d060bea449edcac462c6fa3a158') in 0.0772133 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.042874 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(488c2a153e9d9415088601a6bcea714f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(488c2a153e9d9415088601a6bcea714f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '17536615a716696ad980faea608a77c1') in 0.0017296 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.026408 seconds.
+  path: Assets/Scenes/New SceneTemplate.scenetemplate
+  artifactKey: Guid(8645d854be99b034f909c97c572da60c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/New SceneTemplate.scenetemplate using Guid(8645d854be99b034f909c97c572da60c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'faa155ba1a63639a6d445bbb367cf3c7') in 0.1034504 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.850324 seconds.
+  path: Assets/Scenes/New SceneTemplate.scenetemplate
+  artifactKey: Guid(8645d854be99b034f909c97c572da60c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/New SceneTemplate.scenetemplate using Guid(8645d854be99b034f909c97c572da60c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '62de2bee5df848e458e673143a62b1f3') in 0.0180771 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.273110 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1003d5d58d15aaf884361a3abee1d996') in 0.0007937 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.958939 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '37c6b1b9fcd5682c800ec269626bfe59') in 0.0052076 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.492526 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/General/CycleXRDevices.png
+  artifactKey: Guid(731e7aed8e9f540ac8bf2a7b66abdaf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/General/CycleXRDevices.png using Guid(731e7aed8e9f540ac8bf2a7b66abdaf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c608c5159d3387389486d87a706556f8') in 0.1765902 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/XRI/Settings/Resources/XRDeviceSimulatorSettings.asset
+  artifactKey: Guid(0f2f33a3334141240a5e317704991f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XRI/Settings/Resources/XRDeviceSimulatorSettings.asset using Guid(0f2f33a3334141240a5e317704991f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aa0b332dbf9d059b241eec4327869b5e') in 0.007322 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/HeadDevice/xr_hmd.png
+  artifactKey: Guid(08548d5ac6b7bc64da0b332636c5cc91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/HeadDevice/xr_hmd.png using Guid(08548d5ac6b7bc64da0b332636c5cc91) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd3715ec38c222f71dec69bcd6986050b') in 0.0158046 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/ControllerDevice/xr_ctlr.png
+  artifactKey: Guid(7d7a2f6c5e996e24388af5a8227afdcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/ControllerDevice/xr_ctlr.png using Guid(7d7a2f6c5e996e24388af5a8227afdcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'af2a9669d2fb907685e1f3e5e93780fe') in 0.0149128 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.886725 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd7dff9a42389635e999631bea5ce2e33') in 0.0059201 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.013094 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '57596971d931fcff345fc404bc397b9a') in 0.0065691 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 89.608654 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'deb7572cbfd22a9c64d8a41ef7cf4c34') in 0.0058921 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.243613 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e6c8d893c2c8affafce9ce8b18c32e14') in 0.0062985 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 244.834603 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoScene.unity
+  artifactKey: Guid(da4db6c21a88243878fecfe160c1be3b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoScene.unity using Guid(da4db6c21a88243878fecfe160c1be3b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4420dfa8f29e0170a6129e3f4d97e732') in 0.0069546 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.92 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.3 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 176.0 MB.
+Total: 42.670800 ms (FindLiveObjects: 0.848600 ms CreateObjectMapping: 0.400100 ms MarkObjects: 35.835800 ms  DeleteObjects: 5.583700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.54 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.7 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 175.5 MB.
+Total: 12.574500 ms (FindLiveObjects: 0.584300 ms CreateObjectMapping: 0.305900 ms MarkObjects: 5.178600 ms  DeleteObjects: 6.504300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 661.805448 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '58ebb86a5c8e3f40d79429f96e6ebcfd') in 0.057235 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.230421 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4046c3323cfa1ca9f7900a539e73794b') in 0.0163653 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 504.116010 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd0cf4d4f37ef65fcbc781817c6f643a4') in 0.007702 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.526110 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f60ee349b6d259d9b6a3df981cfd7633') in 0.0074666 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 101.461027 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cbe50b7c376620ee91ddfe38ea390d02') in 0.0078636 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.22 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.3 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.3 MB to 175.9 MB.
+Total: 47.956200 ms (FindLiveObjects: 0.599200 ms CreateObjectMapping: 0.275300 ms MarkObjects: 41.305000 ms  DeleteObjects: 5.774500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.98 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.5 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 175.7 MB.
+Total: 11.030100 ms (FindLiveObjects: 0.437800 ms CreateObjectMapping: 0.346000 ms MarkObjects: 4.539900 ms  DeleteObjects: 5.704900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.03 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.5 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.3 MB to 175.8 MB.
+Total: 14.237600 ms (FindLiveObjects: 0.581900 ms CreateObjectMapping: 0.297000 ms MarkObjects: 6.748000 ms  DeleteObjects: 6.608900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.15 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.8 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 175.4 MB.
+Total: 13.387800 ms (FindLiveObjects: 0.480200 ms CreateObjectMapping: 0.283200 ms MarkObjects: 5.781800 ms  DeleteObjects: 6.841000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 150.027339 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '51d704ff7d95340274adb621d09d88ae') in 0.0126627 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.79 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.6 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.4 MB to 175.7 MB.
+Total: 14.889800 ms (FindLiveObjects: 0.467400 ms CreateObjectMapping: 0.281200 ms MarkObjects: 7.562300 ms  DeleteObjects: 6.577000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.41 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.7 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 175.5 MB.
+Total: 11.208400 ms (FindLiveObjects: 0.457900 ms CreateObjectMapping: 0.363000 ms MarkObjects: 4.306800 ms  DeleteObjects: 6.078500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 94.657529 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c98affc129def428455fa040a11de593') in 0.0080142 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 152.804899 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '892c9726df8e23eac813e0b34cf01f2d') in 0.0057287 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 111.128003 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '499c7420b4ce61becdcb7096d067ed97') in 0.004887 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.210647 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '490d482f29daf16972f282bf27c26e1c') in 0.0047424 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.42 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.5 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.3 MB to 175.8 MB.
+Total: 14.174100 ms (FindLiveObjects: 0.446600 ms CreateObjectMapping: 0.289100 ms MarkObjects: 6.278600 ms  DeleteObjects: 7.158100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.50 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.5 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 175.7 MB.
+Total: 13.211900 ms (FindLiveObjects: 0.539000 ms CreateObjectMapping: 0.360200 ms MarkObjects: 5.112100 ms  DeleteObjects: 7.199400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 119.942043 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '136cfd9d8acddc03e3954850c4735342') in 0.0084834 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.16 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.4 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 175.8 MB.
+Total: 14.006300 ms (FindLiveObjects: 0.481000 ms CreateObjectMapping: 0.286800 ms MarkObjects: 7.122200 ms  DeleteObjects: 6.114700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.45 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (11.4 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.1 MB to 178.7 MB.
+Total: 10.398600 ms (FindLiveObjects: 0.458700 ms CreateObjectMapping: 0.331500 ms MarkObjects: 4.546500 ms  DeleteObjects: 5.060600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 188.840601 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9637125251349680d5e840d7b4b062ae') in 0.0083334 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.85 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.5 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.3 MB to 175.8 MB.
+Total: 13.923600 ms (FindLiveObjects: 0.466300 ms CreateObjectMapping: 0.290000 ms MarkObjects: 6.472700 ms  DeleteObjects: 6.692600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.17 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.4 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 175.7 MB.
+Total: 12.270900 ms (FindLiveObjects: 0.587700 ms CreateObjectMapping: 0.426900 ms MarkObjects: 5.471500 ms  DeleteObjects: 5.783700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 374.874855 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8d64d0cb24dc4b704791fbd80e56a39a') in 0.0080173 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.537157 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f4cc09390e722e46456fa16c70b6ff06') in 0.0056984 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.03 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.6 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.4 MB to 175.8 MB.
+Total: 14.088600 ms (FindLiveObjects: 0.438500 ms CreateObjectMapping: 0.267700 ms MarkObjects: 6.491900 ms  DeleteObjects: 6.889000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.28 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (13.9 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 176.3 MB.
+Total: 10.304300 ms (FindLiveObjects: 0.439100 ms CreateObjectMapping: 0.264300 ms MarkObjects: 4.267800 ms  DeleteObjects: 5.330700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 176.684209 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '35253b997d1fc37ca15e53abdd7e2d0c') in 0.0090047 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.67 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.7 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.3 MB to 175.6 MB.
+Total: 15.143600 ms (FindLiveObjects: 0.479300 ms CreateObjectMapping: 0.280900 ms MarkObjects: 6.381400 ms  DeleteObjects: 8.000000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.37 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.8 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 175.4 MB.
+Total: 11.441200 ms (FindLiveObjects: 0.455800 ms CreateObjectMapping: 0.288100 ms MarkObjects: 5.091000 ms  DeleteObjects: 5.603700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 177.978494 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/Scripts/ARInteractorSpawnTrigger.cs
+  artifactKey: Guid(ba63293f961b46a1a5b648e4ba02cfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/Scripts/ARInteractorSpawnTrigger.cs using Guid(ba63293f961b46a1a5b648e4ba02cfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9baa459e5919b82a8a07574cadccdb22') in 0.0046118 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 284.777613 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5eb4751ca1c9c95b0aadcff8592aff01') in 0.0141546 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.61 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (13.3 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.3 MB to 177.1 MB.
+Total: 52.007900 ms (FindLiveObjects: 0.709200 ms CreateObjectMapping: 0.373400 ms MarkObjects: 44.004200 ms  DeleteObjects: 6.918900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.38 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.4 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.3 MB to 175.8 MB.
+Total: 11.445900 ms (FindLiveObjects: 0.598300 ms CreateObjectMapping: 0.389700 ms MarkObjects: 4.695400 ms  DeleteObjects: 5.760800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 88.343396 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd0860b0a469e22c9fc5d7bd1094e7c98') in 0.0140999 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.59 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.8 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.5 MB to 175.7 MB.
+Total: 14.538100 ms (FindLiveObjects: 0.544500 ms CreateObjectMapping: 0.351500 ms MarkObjects: 7.017900 ms  DeleteObjects: 6.622500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.13 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.6 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.3 MB to 175.7 MB.
+Total: 10.870200 ms (FindLiveObjects: 0.683100 ms CreateObjectMapping: 0.262100 ms MarkObjects: 4.666700 ms  DeleteObjects: 5.256700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.99 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.6 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.3 MB to 175.7 MB.
+Total: 13.862900 ms (FindLiveObjects: 0.841900 ms CreateObjectMapping: 0.238500 ms MarkObjects: 6.804200 ms  DeleteObjects: 5.976700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.41 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.5 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.4 MB to 175.9 MB.
+Total: 12.793300 ms (FindLiveObjects: 0.497100 ms CreateObjectMapping: 0.300200 ms MarkObjects: 4.703400 ms  DeleteObjects: 7.291100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 949.492058 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '700f681bf4b3aca637b6197a2c366536') in 0.1044127 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 7.11 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.3 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 175.9 MB.
+Total: 40.606400 ms (FindLiveObjects: 0.610600 ms CreateObjectMapping: 0.322500 ms MarkObjects: 33.301100 ms  DeleteObjects: 6.369800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.84 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.6 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.3 MB to 175.7 MB.
+Total: 12.021500 ms (FindLiveObjects: 0.597800 ms CreateObjectMapping: 0.463800 ms MarkObjects: 5.382800 ms  DeleteObjects: 5.575800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.02 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.7 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 175.5 MB.
+Total: 14.717300 ms (FindLiveObjects: 0.566100 ms CreateObjectMapping: 0.295800 ms MarkObjects: 7.981400 ms  DeleteObjects: 5.871800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.29 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.5 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 175.7 MB.
+Total: 11.186200 ms (FindLiveObjects: 0.440300 ms CreateObjectMapping: 0.279000 ms MarkObjects: 4.822700 ms  DeleteObjects: 5.642500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.71 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.8 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.3 MB to 175.5 MB.
+Total: 14.789900 ms (FindLiveObjects: 0.475000 ms CreateObjectMapping: 0.273800 ms MarkObjects: 6.433900 ms  DeleteObjects: 7.605000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.49 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.4 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 175.7 MB.
+Total: 12.360000 ms (FindLiveObjects: 0.427700 ms CreateObjectMapping: 0.257500 ms MarkObjects: 5.236400 ms  DeleteObjects: 6.436400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 431.470636 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6bcfc52f8563f7490f96aa92cbc42e41') in 0.0235261 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.99 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.5 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.3 MB to 175.8 MB.
+Total: 14.381500 ms (FindLiveObjects: 0.479700 ms CreateObjectMapping: 0.387100 ms MarkObjects: 8.008800 ms  DeleteObjects: 5.504100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.09 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.6 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 175.7 MB.
+Total: 11.184000 ms (FindLiveObjects: 0.621000 ms CreateObjectMapping: 0.705200 ms MarkObjects: 4.562400 ms  DeleteObjects: 5.293700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 212.937150 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '10aff8aa1fb5566c2f7c222ff358cbe9') in 0.0108997 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.63 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.6 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 175.5 MB.
+Total: 16.791600 ms (FindLiveObjects: 0.460100 ms CreateObjectMapping: 0.448000 ms MarkObjects: 7.814100 ms  DeleteObjects: 8.065400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.09 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.5 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.3 MB to 175.8 MB.
+Total: 12.465000 ms (FindLiveObjects: 0.511300 ms CreateObjectMapping: 0.333400 ms MarkObjects: 6.532500 ms  DeleteObjects: 5.086200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.87 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.8 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 175.4 MB.
+Total: 118.465600 ms (FindLiveObjects: 1.172300 ms CreateObjectMapping: 0.482700 ms MarkObjects: 106.907400 ms  DeleteObjects: 9.899700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.88 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.6 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.2 MB to 175.5 MB.
+Total: 13.511300 ms (FindLiveObjects: 0.501700 ms CreateObjectMapping: 0.342600 ms MarkObjects: 5.404700 ms  DeleteObjects: 7.260600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 63963.673235 seconds.
+  path: Packages/com.unity.xr.interaction.toolkit/Runtime/Inputs/InputActionManager.cs
+  artifactKey: Guid(017c5e3933235514c9520e1dace2a4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.interaction.toolkit/Runtime/Inputs/InputActionManager.cs using Guid(017c5e3933235514c9520e1dace2a4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e52a08da6fd4a18f58156d5ff9a031a1') in 0.0571617 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 317.819781 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bbd8c50e8abad45d5a38ac1891f17e21') in 0.0380919 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.40 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.7 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.3 MB to 175.6 MB.
+Total: 48.716400 ms (FindLiveObjects: 0.602500 ms CreateObjectMapping: 0.288300 ms MarkObjects: 40.398000 ms  DeleteObjects: 7.425000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.61 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.5 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.3 MB to 175.7 MB.
+Total: 10.868500 ms (FindLiveObjects: 0.465100 ms CreateObjectMapping: 0.287400 ms MarkObjects: 4.638500 ms  DeleteObjects: 5.476200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 244.707254 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e2978707f5d034a0f57fc555437f337e') in 0.0920053 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.40 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.7 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.3 MB to 175.6 MB.
+Total: 43.111000 ms (FindLiveObjects: 1.124900 ms CreateObjectMapping: 0.623200 ms MarkObjects: 34.091200 ms  DeleteObjects: 7.268700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 7.63 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6229 unused Assets / (14.3 MB). Loaded Objects now: 6951.
+Memory consumption went from 190.3 MB to 175.9 MB.
+Total: 11.409500 ms (FindLiveObjects: 0.452700 ms CreateObjectMapping: 0.382300 ms MarkObjects: 5.029600 ms  DeleteObjects: 5.543700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 10743.469174 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoScene.unity
+  artifactKey: Guid(da4db6c21a88243878fecfe160c1be3b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoScene.unity using Guid(da4db6c21a88243878fecfe160c1be3b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '658cfe888e3015c4b592341f56a46155') in 0.195808 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 6841.680078 seconds.
+  path: Assets/Scenes/WholeScene.unity
+  artifactKey: Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/WholeScene.unity using Guid(49cff624d28797e4284799f891f44598) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8981188ed806f8764a02cbe257455cc3') in 0.0807702 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 96.142954 seconds.
+  path: Assets/Scripts/Rotator.cs
+  artifactKey: Guid(c8e8813d63e534e4ab7d4d8980d73ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Rotator.cs using Guid(c8e8813d63e534e4ab7d4d8980d73ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd2c135b53defbb38d254ff240d69ad9a') in 0.0082569 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.33 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6232 unused Assets / (13.1 MB). Loaded Objects now: 6950.
+Memory consumption went from 190.4 MB to 177.2 MB.
+Total: 83.121100 ms (FindLiveObjects: 0.565900 ms CreateObjectMapping: 0.276700 ms MarkObjects: 75.839900 ms  DeleteObjects: 6.436400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 39.490437 seconds.
+  path: Assets/Scripts/testDebugScript.cs
+  artifactKey: Guid(4273d08a231a0984d9d3d94f06ff022e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/testDebugScript.cs using Guid(4273d08a231a0984d9d3d94f06ff022e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc8fb9ef2b830f76065f38b4dd7d13b9') in 0.0080609 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018154 seconds.
+  path: Assets/Scripts/testDebugScript.cs
+  artifactKey: Guid(4273d08a231a0984d9d3d94f06ff022e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/testDebugScript.cs using Guid(4273d08a231a0984d9d3d94f06ff022e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fe490427bd04fc5d4a3860e17762ed81') in 0.0416785 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 9)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 9)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 11)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 11)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 13)
+Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 13)
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  5.141 seconds
+Refreshing native plugins compatible for Editor in 5.83 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.111 seconds
+Domain Reload Profiling: 6255ms
+	BeginReloadAssembly (2784ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (295ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (4ms)
+		CreateAndSetChildDomain (1887ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (2268ms)
+		LoadAssemblies (2117ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (290ms)
+			TypeCache.Refresh (46ms)
+				TypeCache.ScanAssembly (3ms)
+			BuildScriptInfoCaches (206ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1111ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (727ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (69ms)
+			ProcessInitializeOnLoadAttributes (488ms)
+			ProcessInitializeOnLoadMethodAttributes (121ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (8ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Refreshing native plugins compatible for Editor in 6.33 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 167 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6331 unused Assets / (13.9 MB). Loaded Objects now: 6904.
+Memory consumption went from 204.1 MB to 190.2 MB.
+Total: 12.010700 ms (FindLiveObjects: 1.164400 ms CreateObjectMapping: 0.280200 ms MarkObjects: 4.070800 ms  DeleteObjects: 6.493300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 25.535074 seconds.
+  path: Assets/Scripts/testDebugScript.cs
+  artifactKey: Guid(4273d08a231a0984d9d3d94f06ff022e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/testDebugScript.cs using Guid(4273d08a231a0984d9d3d94f06ff022e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0054696 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/scripts/testdebugscript.cs in SourceAssetDB has modification time of '2024-09-20T21:12:11.4581268Z' while content on disk has modification time of '2024-09-20T21:12:36.8692045Z'
+  ERROR: Build asset version error: assets/scripts/testdebugscript.cs in SourceAssetDB has modification time of '2024-09-20T21:12:11.4581268Z' while content on disk has modification time of '2024-09-20T21:12:36.8692045Z'
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.32 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 86 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6226 unused Assets / (14.2 MB). Loaded Objects now: 6898.
+Memory consumption went from 198.6 MB to 184.3 MB.
+Total: 10.729000 ms (FindLiveObjects: 0.420000 ms CreateObjectMapping: 0.257300 ms MarkObjects: 3.665300 ms  DeleteObjects: 6.385000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.376791 seconds.
+  path: Assets/Scripts/testDebugScript.cs
+  artifactKey: Guid(4273d08a231a0984d9d3d94f06ff022e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/testDebugScript.cs using Guid(4273d08a231a0984d9d3d94f06ff022e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c7ff42cf7fe77bb8aba3a728872bea14') in 0.0019104 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.590 seconds
+Refreshing native plugins compatible for Editor in 4.65 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.654 seconds
+Domain Reload Profiling: 1243ms
+	BeginReloadAssembly (159ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (40ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (369ms)
+		LoadAssemblies (312ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (135ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (114ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (654ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (474ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (359ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 4.36 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 152 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6331 unused Assets / (14.1 MB). Loaded Objects now: 6905.
+Memory consumption went from 203.4 MB to 189.2 MB.
+Total: 10.464700 ms (FindLiveObjects: 0.455600 ms CreateObjectMapping: 0.273800 ms MarkObjects: 3.441400 ms  DeleteObjects: 6.292500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.43 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 86 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6224 unused Assets / (14.1 MB). Loaded Objects now: 6901.
+Memory consumption went from 200.9 MB to 186.8 MB.
+Total: 31.099600 ms (FindLiveObjects: 0.897400 ms CreateObjectMapping: 0.274700 ms MarkObjects: 24.165100 ms  DeleteObjects: 5.760100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.99 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 84 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6224 unused Assets / (14.0 MB). Loaded Objects now: 6901.
+Memory consumption went from 200.2 MB to 186.2 MB.
+Total: 11.947000 ms (FindLiveObjects: 0.548900 ms CreateObjectMapping: 0.541600 ms MarkObjects: 4.537100 ms  DeleteObjects: 6.318200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.98 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 84 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6224 unused Assets / (14.2 MB). Loaded Objects now: 6901.
+Memory consumption went from 200.2 MB to 186.0 MB.
+Total: 37.602200 ms (FindLiveObjects: 0.774600 ms CreateObjectMapping: 0.309200 ms MarkObjects: 30.199400 ms  DeleteObjects: 6.317100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.64 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 84 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6224 unused Assets / (13.8 MB). Loaded Objects now: 6901.
+Memory consumption went from 200.3 MB to 186.5 MB.
+Total: 9.493000 ms (FindLiveObjects: 0.441800 ms CreateObjectMapping: 0.314300 ms MarkObjects: 3.499900 ms  DeleteObjects: 5.235800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.35 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 84 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6224 unused Assets / (14.2 MB). Loaded Objects now: 6901.
+Memory consumption went from 200.4 MB to 186.2 MB.
+Total: 12.686400 ms (FindLiveObjects: 0.559200 ms CreateObjectMapping: 0.287200 ms MarkObjects: 5.111600 ms  DeleteObjects: 6.726600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.10 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 84 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6224 unused Assets / (13.8 MB). Loaded Objects now: 6901.
+Memory consumption went from 200.4 MB to 186.5 MB.
+Total: 9.588700 ms (FindLiveObjects: 0.482200 ms CreateObjectMapping: 0.355700 ms MarkObjects: 3.701400 ms  DeleteObjects: 5.048000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 1091.979535 seconds.
+  path: Packages/com.unity.xr.interaction.toolkit/Runtime/Interaction/Controllers/XRScreenSpaceController.cs
+  artifactKey: Guid(b7e4c509417774e7e8a8784a2739de68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.interaction.toolkit/Runtime/Interaction/Controllers/XRScreenSpaceController.cs using Guid(b7e4c509417774e7e8a8784a2739de68) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e29014eb32bda7ea1ff94b0c9a7a8e3') in 0.098482 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.903799 seconds.
+  path: Assets/Scripts/Controller
+  artifactKey: Guid(4c17d47df717df946bc37ed4f82cc30f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controller using Guid(4c17d47df717df946bc37ed4f82cc30f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'af631002d94395bad6889f4c902a5005') in 0.0024809 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.84 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 84 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6227 unused Assets / (14.1 MB). Loaded Objects now: 6900.
+Memory consumption went from 200.0 MB to 185.9 MB.
+Total: 11.489800 ms (FindLiveObjects: 0.457000 ms CreateObjectMapping: 0.281500 ms MarkObjects: 4.977200 ms  DeleteObjects: 5.772800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 4.282603 seconds.
+  path: Assets/Scripts/Controller/XRScreenSpaceController.cs
+  artifactKey: Guid(b705c5104ddc9d0419ace09c522cea66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controller/XRScreenSpaceController.cs using Guid(b705c5104ddc9d0419ace09c522cea66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '80df59e156a2938c770c077529620659') in 0.0037922 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.051908 seconds.
+  path: Assets/Scripts/Controller/XRScreenSpaceController.cs
+  artifactKey: Guid(b705c5104ddc9d0419ace09c522cea66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controller/XRScreenSpaceController.cs using Guid(b705c5104ddc9d0419ace09c522cea66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '80df59e156a2938c770c077529620659') in 0.0010831 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.78 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 86 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6227 unused Assets / (12.6 MB). Loaded Objects now: 6900.
+Memory consumption went from 200.5 MB to 187.9 MB.
+Total: 16.657200 ms (FindLiveObjects: 0.581000 ms CreateObjectMapping: 1.080100 ms MarkObjects: 8.982900 ms  DeleteObjects: 6.011600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 10.221824 seconds.
+  path: Assets/Scripts/Controller/newXRScreenSpaceController.cs
+  artifactKey: Guid(b705c5104ddc9d0419ace09c522cea66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controller/newXRScreenSpaceController.cs using Guid(b705c5104ddc9d0419ace09c522cea66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8ad12fa3cd339cc3cadfd0659bdf567e') in 0.0024427 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.76 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 86 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6226 unused Assets / (14.0 MB). Loaded Objects now: 6899.
+Memory consumption went from 200.4 MB to 186.5 MB.
+Total: 11.097300 ms (FindLiveObjects: 0.474800 ms CreateObjectMapping: 0.334700 ms MarkObjects: 3.732400 ms  DeleteObjects: 6.553900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  3.206 seconds
+Refreshing native plugins compatible for Editor in 12.73 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  1.103 seconds
+Domain Reload Profiling: 4308ms
+	BeginReloadAssembly (1451ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (170ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (725ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (1640ms)
+		LoadAssemblies (1609ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (232ms)
+			TypeCache.Refresh (19ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (183ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (1103ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (787ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (9ms)
+			BeforeProcessingInitializeOnLoad (63ms)
+			ProcessInitializeOnLoadAttributes (576ms)
+			ProcessInitializeOnLoadMethodAttributes (102ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (4ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 4.49 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 152 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6331 unused Assets / (14.5 MB). Loaded Objects now: 6906.
+Memory consumption went from 205.4 MB to 190.9 MB.
+Total: 13.218700 ms (FindLiveObjects: 1.273100 ms CreateObjectMapping: 0.323200 ms MarkObjects: 3.627600 ms  DeleteObjects: 7.993300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.55 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 86 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6226 unused Assets / (14.4 MB). Loaded Objects now: 6900.
+Memory consumption went from 202.9 MB to 188.5 MB.
+Total: 16.109200 ms (FindLiveObjects: 0.540300 ms CreateObjectMapping: 0.237700 ms MarkObjects: 6.165000 ms  DeleteObjects: 9.164400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.51 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 86 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6226 unused Assets / (14.1 MB). Loaded Objects now: 6900.
+Memory consumption went from 202.6 MB to 188.5 MB.
+Total: 13.099400 ms (FindLiveObjects: 0.481400 ms CreateObjectMapping: 0.293000 ms MarkObjects: 5.022000 ms  DeleteObjects: 7.301200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.748 seconds
+Refreshing native plugins compatible for Editor in 13.26 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.952 seconds
+Domain Reload Profiling: 1698ms
+	BeginReloadAssembly (227ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (436ms)
+		LoadAssemblies (384ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (173ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (145ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (952ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (681ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (106ms)
+			ProcessInitializeOnLoadAttributes (469ms)
+			ProcessInitializeOnLoadMethodAttributes (64ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 5.30 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 152 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6331 unused Assets / (14.4 MB). Loaded Objects now: 6907.
+Memory consumption went from 207.2 MB to 192.8 MB.
+Total: 14.251000 ms (FindLiveObjects: 1.010600 ms CreateObjectMapping: 0.291000 ms MarkObjects: 4.619900 ms  DeleteObjects: 8.323300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.47 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 86 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6224 unused Assets / (12.5 MB). Loaded Objects now: 6903.
+Memory consumption went from 204.8 MB to 192.2 MB.
+Total: 17.996100 ms (FindLiveObjects: 0.628200 ms CreateObjectMapping: 0.461000 ms MarkObjects: 5.643200 ms  DeleteObjects: 11.261400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.39 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 84 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6224 unused Assets / (12.8 MB). Loaded Objects now: 6903.
+Memory consumption went from 204.3 MB to 191.5 MB.
+Total: 12.094900 ms (FindLiveObjects: 0.461700 ms CreateObjectMapping: 0.312200 ms MarkObjects: 4.145600 ms  DeleteObjects: 7.174200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 1256.350937 seconds.
+  path: Packages/com.unity.xr.interaction.toolkit/Runtime/Interaction/Controllers/XRScreenSpaceController.deprecated.cs
+  artifactKey: Guid(a366b57f26a806c468e883cc1cd807b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.interaction.toolkit/Runtime/Interaction/Controllers/XRScreenSpaceController.deprecated.cs using Guid(a366b57f26a806c468e883cc1cd807b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78b1744c3321def5a0bc24ebc6cd2c2d') in 0.0972264 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.091159 seconds.
+  path: Packages/com.unity.xr.interaction.toolkit/Runtime/Interaction/Controllers/XRControllerRecorder.cs
+  artifactKey: Guid(3c136b463d91eb74c90d06fca5e650b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.interaction.toolkit/Runtime/Interaction/Controllers/XRControllerRecorder.cs using Guid(3c136b463d91eb74c90d06fca5e650b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc132720b332c962c3356e9673dcb8c7') in 0.002758 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.84 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 84 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6227 unused Assets / (14.4 MB). Loaded Objects now: 6902.
+Memory consumption went from 203.9 MB to 189.5 MB.
+Total: 55.798900 ms (FindLiveObjects: 0.835600 ms CreateObjectMapping: 0.276200 ms MarkObjects: 47.636900 ms  DeleteObjects: 7.047900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 89.547088 seconds.
+  path: Assets/Scripts/Controller/XRScreenSpaceController.cs
+  artifactKey: Guid(b0c3f363af908f34ab2f0224001ceac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controller/XRScreenSpaceController.cs using Guid(b0c3f363af908f34ab2f0224001ceac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6b26759b69603029417878625255c299') in 0.004956 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.22 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 86 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6227 unused Assets / (14.0 MB). Loaded Objects now: 6902.
+Memory consumption went from 204.3 MB to 190.3 MB.
+Total: 11.357100 ms (FindLiveObjects: 0.533700 ms CreateObjectMapping: 0.267000 ms MarkObjects: 5.050800 ms  DeleteObjects: 5.504100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 20.849293 seconds.
+  path: Assets/Scripts/Controller/newXRScreenSpaceController.cs
+  artifactKey: Guid(b0c3f363af908f34ab2f0224001ceac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controller/newXRScreenSpaceController.cs using Guid(b0c3f363af908f34ab2f0224001ceac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00c283b1b4824e0b66d719cfc7c8ebd5') in 0.0014041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.51 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 86 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6227 unused Assets / (14.2 MB). Loaded Objects now: 6902.
+Memory consumption went from 204.3 MB to 190.1 MB.
+Total: 10.756100 ms (FindLiveObjects: 0.413800 ms CreateObjectMapping: 0.261400 ms MarkObjects: 3.882700 ms  DeleteObjects: 6.196900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 10.613961 seconds.
+  path: Assets/Scripts/Controller/newXRScreenSpaceController.cs
+  artifactKey: Guid(b0c3f363af908f34ab2f0224001ceac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controller/newXRScreenSpaceController.cs using Guid(b0c3f363af908f34ab2f0224001ceac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '22307af4d5d25f7000268600024777bd') in 0.0010932 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.200 seconds
+Refreshing native plugins compatible for Editor in 9.45 ms, found 7 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.722 seconds
+Domain Reload Profiling: 2921ms
+	BeginReloadAssembly (408ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (22ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (149ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (1722ms)
+		LoadAssemblies (1209ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (651ms)
+			TypeCache.Refresh (133ms)
+				TypeCache.ScanAssembly (7ms)
+			BuildScriptInfoCaches (475ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (722ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (501ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (7ms)
+			BeforeProcessingInitializeOnLoad (56ms)
+			ProcessInitializeOnLoadAttributes (365ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 6.12 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 152 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6332 unused Assets / (12.4 MB). Loaded Objects now: 6909.
+Memory consumption went from 209.1 MB to 196.7 MB.
+Total: 14.265500 ms (FindLiveObjects: 0.529000 ms CreateObjectMapping: 0.429900 ms MarkObjects: 4.184100 ms  DeleteObjects: 9.120700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 12.560970 seconds.
+  path: Assets/Scripts/Controller/newXRScreenSpaceController.cs
+  artifactKey: Guid(b0c3f363af908f34ab2f0224001ceac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Controller/newXRScreenSpaceController.cs using Guid(b0c3f363af908f34ab2f0224001ceac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '995175a969e609881f45e9034dd86f35') in 0.0104172 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.69 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 86 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6225 unused Assets / (13.1 MB). Loaded Objects now: 6905.
+Memory consumption went from 206.3 MB to 193.1 MB.
+Total: 48.471000 ms (FindLiveObjects: 0.764900 ms CreateObjectMapping: 0.295300 ms MarkObjects: 41.703200 ms  DeleteObjects: 5.705500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.38 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 84 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6225 unused Assets / (11.9 MB). Loaded Objects now: 6905.
+Memory consumption went from 205.8 MB to 193.9 MB.
+Total: 10.366100 ms (FindLiveObjects: 0.430700 ms CreateObjectMapping: 0.316200 ms MarkObjects: 3.449000 ms  DeleteObjects: 6.168900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.37 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 84 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6225 unused Assets / (13.5 MB). Loaded Objects now: 6905.
+Memory consumption went from 205.7 MB to 192.2 MB.
+Total: 11.482800 ms (FindLiveObjects: 0.510800 ms CreateObjectMapping: 0.281500 ms MarkObjects: 5.009900 ms  DeleteObjects: 5.678100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.08 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 84 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6225 unused Assets / (14.1 MB). Loaded Objects now: 6905.
+Memory consumption went from 205.8 MB to 191.7 MB.
+Total: 10.657300 ms (FindLiveObjects: 0.454700 ms CreateObjectMapping: 0.278600 ms MarkObjects: 3.437000 ms  DeleteObjects: 6.485800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.94 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 84 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6225 unused Assets / (13.6 MB). Loaded Objects now: 6905.
+Memory consumption went from 205.7 MB to 192.1 MB.
+Total: 11.784700 ms (FindLiveObjects: 0.587700 ms CreateObjectMapping: 0.325800 ms MarkObjects: 5.089100 ms  DeleteObjects: 5.780100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.38 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 84 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6225 unused Assets / (13.7 MB). Loaded Objects now: 6905.
+Memory consumption went from 205.8 MB to 192.0 MB.
+Total: 9.560000 ms (FindLiveObjects: 0.454600 ms CreateObjectMapping: 0.280100 ms MarkObjects: 3.366000 ms  DeleteObjects: 5.457600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 790.395614 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text Image 1.png
+  artifactKey: Guid(4ccf43d26c4748c792174516f4a8fcef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text Image 1.png using Guid(4ccf43d26c4748c792174516f4a8fcef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3f0a6f8cf54fc8f1378f1f5b2b0b0a5c') in 0.2391007 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Prefabs/Text Popup.prefab
+  artifactKey: Guid(b06f0e6c1dfa4356ac918da1bb32c603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Prefabs/Text Popup.prefab using Guid(b06f0e6c1dfa4356ac918da1bb32c603) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e813db0a9b7cbbfab8796331e886e0e') in 0.0712537 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/Prefabs/XR Origin (AR Rig).prefab
+  artifactKey: Guid(48cb3fb68c91eb94999fd99957eb0cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/Prefabs/XR Origin (AR Rig).prefab using Guid(48cb3fb68c91eb94999fd99957eb0cae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd9110088c3c5c2fc56ea4b92420f9519') in 0.0365806 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 44
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 1.prefab
+  artifactKey: Guid(a6e39ced0ea046bcb636c3f0b2e2a745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 1.prefab using Guid(a6e39ced0ea046bcb636c3f0b2e2a745) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cfb5583c9cbbfecf27890ccf97fc0402') in 0.0160218 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 2.prefab
+  artifactKey: Guid(fdad9d952ae84cafb74c63f2e694d042) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 2.prefab using Guid(fdad9d952ae84cafb74c63f2e694d042) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '036776dccbce275d5b9a7afe80744d34') in 0.0185494 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 16
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/Prefabs/XR Screen Space Controller.prefab
+  artifactKey: Guid(069266f272f67eb43b7e9423a4e669d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/Prefabs/XR Screen Space Controller.prefab using Guid(069266f272f67eb43b7e9423a4e669d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '47a775392add8d191ae0b17d0cc445be') in 0.0047679 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

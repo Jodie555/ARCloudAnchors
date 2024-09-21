@@ -15,7 +15,7 @@ C:/Users/Jodie/Documents/project/AR/newtest/ARCloudAnchors/ARCloudAnchors
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-60530
+58412
 -job-worker-count
 9
 -background-job-worker-count
@@ -58,12 +58,12 @@ C:/Users/Jodie/Documents/project/AR/newtest/ARCloudAnchors/ARCloudAnchors
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [39400] Host "[IP] 192.168.30.21 [Port] 0 [Flags] 2 [Guid] 3162453187 [EditorId] 3162453187 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6D8FKOB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [39400] Host "[IP] 192.168.30.21 [Port] 0 [Flags] 2 [Guid] 3162453187 [EditorId] 3162453187 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6D8FKOB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [106192] Host "[IP] 172.16.201.6 [Port] 0 [Flags] 2 [Guid] 3306494695 [EditorId] 3306494695 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6D8FKOB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [106192] Host "[IP] 172.16.201.6 [Port] 0 [Flags] 2 [Guid] 3306494695 [EditorId] 3306494695 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-6D8FKOB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 [Physics::Module] Initialized MultithreadedJobDispatcher with 9 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 5.98 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 5.51 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.3f1 (21747dafc6ee)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/Resources/UnitySubsystems
@@ -79,7 +79,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56416
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56160
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -95,46 +95,46 @@ Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.3f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.003039 seconds.
-- Loaded All Assemblies, in  0.358 seconds
+Registered in 0.004755 seconds.
+- Loaded All Assemblies, in  0.410 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 710 ms
+Android Extension - Scanning For ADB Devices 303 ms
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  1.042 seconds
-Domain Reload Profiling: 1398ms
-	BeginReloadAssembly (127ms)
+- Finished resetting the current domain, in  0.664 seconds
+Domain Reload Profiling: 1072ms
+	BeginReloadAssembly (145ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
 	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (141ms)
-		LoadAssemblies (124ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (171ms)
+		LoadAssemblies (142ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (138ms)
-			TypeCache.Refresh (137ms)
-				TypeCache.ScanAssembly (125ms)
+		AnalyzeDomain (168ms)
+			TypeCache.Refresh (166ms)
+				TypeCache.ScanAssembly (152ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (1043ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (664ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (989ms)
+		SetupLoadedEditorAssemblies (607ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (806ms)
+			InitializePlatformSupportModulesInManaged (424ms)
 			SetLoadedEditorAssemblies (2ms)
 			BeforeProcessingInitializeOnLoad (7ms)
-			ProcessInitializeOnLoadAttributes (131ms)
-			ProcessInitializeOnLoadMethodAttributes (43ms)
+			ProcessInitializeOnLoadAttributes (128ms)
+			ProcessInitializeOnLoadMethodAttributes (47ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -156,8 +156,8 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.830 seconds
-Refreshing native plugins compatible for Editor in 7.84 ms, found 7 plugins.
+- Loaded All Assemblies, in  1.098 seconds
+Refreshing native plugins compatible for Editor in 12.30 ms, found 7 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
@@ -172,1183 +172,758 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.897 seconds
-Domain Reload Profiling: 1722ms
-	BeginReloadAssembly (248ms)
+- Finished resetting the current domain, in  0.904 seconds
+Domain Reload Profiling: 1988ms
+	BeginReloadAssembly (343ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (507ms)
-		LoadAssemblies (329ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (656ms)
+		LoadAssemblies (520ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (253ms)
-			TypeCache.Refresh (197ms)
-				TypeCache.ScanAssembly (179ms)
-			BuildScriptInfoCaches (40ms)
+		AnalyzeDomain (252ms)
+			TypeCache.Refresh (204ms)
+				TypeCache.ScanAssembly (180ms)
+			BuildScriptInfoCaches (34ms)
 			ResolveRequiredComponents (11ms)
-	FinalizeReload (897ms)
+	FinalizeReload (904ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (633ms)
+		SetupLoadedEditorAssemblies (602ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (29ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (70ms)
-			ProcessInitializeOnLoadAttributes (463ms)
-			ProcessInitializeOnLoadMethodAttributes (63ms)
+			InitializePlatformSupportModulesInManaged (24ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (454ms)
+			ProcessInitializeOnLoadMethodAttributes (55ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 5.52 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 5.21 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 266 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6344 unused Assets / (14.3 MB). Loaded Objects now: 6804.
-Memory consumption went from 196.9 MB to 182.5 MB.
-Total: 12.829100 ms (FindLiveObjects: 1.185300 ms CreateObjectMapping: 0.397300 ms MarkObjects: 5.141500 ms  DeleteObjects: 6.103100 ms)
+Unloading 6344 unused Assets / (15.7 MB). Loaded Objects now: 6810.
+Memory consumption went from 194.1 MB to 178.4 MB.
+Total: 11.344200 ms (FindLiveObjects: 0.468400 ms CreateObjectMapping: 0.370800 ms MarkObjects: 4.197500 ms  DeleteObjects: 6.305600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 138367.259963 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/Particles/ParticlesDepthOnlyPass.hlsl
-  artifactKey: Guid(e9795406c7fc049d2b125cce47405fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/Particles/ParticlesDepthOnlyPass.hlsl using Guid(e9795406c7fc049d2b125cce47405fa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd9d9177601adf9bc62e00f66c8f669c0') in 0.0176969 seconds
+  Time since last request: 242222.491563 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Sprites/Icon - Create.png
+  artifactKey: Guid(7ec65d81ee53b4a76babde6fa254b6e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Sprites/Icon - Create.png using Guid(7ec65d81ee53b4a76babde6fa254b6e1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '40e4b7bd483610bea0132029448d9be0') in 0.1726345 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
+  artifactKey: Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset using Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '481bca45e58f30c9ebacdb434ea010fe') in 0.0441164 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/11.9.0/firebase-app-unity-11.9.0.pom
+  artifactKey: Guid(8fdad9b2ad35409b9a010679dc99b68d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/11.9.0/firebase-app-unity-11.9.0.pom using Guid(8fdad9b2ad35409b9a010679dc99b68d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '041c9d673737ef2e3c944d920b498978') in 0.0034456 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.28 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 98 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6235 unused Assets / (15.3 MB). Loaded Objects now: 6803.
-Memory consumption went from 177.9 MB to 162.6 MB.
-Total: 13.810100 ms (FindLiveObjects: 0.480400 ms CreateObjectMapping: 0.308600 ms MarkObjects: 6.272800 ms  DeleteObjects: 6.746100 ms)
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll
+  artifactKey: Guid(efd2c569f89a449498a0c946cd37a752) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll using Guid(efd2c569f89a449498a0c946cd37a752) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'baf3a9953a81a92dd64daf5d40512f21') in 0.0052893 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.45 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 96 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6235 unused Assets / (15.5 MB). Loaded Objects now: 6803.
-Memory consumption went from 177.6 MB to 162.1 MB.
-Total: 10.162400 ms (FindLiveObjects: 0.439900 ms CreateObjectMapping: 0.307800 ms MarkObjects: 3.640200 ms  DeleteObjects: 5.773100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 45580.013800 seconds.
-  path: Assets/Prefabs/CharacterPlacement.prefab
-  artifactKey: Guid(23cfcc059ac2646eeaa6bf6b81088206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/CharacterPlacement.prefab using Guid(23cfcc059ac2646eeaa6bf6b81088206) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '80261886f47b14f093b5b8e607a9b888') in 1.3899367 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 546
+  Time since last request: 0.000116 seconds.
+  path: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/11.9.0/firebase-analytics-unity-11.9.0.srcaar
+  artifactKey: Guid(ab9388572fe746a48ac4aa02d6d35df4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/11.9.0/firebase-analytics-unity-11.9.0.srcaar using Guid(ab9388572fe746a48ac4aa02d6d35df4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5f6fbd3b7014c25e7dcfe423a639b18a') in 0.0038452 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.52 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 96 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6228 unused Assets / (14.7 MB). Loaded Objects now: 6910.
-Memory consumption went from 190.2 MB to 175.5 MB.
-Total: 41.785200 ms (FindLiveObjects: 0.965700 ms CreateObjectMapping: 0.289600 ms MarkObjects: 34.843400 ms  DeleteObjects: 5.683700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.92 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6228 unused Assets / (14.7 MB). Loaded Objects now: 6910.
-Memory consumption went from 188.5 MB to 173.9 MB.
-Total: 10.403200 ms (FindLiveObjects: 0.439300 ms CreateObjectMapping: 0.371400 ms MarkObjects: 4.175200 ms  DeleteObjects: 5.415500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 1539.809142 seconds.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/UI/MinMaxSlider.prefab
+  artifactKey: Guid(657321a07c3561043af55547ec4b0ed7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/UI/MinMaxSlider.prefab using Guid(657321a07c3561043af55547ec4b0ed7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'af4d465b163710e59306f25784513a2b') in 0.0219785 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 26
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/Mouse/MouseR_d.png
+  artifactKey: Guid(308cc8b73722e43eab64c228a76560a6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/Mouse/MouseR_d.png using Guid(308cc8b73722e43eab64c228a76560a6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '926e564f5492075d111072430accd070') in 0.0115288 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/Hands/Hand_Thumb.png
+  artifactKey: Guid(3b2e62babc5249f42921c2cd027852cd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/Hands/Hand_Thumb.png using Guid(3b2e62babc5249f42921c2cd027852cd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2d49e1653be5723d154ac2fc4e80ca01') in 0.0202783 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-auth-unity/11.9.0/firebase-auth-unity-11.9.0.aar
+  artifactKey: Guid(c0f3b0b0227197042a6339300146cbfa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-auth-unity/11.9.0/firebase-auth-unity-11.9.0.aar using Guid(c0f3b0b0227197042a6339300146cbfa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a3c4c172362c7a7d24d2e25c34134678') in 0.0053018 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-database-unity/11.9.0/firebase-database-unity-11.9.0.pom
+  artifactKey: Guid(0a4dfc0de84867f4797f58152b99de6f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-database-unity/11.9.0/firebase-database-unity-11.9.0.pom using Guid(0a4dfc0de84867f4797f58152b99de6f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '233c2e0ce59947cdde7499633ad63add') in 0.0034316 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/Mouse/Mouse.png
+  artifactKey: Guid(f997d60d79a4e45cab6b1814e377a1b3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/Mouse/Mouse.png using Guid(f997d60d79a4e45cab6b1814e377a1b3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '61cc929161d12af01e6d577aa8ef0ea1') in 0.014051 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/UI/Dropdown.prefab
+  artifactKey: Guid(870459f1cb8d7b7428337cc5935feb67) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/UI/Dropdown.prefab using Guid(870459f1cb8d7b7428337cc5935feb67) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3f46dd709ada04c367fdaf675c702f57') in 0.0159536 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 61
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/Hands/Hand_Open.png
+  artifactKey: Guid(ceccab26080354140af21950c6d338d5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/Hands/Hand_Open.png using Guid(ceccab26080354140af21950c6d338d5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '52e11397b195d348abf2d50bcfa03b22') in 0.0109604 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Interactables/Interaction Affordance.prefab
+  artifactKey: Guid(eb9104ef66b7305468adb3697fdeed5e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Interactables/Interaction Affordance.prefab using Guid(eb9104ef66b7305468adb3697fdeed5e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1e21ae6a41f0ffa453adc91ec7f61c3b') in 0.0192401 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-database-unity/11.9.0/firebase-database-unity-11.9.0.aar
+  artifactKey: Guid(98f1576657f77cb49952021c0959601d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-database-unity/11.9.0/firebase-database-unity-11.9.0.aar using Guid(98f1576657f77cb49952021c0959601d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '30c7d81656c1ab578873f541e98aafcb') in 0.0046349 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/UI/Text Toggle.prefab
+  artifactKey: Guid(6a448845c7017044e8a9f3d711cfe825) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/UI/Text Toggle.prefab using Guid(6a448845c7017044e8a9f3d711cfe825) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '09953a564a8e92cb34af2eb3ed611988') in 0.0145991 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 28
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Teleport/Snapping Teleport Anchor.prefab
+  artifactKey: Guid(037ba65d346be2a48ad006b9a9a3873e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Teleport/Snapping Teleport Anchor.prefab using Guid(037ba65d346be2a48ad006b9a9a3873e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e3f572701bf7b5b06b7349f34fe45ec4') in 0.0203075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000416 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/Mouse/Cursor.png
+  artifactKey: Guid(9e4e923f2e0534a56b6a0c2321388194) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/Mouse/Cursor.png using Guid(9e4e923f2e0534a56b6a0c2321388194) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cd0d9a085b4a6a8fe550b4aa09996c34') in 0.0149675 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/UI/Icon Button.prefab
+  artifactKey: Guid(56686f82f64b0af4688a89676403a500) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/UI/Icon Button.prefab using Guid(56686f82f64b0af4688a89676403a500) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1178ca2e0e28e93532ce0945136a4022') in 0.0173239 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
   path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Arch.prefab
-  artifactKey: Guid(13241d599ff10413498d04c6d683ca10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Arch.prefab using Guid(13241d599ff10413498d04c6d683ca10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a67cc589d2572933cb3243796a02b1d') in 0.1761604 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 54
+  artifactKey: Guid(13241d599ff10413498d04c6d683ca10) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Arch.prefab using Guid(13241d599ff10413498d04c6d683ca10) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '828f9909f0a80588a33c29036a58dffd') in 0.0178876 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Debug Cube.prefab
-  artifactKey: Guid(cec25213e5ba74da1ae7d3e2036e000d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Debug Cube.prefab using Guid(cec25213e5ba74da1ae7d3e2036e000d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75c4c2fe294e588017ad8c47546a0c80') in 0.133775 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 99
+  Time since last request: 0.000013 seconds.
+  path: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/maven-metadata.xml
+  artifactKey: Guid(96337775a7c941d88ea15f8026ad6f8e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/maven-metadata.xml using Guid(96337775a7c941d88ea15f8026ad6f8e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2a45ba577f250510766e92de2fcf275c') in 0.0031988 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Cylinder.prefab
-  artifactKey: Guid(894d54703eb1549009ad9f909fc154d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Cylinder.prefab using Guid(894d54703eb1549009ad9f909fc154d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6b20c18f9f20db29420863eddfc56ac4') in 0.0161896 seconds
-Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 56
+  Time since last request: 0.000042 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Cube.prefab
+  artifactKey: Guid(ebd7292e888c84f05924605e51048072) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Cube.prefab using Guid(ebd7292e888c84f05924605e51048072) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e1482e45bafc03b462e31db42ae43166') in 0.0084478 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/UI/Icon Toggle.prefab
+  artifactKey: Guid(541ed11e270c6994ca5910042c7e04da) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/UI/Icon Toggle.prefab using Guid(541ed11e270c6994ca5910042c7e04da) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ce26eb05c1bea03073e14fadc3ef0720') in 0.0084858 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/UI/TextButton.prefab
+  artifactKey: Guid(e5db301629853dd4a99835fa70099d79) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/UI/TextButton.prefab using Guid(e5db301629853dd4a99835fa70099d79) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f16e87ba8baf9e2b73a26d6476e8603d') in 0.0196983 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000018 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Pyramid.prefab
-  artifactKey: Guid(5642b79498b10465fa9219ba4682355b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Pyramid.prefab using Guid(5642b79498b10465fa9219ba4682355b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec28b237719f5b22e1be2e76f3689466') in 0.021128 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Models/Primitive_Pyramid.fbx
+  artifactKey: Guid(e760ff44a7adc4cf98ae34ae984d15a4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Models/Primitive_Pyramid.fbx using Guid(e760ff44a7adc4cf98ae34ae984d15a4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'af3d3193f222db6ee8a9b3f733fe4708') in 0.0161755 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Sprites/Button - Circular BG.png
+  artifactKey: Guid(7347b6042ec9e40c4a3cbd7077c91e67) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Sprites/Button - Circular BG.png using Guid(7347b6042ec9e40c4a3cbd7077c91e67) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1f265fb3437c79a4f41d125ca43912fd') in 0.0105749 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/General/Unlocked.png
+  artifactKey: Guid(f01f3bb228b3b4251a04e2036212d115) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/XR Device Simulator/UI/General/Unlocked.png using Guid(f01f3bb228b3b4251a04e2036212d115) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '116b54053570408214b01a15c620c392') in 0.0119694 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Cyborg/Animations/_cyborg_walk_turn_left.fbx
+  artifactKey: Guid(c9fc5130ad4a5bc47a9edd69966608de) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Cyborg/Animations/_cyborg_walk_turn_left.fbx using Guid(c9fc5130ad4a5bc47a9edd69966608de) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '853e32ea873f197c6890ce176d91f3e4') in 0.0308245 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 208
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Animations/Button.controller
+  artifactKey: Guid(1d6d22d9b592e45e0818c13c315bb6ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/Button.controller using Guid(1d6d22d9b592e45e0818c13c315bb6ad) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '44f484b410dc8ceb7fc2a47c1ec8d021') in 0.0100949 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(4755b35b590504809a7525fd2109c2e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/SampleScene.unity using Guid(4755b35b590504809a7525fd2109c2e2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8ef1e1c40f80ddde93887d540a855c4c') in 0.0032396 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset
+  artifactKey: Guid(5302535af1044152a457ed104f1f4b91) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset using Guid(5302535af1044152a457ed104f1f4b91) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ed29163223800efbdd09c4a436a78d8c') in 0.010746 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Cyborg/Animations/_cyborg_walk_right.fbx
+  artifactKey: Guid(948a95d9c3914d040b5e206f64eb75bb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Cyborg/Animations/_cyborg_walk_right.fbx using Guid(948a95d9c3914d040b5e206f64eb75bb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5bb44ea0a11c6ef7ffcd58aa78a041d8') in 0.0265566 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 208
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.015978 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Materials/InteractableMat.mat
+  artifactKey: Guid(405529b091e884f32ad1cdb05c634ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Materials/InteractableMat.mat using Guid(405529b091e884f32ad1cdb05c634ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'caaf1cb48c40ae4db7f47a626c8cc84e') in 0.2891712 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 44
+
+========================================================================
+Received Import Request.
+  Time since last request: 64.027212 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Cube.prefab
+  artifactKey: Guid(ebd7292e888c84f05924605e51048072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Cube.prefab using Guid(ebd7292e888c84f05924605e51048072) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f7184ac834827fcc0f0fc6cff639a8d1') in 0.048407 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 57
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.912275 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Cube.prefab
+  artifactKey: Guid(ebd7292e888c84f05924605e51048072) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Cube.prefab using Guid(ebd7292e888c84f05924605e51048072) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '26e09a6e50a95c66c8c5e6aa9d61a6e9') in 0.0074791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.119803 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Interactables/Interactable Instant Pyramid.prefab
+  artifactKey: Guid(2ed984a58a974166bf92c82a74380454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Interactables/Interactable Instant Pyramid.prefab using Guid(2ed984a58a974166bf92c82a74380454) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '25c45cee04e62bb947b54bfaa8ad1ad0') in 0.015878 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 57
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006692 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Interactables/Interactable Simple Cube.prefab
+  artifactKey: Guid(2e16046ebcbcb6742a86569d82e56cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Interactables/Interactable Simple Cube.prefab using Guid(2e16046ebcbcb6742a86569d82e56cce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a3e836ccac7feef2ba1ae0c16abceae') in 0.0220467 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 56
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Interactables/Push Button.prefab
+  artifactKey: Guid(76f3439a0ae796e4b81bee3f91f888ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Interactables/Push Button.prefab using Guid(76f3439a0ae796e4b81bee3f91f888ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'da03f8f9aa28b06dad4e21d311af372a') in 0.0176025 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 76
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.047051 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Arch.prefab
+  artifactKey: Guid(13241d599ff10413498d04c6d683ca10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Arch.prefab using Guid(13241d599ff10413498d04c6d683ca10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f65d513780394fa9e962dda6065b11a6') in 0.0203549 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 54
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.951945 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Arch.prefab
+  artifactKey: Guid(13241d599ff10413498d04c6d683ca10) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Arch.prefab using Guid(13241d599ff10413498d04c6d683ca10) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b87867aa07db57d44e45ec06fa02bf83') in 0.0078629 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.334655 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Cube.prefab
+  artifactKey: Guid(ebd7292e888c84f05924605e51048072) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Cube.prefab using Guid(ebd7292e888c84f05924605e51048072) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9db1a92444f0dba50af9ece095dd4441') in 0.14788 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 57
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000019 seconds.
   path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Torus.prefab
   artifactKey: Guid(8ae99c55d89c449b4be74f60dc81e02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Torus.prefab using Guid(8ae99c55d89c449b4be74f60dc81e02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cd687694e50fabc753d0cec4670ddbca') in 0.0158823 seconds
-Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 56
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Torus.prefab using Guid(8ae99c55d89c449b4be74f60dc81e02b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '764c92705ea4f8cb702eaf51fcc760c4') in 0.1167394 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 57
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Wedge.prefab
-  artifactKey: Guid(51f8c8c1205824bcf8fec9805e0312a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Wedge.prefab using Guid(51f8c8c1205824bcf8fec9805e0312a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c578e622cc20a9c07f9c31266855d6e') in 0.0155973 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 56
+  Time since last request: 0.707132 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Materials/InteractableMat.mat
+  artifactKey: Guid(405529b091e884f32ad1cdb05c634ebe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Materials/InteractableMat.mat using Guid(405529b091e884f32ad1cdb05c634ebe) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6e20208899cf1c732cf5a1827f47af37') in 0.010551 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.83 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 97 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6232 unused Assets / (14.7 MB). Loaded Objects now: 6947.
+Memory consumption went from 179.1 MB to 164.4 MB.
+Total: 15.178700 ms (FindLiveObjects: 0.885700 ms CreateObjectMapping: 1.137100 ms MarkObjects: 6.963400 ms  DeleteObjects: 6.190700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.71 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 90 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6230 unused Assets / (14.8 MB). Loaded Objects now: 6947.
+Memory consumption went from 177.4 MB to 162.6 MB.
+Total: 23.121200 ms (FindLiveObjects: 0.530500 ms CreateObjectMapping: 0.298500 ms MarkObjects: 8.740600 ms  DeleteObjects: 13.549700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 113.813035 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Arch.prefab
+  artifactKey: Guid(13241d599ff10413498d04c6d683ca10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Arch.prefab using Guid(13241d599ff10413498d04c6d683ca10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dc40830eb6bf989c7bd368de5f790522') in 0.0319994 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 54
 
 ========================================================================
 Received Import Request.
-  Time since last request: 31.721109 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Debug Cube.prefab
-  artifactKey: Guid(cec25213e5ba74da1ae7d3e2036e000d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Debug Cube.prefab using Guid(cec25213e5ba74da1ae7d3e2036e000d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '273f0a3cbd3387ff357b1789b75fa38c') in 0.0508133 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 99
+  Time since last request: 0.942490 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Arch.prefab
+  artifactKey: Guid(13241d599ff10413498d04c6d683ca10) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Prefabs/Arch.prefab using Guid(13241d599ff10413498d04c6d683ca10) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7830af8cef4164add435bce14169d488') in 0.0233758 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
 
 ========================================================================
 Received Import Request.
-  Time since last request: 63.215111 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Models/Primitive_Arch.fbx
-  artifactKey: Guid(1b1d3fffb2c30434b903b78194cc0997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Models/Primitive_Arch.fbx using Guid(1b1d3fffb2c30434b903b78194cc0997) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43bad8f7018bacc407a085ce6716f823') in 0.1409689 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
+  Time since last request: 148.851250 seconds.
+  path: Assets/Scenes/ARCloudAnchortest.unity
+  artifactKey: Guid(7a2570febc3e86f4ab28dc0ee6127a3e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/ARCloudAnchortest.unity using Guid(7a2570febc3e86f4ab28dc0ee6127a3e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '89c547c09422c2c10e29936e1404f0d2') in 0.0054816 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.32 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 90 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6230 unused Assets / (14.4 MB). Loaded Objects now: 6947.
+Memory consumption went from 177.3 MB to 163.0 MB.
+Total: 15.128900 ms (FindLiveObjects: 0.422600 ms CreateObjectMapping: 0.278500 ms MarkObjects: 7.813700 ms  DeleteObjects: 6.610800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.69 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 90 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6230 unused Assets / (14.7 MB). Loaded Objects now: 6947.
+Memory consumption went from 177.3 MB to 162.6 MB.
+Total: 14.366200 ms (FindLiveObjects: 0.461800 ms CreateObjectMapping: 0.412300 ms MarkObjects: 5.832200 ms  DeleteObjects: 7.657800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 1765.601267 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.asmdef
+  artifactKey: Guid(9233538b711383d449a485633568d17c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/Editor/Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.asmdef using Guid(9233538b711383d449a485633568d17c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '44ee8278b6239f921625c1abc882f597') in 0.0476354 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Models/Primitive_RoundCube.fbx
-  artifactKey: Guid(51244943ebdc847fb82a264e687db85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Models/Primitive_RoundCube.fbx using Guid(51244943ebdc847fb82a264e687db85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12eef5e82c59b947d0ee1c7aedfccedf') in 0.0136393 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
+  Time since last request: 7.201249 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Materials/InteractableMat.mat
+  artifactKey: Guid(405529b091e884f32ad1cdb05c634ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Materials/InteractableMat.mat using Guid(405529b091e884f32ad1cdb05c634ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '55eba7aa1486e670ab0a7a13d317acda') in 0.1993735 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 24
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Models/Primitive_Torus.fbx
-  artifactKey: Guid(a100fee70bb8248c49f00bd953b097c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Models/Primitive_Torus.fbx using Guid(a100fee70bb8248c49f00bd953b097c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dcc5d43f6a54fa11e34e341ea3588642') in 0.0134239 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
+  Time since last request: 143.118257 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Climb/Climb Sample.prefab
+  artifactKey: Guid(2ea572d587ee60f44bd5baa3bc2d6503) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Climb/Climb Sample.prefab using Guid(2ea572d587ee60f44bd5baa3bc2d6503) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52d9a6c8516ec59b399606811d7c4b67') in 0.1433131 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1111
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Models/Primitive_Pyramid.fbx
-  artifactKey: Guid(e760ff44a7adc4cf98ae34ae984d15a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Models/Primitive_Pyramid.fbx using Guid(e760ff44a7adc4cf98ae34ae984d15a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd9fae512b19f4eff1cc69d3e2ab4175') in 0.014566 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
+  Time since last request: 0.000031 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Climb/Ladder.prefab
+  artifactKey: Guid(b3830b3b2f190ee46a9c88433e985221) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Climb/Ladder.prefab using Guid(b3830b3b2f190ee46a9c88433e985221) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78f937b4958987328590e78bd4bd4d1a') in 0.0155179 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 214
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.995220 seconds.
+  path: Assets/Prefabs/Placement.prefab
+  artifactKey: Guid(129ad34963f384c74a74dc102aafbe4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/Placement.prefab using Guid(129ad34963f384c74a74dc102aafbe4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd8c01e65fab19605568e1d21b6147e96') in 0.0695624 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.70 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 90 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6230 unused Assets / (14.6 MB). Loaded Objects now: 6949.
+Memory consumption went from 178.1 MB to 163.5 MB.
+Total: 249.240100 ms (FindLiveObjects: 0.881400 ms CreateObjectMapping: 0.469100 ms MarkObjects: 241.977900 ms  DeleteObjects: 5.907100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.01 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 90 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6230 unused Assets / (14.5 MB). Loaded Objects now: 6949.
+Memory consumption went from 178.3 MB to 163.8 MB.
+Total: 11.930300 ms (FindLiveObjects: 0.417200 ms CreateObjectMapping: 0.269000 ms MarkObjects: 5.157600 ms  DeleteObjects: 6.085200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 2995.772952 seconds.
+  path: Assets/Prefabs/Placement.prefab
+  artifactKey: Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Placement.prefab using Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a6b49510cb165ef71c65b1972270162d') in 0.2138658 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 50
+
+========================================================================
+Received Import Request.
+  Time since last request: 1413.428321 seconds.
+  path: Assets/Prefabs/Placement.prefab
+  artifactKey: Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Placement.prefab using Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd3a685ffa9a49bd565a540daadc75e2b') in 0.1069457 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 50
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.850426 seconds.
+  path: Assets/Prefabs/Placement.prefab
+  artifactKey: Guid(129ad34963f384c74a74dc102aafbe4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/Placement.prefab using Guid(129ad34963f384c74a74dc102aafbe4d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '29643c47fa825eec5cd2e748237ca512') in 0.0467598 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 18
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 8.27 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 90 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6230 unused Assets / (14.3 MB). Loaded Objects now: 6949.
+Memory consumption went from 178.2 MB to 163.9 MB.
+Total: 62.448200 ms (FindLiveObjects: 0.957600 ms CreateObjectMapping: 0.353500 ms MarkObjects: 53.488400 ms  DeleteObjects: 7.645700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 6.58 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 90 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6230 unused Assets / (13.8 MB). Loaded Objects now: 6949.
+Memory consumption went from 178.2 MB to 164.4 MB.
+Total: 11.270100 ms (FindLiveObjects: 0.422000 ms CreateObjectMapping: 0.285400 ms MarkObjects: 4.429200 ms  DeleteObjects: 6.132300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.48 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 90 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6230 unused Assets / (14.7 MB). Loaded Objects now: 6949.
+Memory consumption went from 178.2 MB to 163.6 MB.
+Total: 13.669400 ms (FindLiveObjects: 0.435400 ms CreateObjectMapping: 0.311700 ms MarkObjects: 7.563000 ms  DeleteObjects: 5.357100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.24 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 90 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6230 unused Assets / (14.6 MB). Loaded Objects now: 6949.
+Memory consumption went from 178.3 MB to 163.6 MB.
+Total: 11.559700 ms (FindLiveObjects: 0.439300 ms CreateObjectMapping: 0.272300 ms MarkObjects: 5.081500 ms  DeleteObjects: 5.765000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 2942.837098 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(aab1a5a69318441c2ba075a354933b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(aab1a5a69318441c2ba075a354933b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '31e9e5281b82b751ae6991b0a44af95b') in 0.0504676 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.349163 seconds.
+  path: Assets/Prefabs/Placement.prefab
+  artifactKey: Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Placement.prefab using Guid(129ad34963f384c74a74dc102aafbe4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '403497ead6c9d277dd0b30b1c54a5322') in 0.1451996 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 50
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.748241 seconds.
+  path: Assets/FastMesh/Meshs/Park
+  artifactKey: Guid(8cfabe28c7eb9d14d801adbe7923867b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/FastMesh/Meshs/Park using Guid(8cfabe28c7eb9d14d801adbe7923867b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '41d639cd131e1eef28a3c8952dc5ff5d') in 0.0149764 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012506 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs
+  artifactKey: Guid(4d8199dc698861f4b8af78a78afc9a78) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/MobileARTemplateAssets/Prefabs using Guid(4d8199dc698861f4b8af78a78afc9a78) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b3961c3c815fcc63962e276df88d4d19') in 0.0120659 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000608 seconds.
+  path: Assets/FastMesh/Materials/Wood 1.mat
+  artifactKey: Guid(70aaaf953109828498457c073881e075) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/FastMesh/Materials/Wood 1.mat using Guid(70aaaf953109828498457c073881e075) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5edcdec54ed0f1b6853cae964d239981') in 0.0700748 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/MobileARTemplateAssets
+  artifactKey: Guid(45776986504c69c47a9b772a824fedb0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/MobileARTemplateAssets using Guid(45776986504c69c47a9b772a824fedb0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd218034c87a3a8b314125cfc22f86866') in 0.0074841 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/FastMesh/Meshs
+  artifactKey: Guid(6ca2c1d03d7c453468a337d9288adc9d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/FastMesh/Meshs using Guid(6ca2c1d03d7c453468a337d9288adc9d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd04de367d924a5627811381b2a5d21be') in 0.006022 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Interactables/Interaction Affordance.prefab
+  artifactKey: Guid(eb9104ef66b7305468adb3697fdeed5e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/Prefabs/Interactables/Interaction Affordance.prefab using Guid(eb9104ef66b7305468adb3697fdeed5e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cef93a2aed5b1a778e7a537e3256c1d2') in 0.0152862 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000017 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Models/Primitive_Wedge.fbx
-  artifactKey: Guid(504f04868fdec43fea10caa71569c542) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Models/Primitive_Wedge.fbx using Guid(504f04868fdec43fea10caa71569c542) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c14db71870f8463a754247c80ae761f6') in 0.0172652 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Models/Primitive_Cylinder.fbx
-  artifactKey: Guid(303858b05cdc2474d9cc45c585ccc058) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Models/Primitive_Cylinder.fbx using Guid(303858b05cdc2474d9cc45c585ccc058) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2a2fcf95eb0396c10b1c4a94644e5644') in 0.0118209 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 30
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.264977 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Materials/InteractableMat.mat
-  artifactKey: Guid(405529b091e884f32ad1cdb05c634ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Materials/InteractableMat.mat using Guid(405529b091e884f32ad1cdb05c634ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3328e212ccfbd7a737e5e4a1ab939e31') in 0.0516491 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 23
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.44 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6228 unused Assets / (14.5 MB). Loaded Objects now: 6948.
-Memory consumption went from 189.8 MB to 175.3 MB.
-Total: 12.939200 ms (FindLiveObjects: 0.448600 ms CreateObjectMapping: 0.285100 ms MarkObjects: 6.381800 ms  DeleteObjects: 5.821700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.36 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6228 unused Assets / (14.5 MB). Loaded Objects now: 6948.
-Memory consumption went from 189.6 MB to 175.1 MB.
-Total: 10.032000 ms (FindLiveObjects: 0.433200 ms CreateObjectMapping: 0.265400 ms MarkObjects: 4.170300 ms  DeleteObjects: 5.161100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.83 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6228 unused Assets / (14.7 MB). Loaded Objects now: 6948.
-Memory consumption went from 189.7 MB to 175.0 MB.
-Total: 12.813900 ms (FindLiveObjects: 0.430300 ms CreateObjectMapping: 0.491100 ms MarkObjects: 6.244700 ms  DeleteObjects: 5.645800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.28 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6228 unused Assets / (14.6 MB). Loaded Objects now: 6948.
-Memory consumption went from 189.8 MB to 175.2 MB.
-Total: 10.220500 ms (FindLiveObjects: 0.408200 ms CreateObjectMapping: 0.268000 ms MarkObjects: 4.080900 ms  DeleteObjects: 5.462200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.10 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6228 unused Assets / (14.6 MB). Loaded Objects now: 6948.
-Memory consumption went from 189.7 MB to 175.1 MB.
-Total: 83.390700 ms (FindLiveObjects: 0.904500 ms CreateObjectMapping: 0.286600 ms MarkObjects: 75.629600 ms  DeleteObjects: 6.566900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.22 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6228 unused Assets / (14.5 MB). Loaded Objects now: 6948.
-Memory consumption went from 189.7 MB to 175.2 MB.
-Total: 10.776100 ms (FindLiveObjects: 0.460900 ms CreateObjectMapping: 0.290700 ms MarkObjects: 4.420700 ms  DeleteObjects: 5.601800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 30483.975432 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/Prefabs/XR Origin (XR Rig).prefab
-  artifactKey: Guid(f6336ac4ac8b4d34bc5072418cdc62a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/Prefabs/XR Origin (XR Rig).prefab using Guid(f6336ac4ac8b4d34bc5072418cdc62a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a95fad3ec3a3c6ccfc93d58b010a0aa') in 0.8428655 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 481
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.807784 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/Prefabs/Controllers/XR Controller Right.prefab
-  artifactKey: Guid(9f3369e30fbd31f4bb596b1a99babe83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/Prefabs/Controllers/XR Controller Right.prefab using Guid(9f3369e30fbd31f4bb596b1a99babe83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8cacc273ea2628b72cd2e2c5d8434468') in 0.0127396 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 115
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.368416 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/Prefabs/Interactors/Gaze Interactor.prefab
-  artifactKey: Guid(b84cd05e1160fe34cab2585022c8cd99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/Prefabs/Interactors/Gaze Interactor.prefab using Guid(b84cd05e1160fe34cab2585022c8cd99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '375a297aba06ea25bfbef3803791046b') in 0.0034466 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 12
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.022399 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/Prefabs/Interactors/Poke Interactor.prefab
-  artifactKey: Guid(27024f5809f4a4347b9cd7f26a1bdf93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/Prefabs/Interactors/Poke Interactor.prefab using Guid(27024f5809f4a4347b9cd7f26a1bdf93) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a38cabb42eaa2c3bd04f6f3ea701a71c') in 0.0251702 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 93
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/Prefabs/Interactors/Ray Interactor.prefab
-  artifactKey: Guid(ad818c36731146e994540a1896ad8f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/Prefabs/Interactors/Ray Interactor.prefab using Guid(ad818c36731146e994540a1896ad8f24) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a362addae6168089fa9067c6f20f096d') in 0.008761 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 29
-
-========================================================================
-Received Import Request.
-  Time since last request: 4323.156662 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/Scripts/ObjectSpawner.cs
-  artifactKey: Guid(956dd6cf70eaca449a45b6a95b96c8c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/Scripts/ObjectSpawner.cs using Guid(956dd6cf70eaca449a45b6a95b96c8c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cd444c92cf5492293301113437ee368f') in 0.0194685 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.20 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6230 unused Assets / (14.6 MB). Loaded Objects now: 6950.
-Memory consumption went from 191.0 MB to 176.4 MB.
-Total: 62.122800 ms (FindLiveObjects: 0.994200 ms CreateObjectMapping: 0.278400 ms MarkObjects: 55.370600 ms  DeleteObjects: 5.477500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.86 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6228 unused Assets / (14.5 MB). Loaded Objects now: 6950.
-Memory consumption went from 191.0 MB to 176.5 MB.
-Total: 11.245100 ms (FindLiveObjects: 0.409000 ms CreateObjectMapping: 0.289400 ms MarkObjects: 4.287400 ms  DeleteObjects: 6.258400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.57 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6228 unused Assets / (14.7 MB). Loaded Objects now: 6950.
-Memory consumption went from 191.1 MB to 176.5 MB.
-Total: 12.566200 ms (FindLiveObjects: 0.473100 ms CreateObjectMapping: 0.292600 ms MarkObjects: 6.410700 ms  DeleteObjects: 5.387800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.36 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6228 unused Assets / (14.5 MB). Loaded Objects now: 6950.
-Memory consumption went from 190.9 MB to 176.4 MB.
-Total: 10.430500 ms (FindLiveObjects: 0.484000 ms CreateObjectMapping: 0.335300 ms MarkObjects: 4.275200 ms  DeleteObjects: 5.334400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.62 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6228 unused Assets / (14.7 MB). Loaded Objects now: 6950.
-Memory consumption went from 191.1 MB to 176.4 MB.
-Total: 13.156700 ms (FindLiveObjects: 0.618600 ms CreateObjectMapping: 0.394900 ms MarkObjects: 6.273000 ms  DeleteObjects: 5.867400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.99 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6228 unused Assets / (14.7 MB). Loaded Objects now: 6950.
-Memory consumption went from 191.1 MB to 176.4 MB.
-Total: 11.708500 ms (FindLiveObjects: 0.499100 ms CreateObjectMapping: 0.301900 ms MarkObjects: 4.972800 ms  DeleteObjects: 5.933300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.40 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6228 unused Assets / (14.6 MB). Loaded Objects now: 6950.
-Memory consumption went from 191.0 MB to 176.4 MB.
-Total: 13.967700 ms (FindLiveObjects: 0.475400 ms CreateObjectMapping: 0.276200 ms MarkObjects: 6.861600 ms  DeleteObjects: 6.352700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.41 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6228 unused Assets / (14.7 MB). Loaded Objects now: 6950.
-Memory consumption went from 191.1 MB to 176.4 MB.
-Total: 11.419100 ms (FindLiveObjects: 0.446300 ms CreateObjectMapping: 0.256500 ms MarkObjects: 4.380200 ms  DeleteObjects: 6.334400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 78190.116579 seconds.
-  path: Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Animation/ObjectMenu.controller
-  artifactKey: Guid(ae6550a74e362409db131b3a4372b4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/AR Starter Assets/ARDemoSceneAssets/Animation/ObjectMenu.controller using Guid(ae6550a74e362409db131b3a4372b4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '170ed7627ff9da7e368be34d2714ce8d') in 0.1248887 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.18 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6228 unused Assets / (13.5 MB). Loaded Objects now: 6950.
-Memory consumption went from 191.1 MB to 177.5 MB.
-Total: 136.727000 ms (FindLiveObjects: 0.744000 ms CreateObjectMapping: 0.291000 ms MarkObjects: 129.531800 ms  DeleteObjects: 6.157800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.87 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 89 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6228 unused Assets / (14.6 MB). Loaded Objects now: 6950.
-Memory consumption went from 190.9 MB to 176.3 MB.
-Total: 10.796400 ms (FindLiveObjects: 0.421800 ms CreateObjectMapping: 0.327100 ms MarkObjects: 4.152700 ms  DeleteObjects: 5.892700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 6)
-Internal: deleting an allocation that is older than its permitted lifetime of 4 frames (age = 6)
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.908 seconds
-Refreshing native plugins compatible for Editor in 4.08 ms, found 7 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.202 seconds
-Domain Reload Profiling: 3112ms
-	BeginReloadAssembly (901ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (159ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (2ms)
-		CreateAndSetChildDomain (420ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (941ms)
-		LoadAssemblies (873ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (193ms)
-			TypeCache.Refresh (30ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (142ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (1203ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (781ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (107ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (73ms)
-			ProcessInitializeOnLoadAttributes (545ms)
-			ProcessInitializeOnLoadMethodAttributes (48ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 4.00 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 165 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6328 unused Assets / (13.8 MB). Loaded Objects now: 6903.
-Memory consumption went from 202.9 MB to 189.2 MB.
-Total: 11.680100 ms (FindLiveObjects: 1.180900 ms CreateObjectMapping: 0.278200 ms MarkObjects: 4.596300 ms  DeleteObjects: 5.622700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.174 seconds
-Refreshing native plugins compatible for Editor in 4.31 ms, found 7 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.692 seconds
-Domain Reload Profiling: 1866ms
-	BeginReloadAssembly (486ms)
-		ExecutionOrderSort (1ms)
-		DisableScriptedObjects (34ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (179ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (616ms)
-		LoadAssemblies (549ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (185ms)
-			TypeCache.Refresh (24ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (143ms)
-			ResolveRequiredComponents (13ms)
-	FinalizeReload (693ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (484ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (54ms)
-			ProcessInitializeOnLoadAttributes (352ms)
-			ProcessInitializeOnLoadMethodAttributes (49ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 4.06 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 151 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6328 unused Assets / (14.5 MB). Loaded Objects now: 6904.
-Memory consumption went from 202.6 MB to 188.2 MB.
-Total: 11.499700 ms (FindLiveObjects: 1.006600 ms CreateObjectMapping: 0.296100 ms MarkObjects: 4.298400 ms  DeleteObjects: 5.897100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.97 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 85 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6221 unused Assets / (14.0 MB). Loaded Objects now: 6900.
-Memory consumption went from 200.1 MB to 186.1 MB.
-Total: 23.713900 ms (FindLiveObjects: 0.676400 ms CreateObjectMapping: 0.303000 ms MarkObjects: 17.070100 ms  DeleteObjects: 5.662300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.96 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 83 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6221 unused Assets / (14.2 MB). Loaded Objects now: 6900.
-Memory consumption went from 199.4 MB to 185.2 MB.
-Total: 12.170400 ms (FindLiveObjects: 1.106700 ms CreateObjectMapping: 0.404800 ms MarkObjects: 4.594400 ms  DeleteObjects: 6.062800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.46 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 83 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6221 unused Assets / (13.8 MB). Loaded Objects now: 6900.
-Memory consumption went from 199.4 MB to 185.6 MB.
-Total: 14.018000 ms (FindLiveObjects: 0.610000 ms CreateObjectMapping: 0.306700 ms MarkObjects: 5.124500 ms  DeleteObjects: 7.975400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.94 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 83 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6221 unused Assets / (13.7 MB). Loaded Objects now: 6900.
-Memory consumption went from 199.4 MB to 185.7 MB.
-Total: 9.143900 ms (FindLiveObjects: 0.476400 ms CreateObjectMapping: 0.301300 ms MarkObjects: 3.356300 ms  DeleteObjects: 5.009000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.30 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 83 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6224 unused Assets / (14.0 MB). Loaded Objects now: 6899.
-Memory consumption went from 199.5 MB to 185.6 MB.
-Total: 21.112500 ms (FindLiveObjects: 0.675600 ms CreateObjectMapping: 0.293500 ms MarkObjects: 14.256600 ms  DeleteObjects: 5.885100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 98999.980494 seconds.
-  path: Assets/Scripts/ARtoolkitTest'.cs
-  artifactKey: Guid(a8c1f355231965d4fb73a12d12bd6214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/ARtoolkitTest'.cs using Guid(a8c1f355231965d4fb73a12d12bd6214) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '534e3588759cd59cce0946512b6c8a19') in 0.0740476 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  1.960 seconds
-Refreshing native plugins compatible for Editor in 4.34 ms, found 7 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.711 seconds
-Domain Reload Profiling: 2671ms
-	BeginReloadAssembly (951ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (74ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (7ms)
-		CreateAndSetChildDomain (439ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (935ms)
-		LoadAssemblies (841ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (255ms)
-			TypeCache.Refresh (45ms)
-				TypeCache.ScanAssembly (4ms)
-			BuildScriptInfoCaches (183ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (712ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (485ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (59ms)
-			ProcessInitializeOnLoadAttributes (345ms)
-			ProcessInitializeOnLoadMethodAttributes (51ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 4.32 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 151 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6329 unused Assets / (14.0 MB). Loaded Objects now: 6906.
-Memory consumption went from 204.5 MB to 190.5 MB.
-Total: 16.853800 ms (FindLiveObjects: 0.992900 ms CreateObjectMapping: 0.288100 ms MarkObjects: 5.977800 ms  DeleteObjects: 9.592700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.595 seconds
-Refreshing native plugins compatible for Editor in 4.39 ms, found 7 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Unable to write to 'ProjectSettings\GvhProjectSettings.xml' (System.IO.IOException: Sharing violation on path C:\Users\Jodie\Documents\project\AR\newtest\ARCloudAnchors\ARCloudAnchors\ProjectSettings\GvhProjectSettings.xml
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <1334a096378c46d2bd2be2db1a37116e>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <1334a096378c46d2bd2be2db1a37116e>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean useAsync) [0x00000] in <1334a096378c46d2bd2be2db1a37116e>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,bool)
-  at System.Xml.XmlWriterSettings.CreateWriter (System.String outputFileName) [0x00051] in <5ecb10a9d63b457f80be184a21e69bb7>:0 
-  at System.Xml.XmlWriter.Create (System.String outputFileName, System.Xml.XmlWriterSettings settings) [0x0000a] in <5ecb10a9d63b457f80be184a21e69bb7>:0 
-  at Google.ProjectSettings.Save () [0x0006d] in /Users/chkuang/Workspace/git/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:821 , Project settings were not saved!
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-Google.Logger:Log (string,Google.LogLevel) (at /Users/chkuang/Workspace/git/unity-jar-resolver/source/VersionHandlerImpl/src/Logger.cs:136)
-Google.ProjectSettings:Save () (at /Users/chkuang/Workspace/git/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:844)
-Google.ProjectSettings:SetBool (string,bool,Google.SettingsLocation) (at /Users/chkuang/Workspace/git/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:485)
-Google.ProjectSettings:SetBool (string,bool) (at /Users/chkuang/Workspace/git/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:497)
-Google.IOSResolver:set_VerboseLoggingEnabled (bool) (at /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/IOSResolver/src/IOSResolver.cs:1041)
-Google.IOSResolver:.cctor () (at /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/IOSResolver/src/IOSResolver.cs:727)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-(Filename: /Users/chkuang/Workspace/git/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs Line: 844)
-
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.634 seconds
-Domain Reload Profiling: 1228ms
-	BeginReloadAssembly (174ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (45ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (359ms)
-		LoadAssemblies (300ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (146ms)
-			TypeCache.Refresh (10ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (125ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (635ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (445ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (15ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (319ms)
-			ProcessInitializeOnLoadMethodAttributes (55ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 3.97 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 151 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6329 unused Assets / (14.5 MB). Loaded Objects now: 6907.
-Memory consumption went from 206.5 MB to 192.0 MB.
-Total: 12.995000 ms (FindLiveObjects: 1.102100 ms CreateObjectMapping: 0.330000 ms MarkObjects: 4.848300 ms  DeleteObjects: 6.712900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.749 seconds
-Refreshing native plugins compatible for Editor in 5.01 ms, found 7 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.IO.IOException: Sharing violation on path C:\Users\Jodie\Documents\project\AR\newtest\ARCloudAnchors\ARCloudAnchors\ProjectSettings\GvhProjectSettings.xml
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <1334a096378c46d2bd2be2db1a37116e>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <1334a096378c46d2bd2be2db1a37116e>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00055] in <1334a096378c46d2bd2be2db1a37116e>:0 
-  at System.IO.StreamReader..ctor (System.String path, System.Boolean detectEncodingFromByteOrderMarks) [0x00007] in <1334a096378c46d2bd2be2db1a37116e>:0 
-  at System.IO.StreamReader..ctor (System.String path) [0x00000] in <1334a096378c46d2bd2be2db1a37116e>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string)
-  at Google.XmlUtilities.ParseXmlTextFileElements (System.String filename, Google.Logger logger, Google.XmlUtilities+ParseElement parseElement) [0x0000f] in /Users/chkuang/Workspace/git/unity-jar-resolver/source/VersionHandlerImpl/src/XmlUtilities.cs:104 
-  at Google.ProjectSettings.Load () [0x00012] in /Users/chkuang/Workspace/git/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:777 
-  at Google.ProjectSettings.LoadIfEmpty () [0x0001b] in /Users/chkuang/Workspace/git/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:558 
-  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue, Google.SettingsLocation location) [0x0002b] in /Users/chkuang/Workspace/git/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:606 
-  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue) [0x00000] in /Users/chkuang/Workspace/git/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:619 
-  at Google.IOSResolver.get_VerboseLoggingEnabled () [0x00001] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/IOSResolver/src/IOSResolver.cs:1039 
-  at Google.IOSResolver..cctor () [0x00223] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/IOSResolver/src/IOSResolver.cs:727 
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.660 seconds
-Domain Reload Profiling: 1408ms
-	BeginReloadAssembly (234ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (60ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (427ms)
-		LoadAssemblies (366ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (178ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (2ms)
-			BuildScriptInfoCaches (150ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (660ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (459ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (21ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (54ms)
-			ProcessInitializeOnLoadAttributes (334ms)
-			ProcessInitializeOnLoadMethodAttributes (44ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 4.86 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 151 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6329 unused Assets / (14.2 MB). Loaded Objects now: 6908.
-Memory consumption went from 208.5 MB to 194.3 MB.
-Total: 9.902000 ms (FindLiveObjects: 0.909700 ms CreateObjectMapping: 0.269100 ms MarkObjects: 3.191300 ms  DeleteObjects: 5.526000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 6.72 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 85 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6222 unused Assets / (14.4 MB). Loaded Objects now: 6904.
-Memory consumption went from 206.1 MB to 191.6 MB.
-Total: 61.995000 ms (FindLiveObjects: 0.812000 ms CreateObjectMapping: 0.295800 ms MarkObjects: 53.394800 ms  DeleteObjects: 7.488400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.91 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 83 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6222 unused Assets / (14.0 MB). Loaded Objects now: 6904.
-Memory consumption went from 205.4 MB to 191.4 MB.
-Total: 8.810500 ms (FindLiveObjects: 0.419000 ms CreateObjectMapping: 0.281200 ms MarkObjects: 3.179500 ms  DeleteObjects: 4.930100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.941 seconds
-Refreshing native plugins compatible for Editor in 4.11 ms, found 7 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-System.IO.IOException: Sharing violation on path C:\Users\Jodie\Documents\project\AR\newtest\ARCloudAnchors\ARCloudAnchors\ProjectSettings\GvhProjectSettings.xml
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <1334a096378c46d2bd2be2db1a37116e>:0 
-  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <1334a096378c46d2bd2be2db1a37116e>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
-  at System.IO.StreamReader..ctor (System.String path, System.Text.Encoding encoding, System.Boolean detectEncodingFromByteOrderMarks, System.Int32 bufferSize) [0x00055] in <1334a096378c46d2bd2be2db1a37116e>:0 
-  at System.IO.StreamReader..ctor (System.String path, System.Boolean detectEncodingFromByteOrderMarks) [0x00007] in <1334a096378c46d2bd2be2db1a37116e>:0 
-  at System.IO.StreamReader..ctor (System.String path) [0x00000] in <1334a096378c46d2bd2be2db1a37116e>:0 
-  at (wrapper remoting-invoke-with-check) System.IO.StreamReader..ctor(string)
-  at Google.XmlUtilities.ParseXmlTextFileElements (System.String filename, Google.Logger logger, Google.XmlUtilities+ParseElement parseElement) [0x0000f] in /Users/chkuang/Workspace/git/unity-jar-resolver/source/VersionHandlerImpl/src/XmlUtilities.cs:104 
-  at Google.ProjectSettings.Load () [0x00012] in /Users/chkuang/Workspace/git/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:777 
-  at Google.ProjectSettings.LoadIfEmpty () [0x0001b] in /Users/chkuang/Workspace/git/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:558 
-  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue, Google.SettingsLocation location) [0x0002b] in /Users/chkuang/Workspace/git/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:606 
-  at Google.ProjectSettings.GetBool (System.String name, System.Boolean defaultValue) [0x00000] in /Users/chkuang/Workspace/git/unity-jar-resolver/source/VersionHandlerImpl/src/ProjectSettings.cs:619 
-  at Google.IOSResolver.get_VerboseLoggingEnabled () [0x00001] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/IOSResolver/src/IOSResolver.cs:1039 
-  at Google.IOSResolver..cctor () [0x00223] in /Users/amaurice/Documents/GitHub/unity-jar-resolver/source/IOSResolver/src/IOSResolver.cs:727 
-UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.069 seconds
-Domain Reload Profiling: 2009ms
-	BeginReloadAssembly (297ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (14ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (116ms)
-	RebuildCommonClasses (36ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (565ms)
-		LoadAssemblies (506ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (160ms)
-			TypeCache.Refresh (13ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (130ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (1069ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (773ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (16ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (50ms)
-			ProcessInitializeOnLoadAttributes (629ms)
-			ProcessInitializeOnLoadMethodAttributes (67ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (18ms)
-Refreshing native plugins compatible for Editor in 4.07 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 149 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6327 unused Assets / (14.2 MB). Loaded Objects now: 6911.
-Memory consumption went from 209.9 MB to 195.6 MB.
-Total: 11.553200 ms (FindLiveObjects: 0.958600 ms CreateObjectMapping: 0.300200 ms MarkObjects: 4.363700 ms  DeleteObjects: 5.929000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.639 seconds
-Refreshing native plugins compatible for Editor in 4.64 ms, found 7 plugins.
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.761 seconds
-Domain Reload Profiling: 1399ms
-	BeginReloadAssembly (201ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (61ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (372ms)
-		LoadAssemblies (328ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (135ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (1ms)
-			BuildScriptInfoCaches (112ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (762ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (533ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (68ms)
-			ProcessInitializeOnLoadAttributes (378ms)
-			ProcessInitializeOnLoadMethodAttributes (56ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 3.84 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 149 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6327 unused Assets / (14.2 MB). Loaded Objects now: 6912.
-Memory consumption went from 211.9 MB to 197.7 MB.
-Total: 10.790200 ms (FindLiveObjects: 0.948000 ms CreateObjectMapping: 0.317500 ms MarkObjects: 3.329100 ms  DeleteObjects: 6.194300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.46 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 83 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6222 unused Assets / (13.8 MB). Loaded Objects now: 6906.
-Memory consumption went from 209.3 MB to 195.5 MB.
-Total: 13.133800 ms (FindLiveObjects: 0.652300 ms CreateObjectMapping: 0.362300 ms MarkObjects: 5.576300 ms  DeleteObjects: 6.541100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.54 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 83 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6222 unused Assets / (13.7 MB). Loaded Objects now: 6906.
-Memory consumption went from 209.2 MB to 195.5 MB.
-Total: 10.306800 ms (FindLiveObjects: 0.482900 ms CreateObjectMapping: 0.302100 ms MarkObjects: 4.137300 ms  DeleteObjects: 5.383600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.97 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 83 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6222 unused Assets / (14.0 MB). Loaded Objects now: 6906.
-Memory consumption went from 209.1 MB to 195.2 MB.
-Total: 47.959500 ms (FindLiveObjects: 0.779800 ms CreateObjectMapping: 0.309900 ms MarkObjects: 39.959300 ms  DeleteObjects: 6.907600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 4.22 ms, found 7 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 83 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6222 unused Assets / (14.0 MB). Loaded Objects now: 6906.
-Memory consumption went from 209.2 MB to 195.2 MB.
-Total: 9.924800 ms (FindLiveObjects: 0.449500 ms CreateObjectMapping: 0.281600 ms MarkObjects: 3.306800 ms  DeleteObjects: 5.885800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 2718.874327 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/Common.hlsl
-  artifactKey: Guid(eaaf2a45502c59c4e907088b5f034c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/Common.hlsl using Guid(eaaf2a45502c59c4e907088b5f034c0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8306661c8b29793e9c50b3eb07a98d4e') in 0.2719669 seconds
+  path: Assets/FastMesh
+  artifactKey: Guid(a85a56e88e9988048a0f2a528850412e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/FastMesh using Guid(a85a56e88e9988048a0f2a528850412e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '67207313ec1db0593c84c0734c7f09bb') in 0.0056872 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/TemporalAA.hlsl
-  artifactKey: Guid(2d9f6a569c0b340a388b3e7c0428548c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/TemporalAA.hlsl using Guid(2d9f6a569c0b340a388b3e7c0428548c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '418c76cb81320cd9e0a3f2c80908f4e7') in 0.0012471 seconds
+  Time since last request: 0.000151 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab
+  artifactKey: Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park/1_Park_Bench.prefab using Guid(05dc499abf8344636a806463427e3ccb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4417d755de47c0ffc354b2c54b96761e') in 0.0319613 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 25
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/FastMesh/Materials/Black.mat
+  artifactKey: Guid(1f4cdad4883c4d345b9525bf0a2da3e9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/FastMesh/Materials/Black.mat using Guid(1f4cdad4883c4d345b9525bf0a2da3e9) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ab2a0c1f091cf1fc0a3b0248e88d38e5') in 0.0068117 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/MobileARTemplateAssets/AffordanceThemes/TemplateColorAffordanceTheme.asset
+  artifactKey: Guid(1e7f6f70c50e3864789127de6b014097) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/MobileARTemplateAssets/AffordanceThemes/TemplateColorAffordanceTheme.asset using Guid(1e7f6f70c50e3864789127de6b014097) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9bc3963ddb93f9a257fcc1b9140713f2') in 0.0191265 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/SubpixelMorphologicalAntialiasing.hlsl
-  artifactKey: Guid(3f1f7ec9e0c852a48826fe085f257d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/SubpixelMorphologicalAntialiasing.hlsl using Guid(3f1f7ec9e0c852a48826fe085f257d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0333ff9ce5324032778491e7f0bebcb7') in 0.0013143 seconds
+  Time since last request: 0.000054 seconds.
+  path: Assets/MobileARTemplateAssets/Prefabs/Park
+  artifactKey: Guid(785f1e5de6627d74cbff034cd6489976) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/MobileARTemplateAssets/Prefabs/Park using Guid(785f1e5de6627d74cbff034cd6489976) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5492a12bfb2745a87e573a4faec4dcbc') in 0.0046466 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/SubpixelMorphologicalAntialiasingBridge.hlsl
-  artifactKey: Guid(0c5832a72145a5b49a1b64a21a609bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.render-pipelines.universal/Shaders/PostProcessing/SubpixelMorphologicalAntialiasingBridge.hlsl using Guid(0c5832a72145a5b49a1b64a21a609bb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2f683e69df65180ba7e2a6ea54396cdb') in 0.0009558 seconds
+  Time since last request: 0.000103 seconds.
+  path: Assets/FastMesh/Meshs/Park/Park-Bench1.fbx
+  artifactKey: Guid(debfe07b15b53c44bb7f1637929e481f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/FastMesh/Meshs/Park/Park-Bench1.fbx using Guid(debfe07b15b53c44bb7f1637929e481f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b20e06d5368f55e1e818571ed1a5d1d3') in 0.0193258 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/MobileARTemplateAssets/AffordanceThemes
+  artifactKey: Guid(b88d97effcb116e44a764f5ab02363b5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/MobileARTemplateAssets/AffordanceThemes using Guid(b88d97effcb116e44a764f5ab02363b5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f89475a7e078e35ee4864d434cf324c0') in 0.0053939 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000116 seconds.
+  path: Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/AffordanceThemes/InteractionColorAffordanceTheme.asset
+  artifactKey: Guid(3ec238cb3e80e274c844d7b56f585392) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets/DemoSceneAssets/AffordanceThemes/InteractionColorAffordanceTheme.asset using Guid(3ec238cb3e80e274c844d7b56f585392) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) (ScriptedImporter)Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f6355228a2af6e1f16cb47f553a49fad') in 0.006092 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
