@@ -167,6 +167,7 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
     public async void resolveAnchor()
     {
+
         //arAnchorManager = GetComponent<ARAnchorManager>();
         //NewSceneResolve();
         var anchorId = await GetAnchorIDCloud();
@@ -177,8 +178,11 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
         listPlacedObject = JsonConvert.DeserializeObject<List<PlacedGameObject>>(listObjects);
 
 
+
         if (anchorId != "")
         {
+            ARDebugManager.Instance.LogInfo($"resolving anchor");
+
             arAnchorManager = GetComponent<ARAnchorManager>();
             resolveCloudAnchorPromise = arAnchorManager.ResolveCloudAnchorAsync(anchorId);
             ARDebugManager.Instance.LogInfo($"Next scene can get  Cloud Anchor ID {resolveCloudAnchorPromise}");

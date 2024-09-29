@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/ARCloudAnchortest.unity
     guid: 7a2570febc3e86f4ab28dc0ee6127a3e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/NewScene.unity
     guid: 271b18138d9df36419463a6ca5083ee1
   - enabled: 0
@@ -26,9 +26,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/test.unity
     guid: 9586be9ecac89bf4caa8e7b2fb29c3a9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/WholeScene.unity
     guid: 49cff624d28797e4284799f891f44598
+  - enabled: 0
+    path: Assets/Scenes/testXRInteractable.unity
+    guid: 0efe0dd311c60434293b8902fed956d6
+  - enabled: 0
+    path: Assets/Scenes/TestResolveScene.unity
+    guid: 1ad58995c5684754b8b42a5a81658583
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 3b6e1e3b51b0f4f9782af98302d4a97f,
       type: 2}
@@ -36,6 +42,10 @@ EditorBuildSettings:
       type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 460688443ba177542b94ea30b62fcb46,
       type: 2}
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: e1a9765ca351a85449ce08402252453e,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 92ecd2e551c304604a0d2d16a523c356,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 4b145ba9d62ae8f4f8faa6b58e20ab2f,
       type: 2}
   m_UseUCBPForAssetBundles: 0

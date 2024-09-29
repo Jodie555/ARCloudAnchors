@@ -9,7 +9,7 @@
         "com.unity.xr.arcore": "4.1.5",
         "com.unity.xr.arkit": "4.1.5"
       },
-      "hash": "a7adcde95fc45832551ea939db3d6876a7365b7b"
+      "hash": "b2b7596ad224550d6a1d277194845a5f08e8fcd5"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
@@ -66,6 +66,19 @@
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
+    },
+    "com.unity.feature.ar": {
+      "version": "1.0.2",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {
+        "com.unity.xr.arfoundation": "5.1.1",
+        "com.unity.xr.arkit": "5.1.1",
+        "com.unity.xr.arcore": "5.1.1",
+        "com.unity.xr.interaction.toolkit": "2.5.1",
+        "com.unity.xr.magicleap": "7.0.0",
+        "com.unity.xr.openxr": "1.9.1"
+      }
     },
     "com.unity.ide.rider": {
       "version": "3.0.28",
@@ -257,21 +270,21 @@
       }
     },
     "com.unity.xr.arcore": {
-      "version": "5.1.1",
+      "version": "5.1.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.xr.core-utils": "2.1.0",
         "com.unity.xr.management": "4.0.1",
-        "com.unity.xr.arfoundation": "5.1.1",
+        "com.unity.xr.arfoundation": "5.1.5",
         "com.unity.modules.androidjni": "1.0.0",
         "com.unity.modules.unitywebrequest": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.arfoundation": {
-      "version": "5.1.1",
-      "depth": 0,
+      "version": "5.1.5",
+      "depth": 1,
       "source": "registry",
       "dependencies": {
         "com.unity.ugui": "1.0.0",
@@ -288,13 +301,13 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.arkit": {
-      "version": "5.1.1",
+      "version": "5.1.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {
         "com.unity.xr.core-utils": "2.1.0",
         "com.unity.xr.management": "4.0.1",
-        "com.unity.xr.arfoundation": "5.1.1",
+        "com.unity.xr.arfoundation": "5.1.5",
         "com.unity.editorcoroutines": "1.0.0"
       },
       "url": "https://packages.unity.com"
@@ -324,6 +337,15 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.xr.interactionsubsystems": {
+      "version": "2.0.0",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.subsystems": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "com.unity.xr.legacyinputhelpers": {
       "version": "2.1.10",
       "depth": 1,
@@ -331,6 +353,22 @@
       "dependencies": {
         "com.unity.modules.vr": "1.0.0",
         "com.unity.modules.xr": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.xr.magicleap": {
+      "version": "7.0.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.vr": "1.0.0",
+        "com.unity.modules.xr": "1.0.0",
+        "com.unity.xr.management": "4.2.0",
+        "com.unity.xr.arfoundation": "5.0.0-pre.12",
+        "com.unity.modules.androidjni": "1.0.0",
+        "com.unity.modules.screencapture": "1.0.0",
+        "com.unity.xr.interactionsubsystems": "2.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -343,6 +381,18 @@
         "com.unity.modules.xr": "1.0.0",
         "com.unity.modules.subsystems": "1.0.0",
         "com.unity.xr.legacyinputhelpers": "2.1.7"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.xr.openxr": {
+      "version": "1.9.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.inputsystem": "1.6.3",
+        "com.unity.xr.core-utils": "2.1.1",
+        "com.unity.xr.management": "4.4.0",
+        "com.unity.xr.legacyinputhelpers": "2.1.2"
       },
       "url": "https://packages.unity.com"
     },
