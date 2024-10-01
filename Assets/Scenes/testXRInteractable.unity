@@ -1187,6 +1187,8 @@ GameObject:
   m_Component:
   - component: {fileID: 199474619}
   - component: {fileID: 199474618}
+  - component: {fileID: 199474621}
+  - component: {fileID: 199474620}
   m_Layer: 0
   m_Name: AR Placement Interactable
   m_TagString: Untagged
@@ -1325,6 +1327,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &199474620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199474617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RaycastPrefab: {fileID: 0}
+--- !u!114 &199474621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199474617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0cb9aa70a22847b5925ee5f067c10a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Camera: {fileID: 0}
+  m_OriginBaseGameObject: {fileID: 199474617}
+  m_CameraFloorOffsetObject: {fileID: 0}
+  m_RequestedTrackingOriginMode: 0
+  m_CameraYOffset: 1.1176
 --- !u!1 &300833078
 GameObject:
   m_ObjectHideFlags: 0
@@ -3348,7 +3380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Session: {fileID: 2031610217}
-  SessionOrigin: {fileID: 0}
+  Origin: {fileID: 1908589567}
   CameraManager: {fileID: 1449269279}
   ARCoreExtensionsConfig: {fileID: 11400000, guid: 3701c59566d3248e58dac4074d983c65,
     type: 2}
@@ -5476,6 +5508,7 @@ GameObject:
   - component: {fileID: 1908589575}
   - component: {fileID: 1908589574}
   - component: {fileID: 1908589576}
+  - component: {fileID: 1908589577}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -5641,6 +5674,21 @@ MonoBehaviour:
   arCamera: {fileID: 1449269281}
   resolveAnchorPassedTimeout: 10
   isNewSceneResolved: 0
+--- !u!114 &1908589577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908589565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60f89645695a34faa837be6cfe56c6e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arCamera: {fileID: 1449269281}
+  placedPrefab: {fileID: 8008690481610993897, guid: 05dc499abf8344636a806463427e3ccb,
+    type: 3}
 --- !u!1 &1920625124
 GameObject:
   m_ObjectHideFlags: 0
