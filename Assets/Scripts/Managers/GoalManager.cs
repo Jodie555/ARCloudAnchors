@@ -33,6 +33,7 @@ public class GoalManager : MonoBehaviour
     public void CompleteGoal()
     {
         m_GreetingPrompt.SetActive(false);
+        ARDebugManager.Instance.LogInfo($"testoneObject");
 
     }
 }
