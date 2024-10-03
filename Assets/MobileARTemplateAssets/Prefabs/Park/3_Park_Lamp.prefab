@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 9080505618172942856}
   m_Layer: 0
   m_Name: 3_Park_Lamp
-  m_TagString: Untagged
+  m_TagString: TestingAnchor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

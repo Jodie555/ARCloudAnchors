@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: -6139040581248292666}
   m_Layer: 0
   m_Name: 6_Park_TarshBin
-  m_TagString: Untagged
+  m_TagString: TestingAnchor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

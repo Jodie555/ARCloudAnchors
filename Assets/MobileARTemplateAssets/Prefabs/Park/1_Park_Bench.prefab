@@ -589,7 +589,7 @@ GameObject:
   - component: {fileID: -8022195278037501419}
   m_Layer: 0
   m_Name: 1_Park_Bench
-  m_TagString: Untagged
+  m_TagString: TestingAnchor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

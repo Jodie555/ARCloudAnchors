@@ -227,8 +227,9 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
         cloudAnchorId = hostCloudAnchorResult.CloudAnchorId;
         ARDebugManager.Instance.LogInfo($"Cloud Anchor ID new {cloudAnchorId}");
+        
+        SaveCloudAnchorID();
         anchorUpdateInProgress = true;
-
     }
 
     //private IEnumerator CheckListHostCloudAnchorPromise(HostCloudAnchorPromise promise)
@@ -261,6 +262,7 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
             ARDebugManager.Instance.LogInfo($"quality {quality}");
 
             // in the screen to world point we need to add the final point for the host anchor
+            // previously we use the previous placed object position(x,y) to set up the Vector3
             Vector3 newTouchPosition = arCamera.ScreenToWorldPoint(new Vector3(0, 0, 0.3f));
 
             //var anchor = arAnchorManager.AddAnchor(GetCameraPose());
