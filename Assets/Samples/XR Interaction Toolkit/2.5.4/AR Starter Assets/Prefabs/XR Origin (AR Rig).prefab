@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 2512387470528047718}
   - component: {fileID: 8779828830003531881}
   - component: {fileID: 7070437606447042523}
+  - component: {fileID: 804854465262676179}
   m_Layer: 0
   m_Name: XR Origin (AR Rig)
   m_TagString: Untagged
@@ -328,6 +329,20 @@ MonoBehaviour:
       m_Calls: []
   anchorManager: {fileID: 8779828830003531881}
   arCamera: {fileID: 2512387469002778331}
+--- !u!114 &804854465262676179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2512387470528047719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8606ad9bd52e2f499893c7c28160113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_GreetingPrompt: {fileID: 0}
+  m_ArDrawSlider: {fileID: 0}
 --- !u!1 &2512387470890420964
 GameObject:
   m_ObjectHideFlags: 0

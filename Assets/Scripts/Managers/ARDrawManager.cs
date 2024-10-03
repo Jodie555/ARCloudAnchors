@@ -29,7 +29,7 @@ public class ARDrawManager : Singleton<ARDrawManager>
 
     private List<int> fingerIdList = new List<int>();
 
-    private bool enableDraw = true;
+    private bool enableDraw = false;
 
     void Update ()
     {

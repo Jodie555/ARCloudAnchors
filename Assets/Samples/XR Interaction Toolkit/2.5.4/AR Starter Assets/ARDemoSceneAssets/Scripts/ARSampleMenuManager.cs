@@ -1,5 +1,6 @@
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 namespace UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets
@@ -115,6 +116,22 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets
             set => m_InteractionGroup = value;
         }
 
+        [SerializeField]
+        [Tooltip("The modal with debug options.")]
+        GameObject m_ModalMenu;
+
+        /// <summary>
+        /// The modal with debug options.
+        /// </summary>
+        public GameObject modalMenu
+        {
+            get => m_ModalMenu;
+            set => m_ModalMenu = value;
+        }
+
+
+
+        bool m_ShowOptionsModal;
         bool m_ShowObjectMenu;
 
         void OnEnable()
@@ -139,7 +156,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets
 
         void Update()
         {
-            if (m_ShowObjectMenu)
+            if (m_ShowObjectMenu || m_ShowOptionsModal)
             {
                 m_CreateButton.gameObject.SetActive(false);
                 m_DeleteButton.gameObject.SetActive(false);
@@ -147,6 +164,9 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets
                 if (!isPointerOverUI && m_ScreenSpaceController.tapStartPositionAction.action.WasPerformedThisFrame())
                 {
                     HideMenu();
+
+                    if (m_ShowOptionsModal)
+                        m_ModalMenu.SetActive(false);
                 }
             }
             else if (m_InteractionGroup is not null)
@@ -216,5 +236,20 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets
                 Destroy(currentFocusedObject.transform.gameObject);
             }
         }
+
+        public void ShowHideModal()
+        {
+            if (m_ModalMenu.activeSelf)
+            {
+                m_ShowOptionsModal = false;
+                m_ModalMenu.SetActive(false);
+            }
+            else
+            {
+                m_ShowOptionsModal = true;
+                m_ModalMenu.SetActive(true);
+            }
+        }
+
     }
 }
