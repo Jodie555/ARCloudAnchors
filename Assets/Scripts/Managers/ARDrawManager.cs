@@ -37,7 +37,6 @@ public class ARDrawManager : Singleton<ARDrawManager>
         // ARAnchor newAnchor = anchorManager.AddAnchor(pose);
         // var cloudAnchor = anchorManager.HostCloudAnchorAsync(newAnchor,10);
 
-
         #if !UNITY_EDITOR
         DrawOnTouch();
         #else
@@ -72,7 +71,8 @@ public class ARDrawManager : Singleton<ARDrawManager>
 
     void DrawOnTouch()
     {
-        if(!enableDraw) return;
+
+        if (!enableDraw) return;
 
         int tapCount = Input.touchCount > 1 && lineSettings.allowMultiTouch ? Input.touchCount : 1;
         for (int i = 0; i < tapCount; i++)
@@ -96,10 +96,10 @@ public class ARDrawManager : Singleton<ARDrawManager>
 
                 fingerIdList.Add(touch.fingerId);
 
-                //ARLine line = new ARLine(lineSettings);
-                //Lines.Add(touch.fingerId, line);
-                //line.AddNewLineRenderer(transform, anchor, touchPosition);
-                //ARDebugManager.Instance.LogInfo($"Draw");
+                ARLine line = new ARLine(lineSettings);
+                Lines.Add(touch.fingerId, line);
+                line.AddNewLineRenderer(transform, anchor, touchPosition);
+                ARDebugManager.Instance.LogInfo($"Draw");
 
             }
             else if(touch.phase == TouchPhase.Moved || touch.phase == TouchPhase.Stationary)

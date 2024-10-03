@@ -167,6 +167,7 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
     public async void resolveAnchor()
     {
+
         //arAnchorManager = GetComponent<ARAnchorManager>();
         //NewSceneResolve();
         var anchorId = await GetAnchorIDCloud();
@@ -177,8 +178,11 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
         listPlacedObject = JsonConvert.DeserializeObject<List<PlacedGameObject>>(listObjects);
 
 
+
         if (anchorId != "")
         {
+            ARDebugManager.Instance.LogInfo($"resolving anchor");
+
             arAnchorManager = GetComponent<ARAnchorManager>();
             resolveCloudAnchorPromise = arAnchorManager.ResolveCloudAnchorAsync(anchorId);
             ARDebugManager.Instance.LogInfo($"Next scene can get  Cloud Anchor ID {resolveCloudAnchorPromise}");
@@ -223,8 +227,9 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
         cloudAnchorId = hostCloudAnchorResult.CloudAnchorId;
         ARDebugManager.Instance.LogInfo($"Cloud Anchor ID new {cloudAnchorId}");
+        
+        SaveCloudAnchorID();
         anchorUpdateInProgress = true;
-
     }
 
     //private IEnumerator CheckListHostCloudAnchorPromise(HostCloudAnchorPromise promise)
@@ -247,15 +252,34 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
 
         ARDebugManager.Instance.LogInfo($"HostAnchor executing");
         ARDebugManager.Instance.LogInfo($"Camera Pose {GetCameraPose()}");
-        ARDebugManager.Instance.LogInfo($"Anchor transform position {pendingHostAnchor.transform.position}");
+        arAnchorManager = GetComponent<ARAnchorManager>();
+        try
+        {
+            ARDebugManager.Instance.LogInfo($"arAnchorManager {arAnchorManager}");
+            FeatureMapQuality quality =
+                arAnchorManager.EstimateFeatureMapQualityForHosting(GetCameraPose());
 
-        FeatureMapQuality quality =
-            arAnchorManager.EstimateFeatureMapQualityForHosting(GetCameraPose());
+            ARDebugManager.Instance.LogInfo($"quality {quality}");
 
-        ARDebugManager.Instance.LogInfo($"quality {quality}");
+            // in the screen to world point we need to add the final point for the host anchor
+            // previously we use the previous placed object position(x,y) to set up the Vector3
+            Vector3 newTouchPosition = arCamera.ScreenToWorldPoint(new Vector3(0, 0, 0.3f));
 
-        HostCloudAnchorPromise =  arAnchorManager.HostCloudAnchorAsync(pendingHostAnchor, 1);
-        StartCoroutine(CheckHostCloudAnchorPromise(HostCloudAnchorPromise));
+            //var anchor = arAnchorManager.AddAnchor(GetCameraPose());
+            var anchor = arAnchorManager.AddAnchor(new Pose(newTouchPosition, new Quaternion()));
+
+            HostCloudAnchorPromise = arAnchorManager.HostCloudAnchorAsync(anchor, 1);
+            ARDebugManager.Instance.LogInfo($"HostCloudAnchorPromise {HostCloudAnchorPromise}");
+            StartCoroutine(CheckHostCloudAnchorPromise(HostCloudAnchorPromise));
+        }
+        catch (System.Exception e)
+        {
+            ARDebugManager.Instance.LogInfo($"Error {e.Message}");
+        }
+
+
+
+
 
 
     }
