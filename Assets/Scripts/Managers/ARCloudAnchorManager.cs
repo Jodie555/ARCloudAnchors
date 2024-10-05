@@ -75,14 +75,15 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
         resolver.AddListener((t) => ARPlacementManager.Instance.ReCreatePlacement(t));
         await UnityServices.InitializeAsync();
         await AuthenticationService.Instance.SignInAnonymouslyAsync();
-        
+        firebaseInit = GetComponent<FirebaseInit>();
+        anchorListManager = GetComponent<AnchorListManager>();
+
 
     }
 
     private void Start()
     {
-        firebaseInit = GetComponent<FirebaseInit>();
-        anchorListManager = GetComponent<AnchorListManager>();
+
 
     }
 
@@ -211,10 +212,7 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
     }
 
 
-    //public void QueueAnchorList(List<ARAnchor> arAnchorList)
-    //{
-    //    aRAnchors = arAnchorList;
-    //}
+
 
 
     private IEnumerator CheckHostCloudAnchorPromise(HostCloudAnchorPromise promise)
@@ -228,23 +226,9 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
         cloudAnchorId = hostCloudAnchorResult.CloudAnchorId;
         ARDebugManager.Instance.LogInfo($"Cloud Anchor ID new {cloudAnchorId}");
         
-        SaveCloudAnchorID();
+
         anchorUpdateInProgress = true;
     }
-
-    //private IEnumerator CheckListHostCloudAnchorPromise(HostCloudAnchorPromise promise)
-    //{
-
-    //    yield return promise;
-    //    if (promise.State == PromiseState.Cancelled) yield break;
-    //    hostCloudAnchorResult = promise.Result;
-    //    /// Use the result of your promise here.
-
-    //    cloudAnchorId = hostCloudAnchorResult.CloudAnchorId;
-    //    ARDebugManager.Instance.LogInfo($"Cloud Anchor ID new {cloudAnchorId}");
-    //    isListHosted = true;
-    //    anchorHostedCount++;
-    //}
 
 
     public void HostAnchor()
@@ -265,8 +249,8 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
             // previously we use the previous placed object position(x,y) to set up the Vector3
             Vector3 newTouchPosition = arCamera.ScreenToWorldPoint(new Vector3(0, 0, 0.3f));
 
-            //var anchor = arAnchorManager.AddAnchor(GetCameraPose());
-            var anchor = arAnchorManager.AddAnchor(new Pose(newTouchPosition, new Quaternion()));
+            var anchor = arAnchorManager.AddAnchor(GetCameraPose());
+            //var anchor = arAnchorManager.AddAnchor(new Pose(newTouchPosition, new Quaternion()));
 
             HostCloudAnchorPromise = arAnchorManager.HostCloudAnchorAsync(anchor, 1);
             ARDebugManager.Instance.LogInfo($"HostCloudAnchorPromise {HostCloudAnchorPromise}");
@@ -347,6 +331,8 @@ public class ARCloudAnchorManager : Singleton<ARCloudAnchorManager>
             // keep track of cloud anchors added
             anchorToResolve = hostCloudAnchorResult.CloudAnchorId;
             ARDebugManager.Instance.LogError($"get the host cloud Anchor Result CloudAnchorID : {hostCloudAnchorResult.CloudAnchorId}");
+            cloudAnchorId = hostCloudAnchorResult.CloudAnchorId;
+            SaveCloudAnchorID();
         }
         else if(cloudAnchorState != CloudAnchorState.TaskInProgress)
         {
